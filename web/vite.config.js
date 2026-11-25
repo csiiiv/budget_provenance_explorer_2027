@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import niaCoverageData from './niaCoverageData.mjs'
 import { cpSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 
@@ -12,6 +13,7 @@ export default defineConfig({
   base: './',
   plugins: [
     react(),
+    niaCoverageData(),
     {
       name: 'copy-ledger-data',
       apply: 'build',
@@ -31,6 +33,7 @@ export default defineConfig({
         about: fileURLToPath(new URL('./about.html', import.meta.url)),
         nia: fileURLToPath(new URL('./nia.html', import.meta.url)),
         'nia-map': fileURLToPath(new URL('./nia_map.html', import.meta.url)),
+        'nia-documents': fileURLToPath(new URL('./nia-documents.html', import.meta.url)),
         'nia-titles': fileURLToPath(new URL('./nia-titles.html', import.meta.url)),
         dpwh: fileURLToPath(new URL('./dpwh.html', import.meta.url)),
       },

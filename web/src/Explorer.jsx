@@ -144,7 +144,7 @@ export default function Explorer({ projects, regions, localities, locality, setL
     ['house', 'House project'], ['nep_only', 'NEP without House link'],
     ['senate_insertion', 'Senate insertion'], ['da_only', 'DA without NEP/House link'],
   ]
-  const [q, setQ] = useState('')
+  const [q, setQ] = useState(() => new URLSearchParams(window.location.search).get('q') || '')
   const [region, setRegion] = useState('')
   const [status, setStatus] = useState('')
   const [type, setType] = useState('')

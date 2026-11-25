@@ -51,6 +51,7 @@ function NiaMapPage() {
       <h1>NIA Project Map — FY 2027</h1>
       <a href="./nia.html">Provenance Explorer</a>
       <a href="./nia-titles.html">Title Comparison</a>
+      <a href="./nia-documents.html">Document Coverage Analysis</a>
       {data?.points.length > 0 && <span className="sub">
         {data.projectCount.toLocaleString()} projects · {data.points.length.toLocaleString()} workbook points
       </span>}

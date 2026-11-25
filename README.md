@@ -19,6 +19,7 @@ npm --prefix web run dev
 | FMR | http://localhost:5180/ | [Budget-chain notes](docs/fmr_budget_chain_web.md) · [Matching edge cases](docs/fmr_budget_chain_edge_cases.md) |
 | NIA | http://localhost:5180/nia.html | [Explorer notes](docs/nia_provenance_explorer.md) · [Workbook review evidence](docs/nia_review_data_sources.md) |
 | NIA titles | http://localhost:5180/nia-titles.html | Side-by-side titles across NEP · House · workbooks · Senate |
+| NIA document coverage | http://localhost:5180/nia-documents.html | Workbook-level POW/picture coverage, regional breakdowns, package matching, CSV exports |
 | NIA map | http://localhost:5180/nia_map.html | Workbook site coordinates on an interactive map |
 | DPWH | http://localhost:5180/dpwh.html | [Explorer notes](docs/dpwh_provenance_explorer.md) |
 

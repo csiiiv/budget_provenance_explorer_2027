@@ -1,0 +1,27 @@
+.coverage-main {grid-template-columns:minmax(0,1fr)}
+.coverage-main .panel {min-width:0}
+.coverage-main .kpi .note {color:var(--dim)}
+.coverage-filter {display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--dim)}
+.coverage-filter select {max-width:min(420px,85vw)}
+.coverage-main .filters {align-items:end}
+.coverage-main .filters input[type=search] {min-width:min(260px,100%);max-width:100%}
+.coverage-note {color:var(--dim);font-size:12px;overflow-wrap:anywhere}
+.coverage-bar {display:flex;height:16px;background:var(--panel2);border-radius:5px;overflow:hidden;min-width:80px}
+.coverage-bar span {height:100%;flex-shrink:0}
+.coverage-both {background:#2fbf71}.coverage-pow {background:#4f8ff7}.coverage-photos {background:#b27be2}.coverage-other {background:#f5a623}.coverage-none {background:#b45c5c}
+.coverage-legend {display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.coverage-legend i,.coverage-dot {display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px}
+.coverage-groups {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.coverage-summary td:nth-child(7) {min-width:105px}
+.coverage-summary td:not(:first-child) {text-align:right;white-space:nowrap}
+.coverage-summary td:first-child {min-width:110px}
+.coverage-toolbar {display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:space-between;margin:10px 0}
+.coverage-controls {margin-top:12px}
+.coverage-record-table table {min-width:900px}
+.coverage-record-table td {vertical-align:top}
+.coverage-record-table td:first-child {min-width:250px;max-width:460px}
+.coverage-record-table td:last-child {min-width:170px;max-width:340px;overflow-wrap:anywhere}
+.coverage-record-table summary {cursor:pointer;color:var(--nep)}
+.coverage-main button:disabled {opacity:.4;cursor:default}
+@media(max-width:1100px){.coverage-groups{grid-template-columns:1fr}}
+@media(max-width:600px){.coverage-main{padding:12px}.coverage-main .kpirow{grid-template-columns:repeat(2,minmax(0,1fr))}.coverage-main .kpi .val{font-size:17px}.coverage-main .panel{padding:12px}}

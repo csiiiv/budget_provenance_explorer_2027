@@ -854,6 +854,8 @@ function App({ mode = 'explorer' } = {}) {
         : <a href="./nia-titles.html">NIA Title Comparison</a>}
       {' · '}
       <a href="./nia_map.html" target="_blank" rel="noopener noreferrer">NIA Project Map</a>
+      {' · '}
+      <a href="./nia-documents.html">Document Coverage Analysis</a>
       <Downloads program="nia" />
     </>}
     footer={`NIA ledger ${bundle.inputs['data_formalization/data/ledger/nia.jsonl'].slice(0, 8)} · ${projects.length.toLocaleString()} chain records`}>
