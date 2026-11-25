@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { bucket, buckets, csv, groupName, groupRows, pct, summarize } from './niaCoverageModel.mjs'
 import SiteNav from './SiteNav.jsx'
+import NiaSectionNav from './NiaSectionNav.jsx'
 import './styles.css'
 import './niaCoverage.css'
 
@@ -103,6 +104,6 @@ function App() {
   const [data,setData]=useState(null)
   const [error,setError]=useState('')
   useEffect(()=>{fetch(new URL('data/nia-document-coverage.json',window.location.href)).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(setData).catch(e=>setError(e.message))},[])
-  return <><SiteNav current="nia"/><header><h1>NIA Document Coverage Analysis — FY2027</h1><a href="./nia.html">NIA explorer</a><a href="./nia-titles.html">Title comparison</a><a href="./nia_map.html">Project map</a></header>{error?<main><p role="alert">Unable to load document inventory: {error}</p></main>:data?<Dashboard data={data}/>:<main role="status">Loading document inventories…</main>}</>
+  return <><SiteNav current="nia"/><header><h1>NIA Document Coverage Analysis — FY2027</h1><NiaSectionNav current="documents"/></header>{error?<main><p role="alert">Unable to load document inventory: {error}</p></main>:data?<Dashboard data={data}/>:<main role="status">Loading document inventories…</main>}</>
 }
 createRoot(document.getElementById('app')).render(<App/>)

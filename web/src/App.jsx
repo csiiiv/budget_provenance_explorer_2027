@@ -75,7 +75,7 @@ export default function App() {
           <span className={`badge${crossCheck === 'clean' ? ' ok' : ''}`}>Senate cross-check {crossCheck ?? 'pending'}</span>
           <span className="badge">{c.nep} NEP · {c.house} house · {c.senate_rows} senate rows</span>
         </div>
-        <a href="./nia.html">NIA Provenance Explorer</a>
+        <a href="./nia.html">NIA Budget Explorer</a>
         {' · '}
         <a href="./dpwh.html">DPWH Provenance Explorer</a>
         <Downloads program="fmr" />
