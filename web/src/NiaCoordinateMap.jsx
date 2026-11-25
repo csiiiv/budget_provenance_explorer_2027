@@ -26,14 +26,8 @@ const BASEMAPS = {
   },
 }
 
-export function workbookMapPoints(workbook = []) {
-  const points = workbook.flatMap(({ coordinate_workbook: evidence }) =>
-    (evidence?.coordinates?.points ?? [])
-      .filter((point) => Number.isFinite(point.latitude) && Number.isFinite(point.longitude)
-        && !point.issues?.includes('outside_philippines_screening_bounds'))
-      .map((point) => ({ ...point, row: evidence.row })))
-  return points
-}
+import { workbookMapPoints } from './niaCoordinateCoverage.mjs'
+export { workbookMapPoints }
 
 export function formatMapPoint({ latitude, longitude }) {
   return `${latitude.toFixed(6)}, ${longitude.toFixed(6)}`

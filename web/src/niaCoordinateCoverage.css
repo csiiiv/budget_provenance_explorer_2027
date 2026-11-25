@@ -1,0 +1,10 @@
+.coordinate-matrix th,.coordinate-matrix td{min-width:100px}
+.coordinate-matrix th:first-child{min-width:210px}
+.coordinate-matrix tbody th,.coordinate-total th{position:static;background:transparent}
+.coordinate-matrix td,.coordinate-amount td:not(:first-child){text-align:right;font-variant-numeric:tabular-nums}
+.coordinate-matrix button{font-variant-numeric:tabular-nums}
+.coordinate-total{font-weight:600;background:var(--panel2)}
+.coordinate-bar{height:22px;margin:12px 0}
+.coordinate-raw{white-space:pre-wrap;overflow-wrap:anywhere}
+.coverage-main h3{font-size:13px;font-weight:600;margin-top:18px}
+.coverage-main a{color:var(--nep)}
