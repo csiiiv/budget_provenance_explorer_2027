@@ -24,6 +24,7 @@ export default defineConfig({
           new URL('./dist/data', import.meta.url),
           { recursive: true },
         )
+        sanitizePublishedNia(new URL('./dist/data/', import.meta.url))
       },
     },
   ],
