@@ -355,7 +355,7 @@ function adapt(row) {
     stageRefs: Object.fromEntries(TITLE_STAGES.map((key) => [key, stageRef(row, key)])),
     baselineTitleRefs: { nep: baselineTitleRef(row, 'nep'), house: baselineTitleRef(row, 'house') },
     coordinateCoverage: coordinateCoverage(row.november_review),
-    coordinatePoints: workbookMapPoints(row.workbook),
+    coordinatePoints: [...workbookMapPoints(row.workbook), ...submissionMapPoints(row.nia_submission_only)],
     supportingDocs: docs,
     stageNotes: { nep_house: changes.house, oct10: changes.oct10,
       nov13: changes.nov13, house_senate: changes.senate },
@@ -426,9 +426,11 @@ function CoordinateWorkbookEvidence({ evidence }) {
     <DetailTable label="Workbook fields" pairs={[
       [`CORPLAN checking · Z${row}`, evidence.corplan_checking],
       ['Region', evidence.region], ['Province', evidence.province],
+      ['Match method', evidence.match_method],
     ]} />
     <FieldDiff label={`Map link cell · AA${row}`} to={evidence.map_link_text} mono />
     {mapLink && <a href={mapLink} target="_blank" rel="noopener noreferrer">Open workbook map link</a>}
+    {evidence.geography_review && <p>{evidence.geography_review.note}</p>}
     <Remark label="Workbook justification" text={evidence.justification} />
   </details>
 }
@@ -575,6 +577,7 @@ function Evidence({ rec, initialStage, sources, onClose, onJump, projects, title
               ['Excel row', submission.row], ['NIA submission amount', amount(submission.submission_amount_php)],
               ['Region', submission.region], ['Province', submission.province],
             ]} />
+            <CoordinateWorkbookEvidence evidence={submission.coordinate_workbook} />
           </> : !r ? <div className="empty">{(key === 'oct10' && row.workbook?.length) ||
             (key === 'nov13' && row.november_review?.length)
             ? 'Workbook row evidence below' : 'No linked record'}</div> : <>

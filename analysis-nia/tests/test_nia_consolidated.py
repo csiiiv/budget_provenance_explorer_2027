@@ -41,16 +41,26 @@ class ConsolidatedDatasetTests(unittest.TestCase):
         }
         review = {entry['row']: entry['reason'] for entry in source['review_rows']}
         self.assertEqual(len(attached), source['matched_rows'])
-        self.assertEqual(len(attached), 796)
+        self.assertEqual(len(attached), 799)
         self.assertTrue(attached.keys().isdisjoint(review))
+        # Row 785 is a submission-only row (reallocation recipient, not a
+        # Senate workbook project) — it stays held here and joins the web
+        # export's reallocation chain instead.
         self.assertEqual(review, {
             65: 'geography_differs', 67: 'geography_differs', 69: 'geography_differs',
             71: 'geography_differs', 73: 'geography_differs',
-            785: 'no_printed_project_title', 1616: 'no_printed_project_title',
-            1618: 'no_printed_project_title', 1671: 'no_printed_project_title',
+            785: 'no_printed_project_title',
             1803: 'repeated_project_key',
         })
-        self.assertEqual(self.by_id['sen:r279']['locations']['coordinate_workbook']['row'], 279)
+        # Inserted rows (no printed title) attach through the revised title
+        # and submission amount; documented reassignments keep a geography note.
+        for row in (1616, 1618, 1671):
+            entry = attached[row]
+            self.assertEqual(entry['match_method'], 'revised_title_and_submission_amount')
+            note = entry['geography_review']
+            self.assertEqual(note['october_region'], 'Region 13')
+            self.assertIn('Region 2', note['coordinate_row_region'])
+        self.assertEqual(attached[279]['row'], 279)
         self.assertTrue(attached[279]['map_url'].startswith('https://'))
         self.assertTrue(any(
             'outside_philippines_screening_bounds' in point['issues']

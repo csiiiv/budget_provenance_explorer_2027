@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
-import { formatMapPoint, NiaMapCanvas, workbookMapPoints } from './NiaCoordinateMap.jsx'
+import { formatMapPoint, NiaMapCanvas, workbookMapPoints, submissionMapPoints } from './NiaCoordinateMap.jsx'
 import { adapt, Evidence } from './Nia.jsx'
 import './styles.css'
 import NiaSectionNav from './NiaSectionNav.jsx'
@@ -36,6 +36,15 @@ function NiaMapPage() {
           if (!sites.length) continue
           projectCount++
           points.push(...sites.map((point) => ({ ...point, projectId })))
+        }
+        // Submission-only chains (Senate insertions / reallocation recipients)
+        // carry their coordinates on the NIA submission entries.
+        for (const chain of chains) {
+          if (chain.workbook?.length) continue
+          const sites = submissionMapPoints(chain.nia_submission_only)
+          if (!sites.length) continue
+          projectCount++
+          points.push(...sites.map((point) => ({ ...point, projectId: chain.id })))
         }
         const projects = chains.map(adapt)
         const byId = new Map(projects.map((project) => [project.id, project]))

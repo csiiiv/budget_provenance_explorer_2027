@@ -12,7 +12,7 @@ import unicodedata
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'gps-analysis'))
 sys.path.insert(0, str(ROOT / 'analysis-nia'))
-from nia_coordinate_workbook import SOURCE as COORDINATE_WORKBOOK, build_coordinate_evidence
+from nia_coordinate_workbook import SOURCE as COORDINATE_WORKBOOK, attach_submission_only_evidence, build_coordinate_evidence
 from scan_gps_inventory import analyze_text
 
 DATA = ROOT / 'analysis-nia/data'
@@ -1173,14 +1173,23 @@ def build():
 
     october_projects = read(DATA / 'senate_nia_dataset.json')['projects']
     coordinate_by_id, coordinate_source = build_coordinate_evidence(october_projects)
+    submission_evidence = attach_submission_only_evidence(
+        coordinate_source, read(SUBMISSION_ONLY))
     exported_coordinate_ids = set()
+    exported_submission_keys = set()
     for chain in chains:
         for workbook_row in chain.get('workbook', []):
             if evidence := coordinate_by_id.get(workbook_row['id']):
                 workbook_row['coordinate_workbook'] = evidence
                 exported_coordinate_ids.add(workbook_row['id'])
+        for vintage, submission in (chain.get('nia_submission_only') or {}).items():
+            if evidence := submission_evidence.get((vintage, submission['row'])):
+                submission['coordinate_workbook'] = evidence
+                exported_submission_keys.add((vintage, submission['row']))
     if exported_coordinate_ids != coordinate_by_id.keys():
         raise ValueError('NIA web export is missing matched coordinate workbook evidence')
+    if exported_submission_keys != submission_evidence.keys():
+        raise ValueError('NIA web export is missing submission-only coordinate evidence')
 
     totals = {}
     for side, source, field in (

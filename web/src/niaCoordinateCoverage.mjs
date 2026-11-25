@@ -7,6 +7,32 @@ export function workbookMapPoints(workbook = []) {
       .map(p => ({ ...p, row: evidence.row })))
 }
 
+// Chains without workbook rows can still carry coordinate evidence on their
+// NIA submission-only entries (e.g. reallocation recipients). Both vintage
+// entries may reference the same coordinate workbook row — dedupe on it.
+export function submissionEvidence(submissions = {}) {
+  const byRow = new Map()
+  for (const sub of Object.values(submissions ?? {})) {
+    const evidence = sub?.coordinate_workbook
+    if (evidence?.row != null && !byRow.has(evidence.row)) byRow.set(evidence.row, evidence)
+  }
+  return [...byRow.values()]
+}
+
+export function submissionMapPoints(submissions = {}) {
+  return submissionEvidence(submissions).flatMap((evidence) =>
+    (evidence?.coordinates?.points ?? [])
+      .filter(p => Number.isFinite(p.latitude) && Number.isFinite(p.longitude)
+        && !p.issues?.includes('outside_philippines_screening_bounds'))
+      .map(p => ({ ...p, row: evidence.row })))
+}
+
+export function submissionCoordinateText(submissions = {}) {
+  return submissionEvidence(submissions)
+    .filter(evidence => evidence?.coordinate_text?.trim())
+    .map(evidence => ({ id: 'NIA submission · row ' + evidence.row, text: String(evidence.coordinate_text) }))
+}
+
 export const classes = {
   usable: 'Usable workbook coordinates',
   unparsed: 'Workbook text, no usable point',
@@ -21,11 +47,15 @@ const decimal = /\b(?:[4-9]|1\d|2[0-2])\.\d{3,}\s*,?\s+1(?:1[6-9]|2[0-7])\.\d{3,
 export const hasTitleCoordinates = text => typeof text === 'string' && (dms.test(text) || decimal.test(text))
 export function classify(chain) {
   const workbook = chain.workbook ?? []
-  const raw = workbook.flatMap(w => {
-    const value = w.coordinate_workbook?.coordinate_text
-    return value != null && String(value).trim() ? [{id:w.id,text:String(value)}] : []
-  })
-  const points = workbookMapPoints(workbook)
+  const submissions = chain.nia_submission_only ?? {}
+  const raw = [
+    ...workbook.flatMap(w => {
+      const value = w.coordinate_workbook?.coordinate_text
+      return value != null && String(value).trim() ? [{id:w.id,text:String(value)}] : []
+    }),
+    ...submissionCoordinateText(submissions),
+  ]
+  const points = [...workbookMapPoints(workbook), ...submissionMapPoints(submissions)]
   const titles = [
     ['Senate',chain.senate?.senate_title], ['Senate House column',chain.senate?.hb_title],
     ['House',chain.house?.title], ['NEP',chain.nep?.title],

@@ -26,8 +26,8 @@ const BASEMAPS = {
   },
 }
 
-import { workbookMapPoints } from './niaCoordinateCoverage.mjs'
-export { workbookMapPoints }
+import { workbookMapPoints, submissionMapPoints } from './niaCoordinateCoverage.mjs'
+export { workbookMapPoints, submissionMapPoints }
 
 export function formatMapPoint({ latitude, longitude }) {
   return `${latitude.toFixed(6)}, ${longitude.toFixed(6)}`
