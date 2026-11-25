@@ -1,0 +1,24 @@
+name: NIA document coverage checks
+on:
+  pull_request:
+    paths:
+      - 'web/**'
+      - 'analysis-nia/data/program_of_works/**'
+      - '.github/workflows/nia-document-coverage.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: node --test web/tests/niaCoverage.test.mjs
+      - run: npm --prefix web ci
+      - run: npm --prefix web run build
+      - run: test -s web/dist/data/nia-document-coverage.json && test -s web/dist/nia-documents.html
