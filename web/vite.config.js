@@ -28,6 +28,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         fmr: fileURLToPath(new URL('./index.html', import.meta.url)),
+        about: fileURLToPath(new URL('./about.html', import.meta.url)),
         nia: fileURLToPath(new URL('./nia.html', import.meta.url)),
         'nia-map': fileURLToPath(new URL('./nia_map.html', import.meta.url)),
         'nia-titles': fileURLToPath(new URL('./nia-titles.html', import.meta.url)),
