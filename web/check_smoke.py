@@ -118,7 +118,7 @@ def main():
             expect(rows.nth(0)).to_contain_text('Cabungaan A FMR')
             expect(rows.nth(1)).to_contain_text('Cabungaan B FMR')
             expect(rows.first.locator('.act-pill:not(.stage-note)')).to_have_text(
-                ['proposed⚑', 'carried⚑', 'list revision✓', 'list revision✓', 'realigned']
+                ['proposed⚑', 'carried⚑', 'list revision✓', 'list revision✓', 'Realigned']
             )
             expect(rows.first.locator('.stage-note')).to_have_text(
                 ['Title corrected', 'Title corrected', 'Title revised']
@@ -145,7 +145,7 @@ def main():
             inserted.click()
             expect(rows).to_have_count(1)
             expect(explorer.get_by_role('status')).to_be_empty()
-            expect(rows.first).to_contain_text('realigned')
+            expect(rows.first).to_contain_text('Realigned')
             search.fill('senate_a1:p7:r59')
             expect(rows).to_have_count(1)
             expect(rows.first).to_contain_text('Cabungaan North FMR')
@@ -220,9 +220,9 @@ def main():
             pending = rows.first.locator('.stage-status').nth(3).get_by_role('img', name='Pending')
             expect(pending).to_be_visible()
             for query, label in (
-                ('R3-0085', 'reinstated'),
-                ('R3-0108', 'reinstated'),
-                ('R3-NEW-0023', 'realigned'),
+                ('R3-0085', 'Reinstated'),
+                ('R3-0108', 'Reinstated'),
+                ('R3-NEW-0023', 'Realigned'),
             ):
                 search.fill(query)
                 expect(rows).to_have_count(1)
@@ -240,7 +240,7 @@ def main():
             search.fill('R1-NEW-0029')
             expect(rows).to_have_count(1)
             expect(rows.first).to_contain_text('Nancalabasaan')
-            expect(rows.first).to_contain_text('realigned')
+            expect(rows.first).to_contain_text('Realigned')
             expect(rows.first.get_by_role('cell').nth(4)).to_have_text('15M')
             rows.first.get_by_role('button', name='Senate', exact=False).click()
             expect(drawer).to_contain_text('agree on title, amount, and both endpoints')
@@ -272,15 +272,15 @@ def main():
             search.fill('kalubkob')
             expect(rows).to_have_count(2)
             corrected = rows.filter(has_text='Construction of Brgy. Kalubkob FMR')
-            expect(corrected).to_contain_text('reinstated')
+            expect(corrected).to_contain_text('Reinstated')
             expect(corrected).to_contain_text('coordinate correction')
             expect(corrected.get_by_role('cell').nth(4)).to_have_text('15M')
             supok = rows.filter(has_text='Sitio Supok')
             expect(supok.get_by_role('cell').nth(4)).to_have_text('20M')
-            expect(supok).to_contain_text('inserted')
+            expect(supok).to_contain_text('Senate inserted')
             search.fill('senate_a1:p65:r601')
             expect(rows).to_have_count(1)
-            expect(rows.first).to_contain_text('reinstated')
+            expect(rows.first).to_contain_text('Reinstated')
 
             search.fill('corocor')
             expect(rows).to_have_count(1)
@@ -306,7 +306,7 @@ def main():
 
             search.fill('Ilocos Sur Provincial Trading Center')
             expect(rows).to_have_count(1)
-            expect(rows.first).to_contain_text('reinstated')
+            expect(rows.first).to_contain_text('Reinstated')
             expect(rows.first).to_contain_text('modified')
             search.fill('senate_a1:p4:r28')
             expect(rows).to_have_count(1)
