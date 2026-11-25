@@ -1,0 +1,106 @@
+name: Standalone provenance validation (not deployment)
+
+on:
+  pull_request:
+    paths:
+      - 'web/**'
+      - 'data_formalization/**'
+      - 'analysis/**'
+      - 'analysis-nia/**'
+      - 'other-analysis/**'
+      - 'Senate_report_data/**'
+      - '.github/workflows/validate.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+        working-directory: web
+      - run: npm run build
+        working-directory: web
+      - uses: actions/upload-artifact@v4
+        with:
+          name: validation-dist
+          path: web/dist
+          retention-days: 2
+          if-no-files-found: error
+
+  integrity:
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        program: [fmr, nia, dpwh]
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: validation-dist
+          path: web/dist
+      - run: python3 web/tests/check_integrity.py ${{ matrix.program }}
+
+  browser:
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        page: [fmr, nia, nia-titles, nia-map, dpwh, about, public-docs]
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: validation-dist
+          path: web/dist
+      - run: |
+          python3 -m pip install playwright==1.55.0
+          if [ ! -x /usr/bin/google-chrome ]; then
+            python3 -m playwright install --with-deps chromium
+          fi
+      - run: python3 web/tests/check_public_site.py ${{ matrix.page }}
+
+  fmr-regression:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: validation-dist
+          path: web/dist
+      - run: |
+          python3 -m pip install playwright==1.55.0
+          if [ ! -x /usr/bin/google-chrome ]; then
+            python3 -m playwright install --with-deps chromium
+          fi
+      - run: python3 web/check_smoke.py
+
+  lineage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 web/tests/check_lineage.py
