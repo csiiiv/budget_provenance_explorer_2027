@@ -18,7 +18,7 @@ jobs:
           node-version: '22'
           cache: npm
           cache-dependency-path: web/package-lock.json
-      - run: node --test web/tests/niaCoverage.test.mjs
+      - run: node --test web/tests/niaCoverage.test.mjs web/tests/niaCoordinateCoverage.test.mjs
       - run: npm --prefix web ci
       - run: npm --prefix web run build
       - run: test -s web/dist/data/nia-document-coverage.json && test -s web/dist/nia-documents.html
@@ -33,3 +33,4 @@ jobs:
       - run: python3 web/tests/check_nia_landing.py
       - run: python3 web/check_nia_supporting_docs.py
       - run: node --test web/tests/niaPublicDocuments.test.mjs
+      - run: python3 web/tests/check_nia_coordinates.py

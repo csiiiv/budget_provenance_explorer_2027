@@ -8,6 +8,7 @@ const icons = {
   provenance: <><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4a3 3 0 0 1 3 3V14M6.5 10v7a1 1 0 0 0 1 1H14"/></>,
   titles: <><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 4v16M6 8h3m-3 4h3m-3 4h3m6-8h3m-3 4h3m-3 4h3"/></>,
   documents: <><path d="M13 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10zM13 3v7h7M8 14h8m-8 3h5"/><path d="m8 10 1 1 2-2"/></>,
+  coordinates: <><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 1v5m0 12v5M1 12h5m12 0h5"/></>,
   map: <><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></>,
 }
 function Landing() {

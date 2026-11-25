@@ -12,6 +12,7 @@ TOOLS = {
     'nia-provenance.html': 'NIA Provenance Explorer',
     'nia-titles.html': 'NIA Title Comparison',
     'nia-documents.html': 'NIA Document Coverage Analysis',
+    'nia-coordinates.html': 'NIA Coordinate Coverage Analysis',
     'nia_map.html': 'NIA Project Map',
 }
 
@@ -39,7 +40,7 @@ with TemporaryDirectory() as tmp:
                 nav.get_by_role('link', name='NIA overview').click()
                 expect(page.get_by_role('heading', level=1)).to_have_text('NIA Budget Explorer')
             page.set_viewport_size({'width': 390, 'height': 844})
-            expect(page.locator('.nia-hub-card')).to_have_count(4)
+            expect(page.locator('.nia-hub-card')).to_have_count(len(TOOLS))
             assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth'), 'Mobile page overflows'
             page.goto(base + 'nia.html?q=sen%3Ar1456')
             expect(page).to_have_url(base + 'nia-provenance.html?q=sen%3Ar1456')
@@ -49,4 +50,4 @@ with TemporaryDirectory() as tmp:
             assert not errors, errors
             browser.close()
         server.shutdown()
-print('NIA hub, four tool routes, return navigation, mobile layout and legacy search link passed')
+print('NIA hub, five tool routes, return navigation, mobile layout and legacy search link passed')
