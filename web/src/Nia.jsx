@@ -134,22 +134,16 @@ function workbookAmount(row, key, side) {
   return Number.isFinite(parsed) ? parsed : record(row, key)?.[`${side}_amount_php`]
 }
 
-// Local package path as a file:// URI (percent-encoded for spaces/brackets).
-const fileUrl = (root, path) =>
-  `file://${[...root.split('/'), ...path.split('/')]
-    .filter(Boolean).map(encodeURIComponent).join('/')}`
-
-// Table cell: total file count with a POW/photo breakdown, linking each
-// attributed package to its local folder path (file://).
+// Public table cell: package names and upstream source, not local filesystem links.
 function SupportingDocsCell({ docs }) {
   if (!docs) return <span className="title-missing" aria-label="No supporting docs">—</span>
   return <div className="pow-docs-cell">
     <strong>{docs.doc_count.toLocaleString()}</strong>
     <small>{docs.pdf_count} PDF · {docs.image_count} photo{docs.image_count === 1 ? '' : 's'}</small>
     {docs.packages.map((p, i) => (
-      <a key={i} href={fileUrl(docs.source_path, p.path)} title={p.path}
-        onClick={(e) => e.stopPropagation()}>{p.name}</a>
+      <span className="pow-package-name" key={i}>{p.name}</span>
     ))}
+    <a href={docs.drive_url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>PBC source folder ↗</a>
   </div>
 }
 
@@ -328,7 +322,7 @@ function coordinateCoverage(rows = []) {
 }
 
 // [POW FOR REVIEW] supporting docs attached by the exporter: file counts
-// plus the local drop path of each attributed package (file:// links).
+// plus the attributed package names and upstream source URL.
 function supportingDocsOf(row) {
   const docs = row.supporting_docs
   if (!docs || !docs.packages?.length) return null
@@ -493,14 +487,8 @@ function SupportingDocsEvidence({ docs }) {
       p.name,
       `${p.doc_count} file${p.doc_count === 1 ? '' : 's'} · ${p.pdf_count} PDF · ${p.image_count} photo${p.image_count === 1 ? '' : 's'}${p.score != null ? ` · score ${Math.round(p.score * 100)}%` : ''}`,
     ])} />
-    <p>Local mirror:{' '}
-      {docs.packages.map((p, i) => <React.Fragment key={i}>
-        {i > 0 && ' · '}
-        <a href={fileUrl(docs.source_path, p.path)} title={p.path}>{p.name}</a>
-      </React.Fragment>)}
-    </p>
-    <p>Upstream: <a href={docs.drive_url} target="_blank" rel="noopener noreferrer">PBC Google Drive folder</a>
-      {' · '}local root <code>{docs.source_path}</code></p>
+    <p>Source: <a href={docs.drive_url} target="_blank" rel="noopener noreferrer">PBC Google Drive folder</a></p>
+    <p>Package names identify the attributed evidence; the source link opens the shared folder, not an individual file.</p>
   </div>
 }
 

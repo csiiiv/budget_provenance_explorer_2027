@@ -90,6 +90,7 @@ main:has(.tablewrap.title-compare) { grid-template-columns: minmax(0, 1fr); }
 .pow-docs-cell strong { font-variant-numeric: tabular-nums; font-size: 13px; }
 .pow-docs-cell small { display: block; color: var(--dim); font-size: 10.5px;
   font-variant-numeric: tabular-nums; margin-bottom: 3px; }
+.pow-docs-cell .pow-package-name { display: block; font-size: 10.5px; overflow-wrap: anywhere; }
 .pow-docs-cell a { display: block; color: var(--nep); font-size: 10.5px;
   text-decoration: underline; text-underline-offset: 2px; overflow-wrap: anywhere; }
 .pow-docs-cell a:hover { color: var(--text); }

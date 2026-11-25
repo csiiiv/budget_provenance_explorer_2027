@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import niaCoverageData from './niaCoverageData.mjs'
 import { cpSync } from 'node:fs'
+import { sanitizePublishedNia } from './niaPublicDocuments.mjs'
 import { fileURLToPath } from 'node:url'
 
 // The Python exporter (data_formalization/scripts/export_web.py) writes
@@ -23,6 +24,7 @@ export default defineConfig({
           new URL('./dist/data', import.meta.url),
           { recursive: true },
         )
+        sanitizePublishedNia(new URL('./dist/data/', import.meta.url))
       },
     },
   ],

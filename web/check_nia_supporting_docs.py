@@ -38,15 +38,10 @@ def main():
             expect(rows).to_have_count(1)
             cell = rows.first.locator('td.pow-docs-cell')
             expect(cell.locator('strong')).to_have_text('2')
-            link = cell.locator('a')
-            expect(link).to_have_count(1)
-            href = link.get_attribute('href')
-            assert href.startswith('file://'), href
-            assert 'REPAIRPIS-LARPIS(AUPAGAN)-300M' in href, href
-            # spaces and brackets percent-encoded
-            assert ' ' not in href and '[' not in href, href
-            assert link.get_attribute('title') == \
-                'REGION 13 [FOR REVIEW]/Repair PIS/REPAIRPIS-LARPIS(AUPAGAN)-300M'
+            expect(cell.get_by_text('REPAIRPIS-LARPIS(AUPAGAN)-300M')).to_be_visible()
+            link = cell.get_by_role('link', name='PBC source folder')
+            expect(link).to_have_attribute('href', data['chains'][next(i for i, r in enumerate(data['chains']) if any(w['id'] == 'sen:r1456' for w in r.get('workbook', [])))]['supporting_docs']['drive_url'])
+            assert cell.locator('a[href^="file:"]').count() == 0
 
             # unsupported row shows an em dash (Kabulnan RIS, sen:r2463)
             page.get_by_role('searchbox').fill('sen:r2463')
@@ -61,7 +56,10 @@ def main():
             drawer = page.locator('.detail.open')
             expect(drawer.get_by_text('Supporting documents · [POW FOR REVIEW]')).to_be_visible()
             expect(drawer.get_by_text('REPAIRPIS-LARPIS(AUPAGAN)-300M').first).to_be_visible()
-            assert drawer.locator('a[href^="file://"]').count() >= 1
+            expect(drawer.get_by_role('link', name='PBC Google Drive folder')).to_be_visible()
+            assert page.locator('a[href^="file:"]').count() == 0
+            assert 'Local mirror:' not in drawer.inner_text()
+            assert 'local root' not in drawer.inner_text()
 
             # KPI is present
             expect(page.get_by_text('chains with [POW FOR REVIEW] packages attributed')).to_be_visible()
