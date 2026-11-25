@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { formatMapPoint, NiaMapCanvas, workbookMapPoints } from './NiaCoordinateMap.jsx'
 import { adapt, Evidence } from './Nia.jsx'
 import './styles.css'
+import NiaSectionNav from './NiaSectionNav.jsx'
 
 function NiaMapPage() {
   const [data, setData] = useState(null)
@@ -49,9 +50,7 @@ function NiaMapPage() {
   return <>
     <header>
       <h1>NIA Project Map — FY 2027</h1>
-      <a href="./nia.html">Provenance Explorer</a>
-      <a href="./nia-titles.html">Title Comparison</a>
-      <a href="./nia-documents.html">Document Coverage Analysis</a>
+      <NiaSectionNav current="map" />
       {data?.points.length > 0 && <span className="sub">
         {data.projectCount.toLocaleString()} projects · {data.points.length.toLocaleString()} workbook points
       </span>}

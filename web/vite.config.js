@@ -32,6 +32,7 @@ export default defineConfig({
         fmr: fileURLToPath(new URL('./index.html', import.meta.url)),
         about: fileURLToPath(new URL('./about.html', import.meta.url)),
         nia: fileURLToPath(new URL('./nia.html', import.meta.url)),
+        'nia-provenance': fileURLToPath(new URL('./nia-provenance.html', import.meta.url)),
         'nia-map': fileURLToPath(new URL('./nia_map.html', import.meta.url)),
         'nia-documents': fileURLToPath(new URL('./nia-documents.html', import.meta.url)),
         'nia-titles': fileURLToPath(new URL('./nia-titles.html', import.meta.url)),

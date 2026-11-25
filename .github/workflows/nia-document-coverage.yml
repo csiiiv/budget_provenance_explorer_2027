@@ -22,3 +22,12 @@ jobs:
       - run: npm --prefix web ci
       - run: npm --prefix web run build
       - run: test -s web/dist/data/nia-document-coverage.json && test -s web/dist/nia-documents.html
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python3 -m pip install playwright==1.55.0
+          if [ ! -x /usr/bin/google-chrome ]; then
+            python3 -m playwright install --with-deps chromium
+          fi
+      - run: python3 web/tests/check_nia_landing.py

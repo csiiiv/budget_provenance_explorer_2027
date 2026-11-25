@@ -7,7 +7,7 @@ python3 data_formalization/scripts/export_nia_web.py
 npm --prefix web run dev
 ```
 
-Open `http://localhost:5180/nia.html` or follow the NIA link from the FMR
+Open `http://localhost:5180/nia-provenance.html` or follow the NIA link from the FMR
 dashboard. Both pages build with `npm --prefix web run build`.
 
 ## Shared project explorer

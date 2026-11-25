@@ -114,7 +114,7 @@ npm --prefix web run dev
 npm --prefix web run build
 ```
 
-The dev server serves FMR at `/`, NIA at `/nia.html`, and DPWH at
+The dev server serves FMR at `/`, the NIA landing page at `/nia.html` (provenance at `/nia-provenance.html`), and DPWH at
 `/dpwh.html` on port 5180.
 The production output is `web/dist/`. With Playwright and Chromium
 available, run `python3 web/check_smoke.py` for FMR and
