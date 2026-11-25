@@ -19,6 +19,7 @@ npm --prefix web run dev
 | FMR | http://localhost:5180/ | [Budget-chain notes](docs/fmr_budget_chain_web.md) · [Matching edge cases](docs/fmr_budget_chain_edge_cases.md) |
 | NIA | http://localhost:5180/nia.html | [Explorer notes](docs/nia_provenance_explorer.md) · [Workbook review evidence](docs/nia_review_data_sources.md) |
 | NIA titles | http://localhost:5180/nia-titles.html | Side-by-side titles across NEP · House · workbooks · Senate |
+| NIA map | http://localhost:5180/nia_map.html | Workbook site coordinates on an interactive map |
 | DPWH | http://localhost:5180/dpwh.html | [Explorer notes](docs/dpwh_provenance_explorer.md) |
 
 Read the methodology and download the original guides at
@@ -27,6 +28,14 @@ http://localhost:5180/about.html.
 Build the explorer pages and About page with `npm --prefix web run build`. Serve
 `web/dist/` as a static site at the host root, or run
 `npm --prefix web run preview` locally.
+
+### GitHub Pages
+
+Pushes to `main` that touch `web/` (or the deploy workflow) build `web/dist/`
+and publish it via GitHub Pages. After the first successful run, the site is
+at `https://csiiiv.github.io/budget_provenance_explorer_2027/` (FMR index,
+`nia.html`, `nia-titles.html`, `nia_map.html`, `dpwh.html`). The Vite `base`
+is `./` so asset paths work under the project-pages subpath.
 
 ## Regenerate explorer data
 

@@ -6,7 +6,10 @@ import { fileURLToPath } from 'node:url'
 // The Python exporter (data_formalization/scripts/export_web.py) writes
 // bundles straight into web/data/<program>/ — served as static files by the
 // dev server, and copied into dist/ on build so `vite preview` works too.
+// Relative base keeps the bundle working under any subpath, including
+// GitHub Pages project sites (/<repo>/).
 export default defineConfig({
+  base: './',
   plugins: [
     react(),
     {

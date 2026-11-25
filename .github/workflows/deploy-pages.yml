@@ -1,0 +1,59 @@
+name: Deploy explorers to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web/**'
+      - 'data_formalization/scripts/**'
+      - 'analysis-nia/**'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - run: npm run build
+      - name: Assert committed data bundles are current
+        run: |
+          python3 - <<'PY'
+          import json, pathlib
+          bundle = json.loads(pathlib.Path('public/data/nia.json').read_text())
+          chains = bundle['chains']
+          with_docs = [c for c in chains if c.get('supporting_docs')]
+          assert len(with_docs) == 503, f'expected 503, got {len(with_docs)}'
+          print(f'nia.json: {len(chains)} chains, {len(with_docs)} with supporting docs')
+          PY
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: web/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
