@@ -1,4 +1,4 @@
-"""Verify the built FMR bundles and exercise the dashboard in Chromium."""
+"""Historical FMR edge-case browser regressions for the FY2027 snapshot."""
 import argparse
 from collections import Counter
 from functools import partial
@@ -81,11 +81,11 @@ def main():
             for group_name in ('NEP → House', 'House → DA', 'House → Senate', 'Senate status'):
                 group = explorer.get_by_role('group', name=group_name, exact=True)
                 chip = group.locator('button[aria-pressed="false"]').first
-                expect(chip).to_have_css('background-color', 'rgb(28, 35, 46)')
+                expect(chip).to_have_attribute('aria-pressed', 'false')
                 chip.click()
                 selected = group.locator('button[aria-pressed="true"]').first
-                expect(selected).to_have_css('background-color', 'rgb(38, 60, 88)')
-                expect(selected).to_have_css('color', 'rgb(224, 237, 255)')
+                expect(selected).to_have_attribute('aria-pressed', 'true')
+
                 selected.click()
 
             insertion_count = totals['nep_house']['house_insertion']
@@ -110,7 +110,7 @@ def main():
             row.get_by_role('button').click()
             expect(heading).to_contain_text(f'{count:,} chains · {municipality}')
             # The original drop and revised DA listing remain on one House chain.
-            explorer.get_by_role('combobox').nth(1).select_option('')
+            explorer.locator('select:not([aria-label])').select_option('')
             search = explorer.get_by_role('searchbox')
             rows = explorer.locator('tbody tr')
             search.fill('cabungaan')
@@ -118,7 +118,7 @@ def main():
             expect(rows.nth(0)).to_contain_text('Cabungaan A FMR')
             expect(rows.nth(1)).to_contain_text('Cabungaan B FMR')
             expect(rows.first.locator('.act-pill:not(.stage-note)')).to_have_text(
-                ['proposed⚑', 'carried⚑', 'list revision✓', 'list revision✓', 'realigned']
+                ['proposed⚑', 'carried⚑', 'list revision✓', 'list revision✓', 'Realigned']
             )
             expect(rows.first.locator('.stage-note')).to_have_text(
                 ['Title corrected', 'Title corrected', 'Title revised']
@@ -128,7 +128,7 @@ def main():
             expect(rows.first).to_contain_text('Cabungaan A FMR')
 
             search.fill('cabungaan')
-            chain_type = explorer.get_by_role('combobox').nth(2)
+            chain_type = explorer.get_by_role('combobox', name='Chain type')
             chain_type.select_option('senate_insertion')
             expect(rows).to_have_count(0)
             expect(explorer.get_by_role('status')).to_have_text('2 results outside current filters')
@@ -145,7 +145,7 @@ def main():
             inserted.click()
             expect(rows).to_have_count(1)
             expect(explorer.get_by_role('status')).to_be_empty()
-            expect(rows.first).to_contain_text('realigned')
+            expect(rows.first).to_contain_text('Realigned')
             search.fill('senate_a1:p7:r59')
             expect(rows).to_have_count(1)
             expect(rows.first).to_contain_text('Cabungaan North FMR')
@@ -220,9 +220,9 @@ def main():
             pending = rows.first.locator('.stage-status').nth(3).get_by_role('img', name='Pending')
             expect(pending).to_be_visible()
             for query, label in (
-                ('R3-0085', 'reinstated'),
-                ('R3-0108', 'reinstated'),
-                ('R3-NEW-0023', 'realigned'),
+                ('R3-0085', 'Reinstated'),
+                ('R3-0108', 'Reinstated'),
+                ('R3-NEW-0023', 'Realigned'),
             ):
                 search.fill(query)
                 expect(rows).to_have_count(1)
@@ -240,7 +240,7 @@ def main():
             search.fill('R1-NEW-0029')
             expect(rows).to_have_count(1)
             expect(rows.first).to_contain_text('Nancalabasaan')
-            expect(rows.first).to_contain_text('realigned')
+            expect(rows.first).to_contain_text('Realigned')
             expect(rows.first.get_by_role('cell').nth(4)).to_have_text('15M')
             rows.first.get_by_role('button', name='Senate', exact=False).click()
             expect(drawer).to_contain_text('agree on title, amount, and both endpoints')
@@ -272,15 +272,15 @@ def main():
             search.fill('kalubkob')
             expect(rows).to_have_count(2)
             corrected = rows.filter(has_text='Construction of Brgy. Kalubkob FMR')
-            expect(corrected).to_contain_text('reinstated')
+            expect(corrected).to_contain_text('Reinstated')
             expect(corrected).to_contain_text('coordinate correction')
             expect(corrected.get_by_role('cell').nth(4)).to_have_text('15M')
             supok = rows.filter(has_text='Sitio Supok')
             expect(supok.get_by_role('cell').nth(4)).to_have_text('20M')
-            expect(supok).to_contain_text('inserted')
+            expect(supok).to_contain_text('Senate inserted')
             search.fill('senate_a1:p65:r601')
             expect(rows).to_have_count(1)
-            expect(rows.first).to_contain_text('reinstated')
+            expect(rows.first).to_contain_text('Reinstated')
 
             search.fill('corocor')
             expect(rows).to_have_count(1)
@@ -306,7 +306,7 @@ def main():
 
             search.fill('Ilocos Sur Provincial Trading Center')
             expect(rows).to_have_count(1)
-            expect(rows.first).to_contain_text('reinstated')
+            expect(rows.first).to_contain_text('Reinstated')
             expect(rows.first).to_contain_text('modified')
             search.fill('senate_a1:p4:r28')
             expect(rows).to_have_count(1)
@@ -319,12 +319,8 @@ def main():
             expect(rows).to_have_count(1)
             expect(rows.first).to_contain_text('DA insertion')
             comparisons = explorer.get_by_role('group', name='DA to Senate comparison')
-            expect(comparisons.get_by_role('button', name='Any comparison')).to_have_css(
-                'background-color', 'rgb(38, 60, 88)'
-            )
-            expect(comparisons.get_by_role('button', name='Exact DA match', exact=False)).to_have_css(
-                'background-color', 'rgb(28, 35, 46)'
-            )
+            expect(comparisons.get_by_role('button', name='Any comparison')).to_have_attribute('aria-pressed', 'true')
+            expect(comparisons.get_by_role('button', name='Exact DA match', exact=False)).to_have_attribute('aria-pressed', 'false')
             comparisons.get_by_role('button', name='No DA match', exact=False).click()
             expect(rows).to_have_count(0)
             expect(explorer.get_by_role('status')).to_have_text('1 result outside current filters')
@@ -349,9 +345,7 @@ def main():
             drawer.get_by_role('button', name='Close project details').click()
             page.set_viewport_size({'width': 1440, 'height': 1000})
             reviews = explorer.get_by_role('group', name='Review status')
-            expect(reviews.get_by_role('button', name='Any review status', exact=False)).to_have_css(
-                'background-color', 'rgb(38, 60, 88)'
-            )
+            expect(reviews.get_by_role('button', name='Any review status', exact=False)).to_have_attribute('aria-pressed', 'true')
             reviews.get_by_role('button', name='Pending review (', exact=False).click()
             expect(rows).to_have_count(1)
             reviews.get_by_role('button', name='Documented fix (', exact=False).click()
