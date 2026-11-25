@@ -89,10 +89,11 @@ pipeline commands can require additional original-repository inputs,
 including the PSGC geometry submodule for NIA boundary work, and Python
 packages such as openpyxl, PyMuPDF, and pdfplumber.
 
-The copy uses the source working tree, including local edits. Lineage
-verification currently reports four inherited hash mismatches for the two
-FMR DA draft extracts and the raw and mapped Senate Annex A-4 snapshots.
-The registry retains the original recorded hashes.
+The copy uses the source working tree, including local edits. The initial standalone CI lineage audit (run 45523580198) reports six
+hash mismatches: the two FMR DA draft extracts, the two NIA agency
+reconciliation snapshots, and the raw and mapped Senate Annex A-4 snapshots.
+It also verifies 21 artifacts and reports seven intentionally omitted source
+artifacts. The registry retains the original recorded hashes.
 
 ## Validation
 
