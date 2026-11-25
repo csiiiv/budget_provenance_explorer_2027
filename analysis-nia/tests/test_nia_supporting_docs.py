@@ -49,7 +49,8 @@ class TestSupportingDocs(unittest.TestCase):
             if not docs:
                 continue
             self.assertEqual(docs['source'], 'POW FOR REVIEW')
-            self.assertTrue(docs['source_path'])
+            # Older retained snapshots may still contain the private root;
+            # public output is sanitized by the Vite build. New exports omit it.
             self.assertTrue(docs['drive_url'].startswith('https://drive.google.com/'))
             self.assertEqual(
                 docs['doc_count'], docs['pdf_count'] + docs['image_count'])
@@ -64,6 +65,8 @@ class TestSupportingDocs(unittest.TestCase):
 
     def test_package_paths_exist_locally(self):
         root = self.pow['source']
+        if not os.path.isdir(root):
+            self.skipTest('Local source mirror is not available in this checkout')
         checked = 0
         for chain in self.chains:
             docs = chain.get('supporting_docs')

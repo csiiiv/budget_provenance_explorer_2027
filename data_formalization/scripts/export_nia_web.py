@@ -496,8 +496,8 @@ def attach_supporting_docs(chains):
     (``sen:rNNNN``). Chains carry that id on their October workbook rows; the
     one agency-only chain without a workbook row resolves through the agency
     leaf's Excel row, which indexes the same workbook. Each supported row lists
-    its attributed packages with file counts and the local drop path (links are
-    ``file://`` URIs in the explorer, per the local-mirror configuration).
+    its attributed packages with file counts, relative inventory paths, and
+    the upstream Drive folder. The local mirror root is not exported.
     """
     art = read(POW_REVIEW)
     by_row = {r['senate_id']: r for r in art['coverage'] if r.get('supported')}
@@ -521,7 +521,6 @@ def attach_supporting_docs(chains):
             continue
         docs = {
             'source': 'POW FOR REVIEW',
-            'source_path': art['source'],
             'drive_url': art['source_drive_url'],
             'match_strength': support.get('match_strength'),
             'pdf_confirmed': support.get('pdf_confirmed') or False,

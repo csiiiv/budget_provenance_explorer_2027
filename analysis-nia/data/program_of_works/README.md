@@ -83,8 +83,9 @@ The PBC-NIA-APP view Analysis → **Document availability** reads
 
 The provenance-explorers **NIA Title Comparison** page
 (`web/nia-titles.html`) renders a *Supporting docs* column: per-chain file
-count with a PDF/photo breakdown, plus a link to each attributed package's
-local folder path (`file://<source>/<package_path>`). The web exporter
+count with a PDF/photo breakdown, attributed package names, and a link to
+the upstream PBC Drive folder. The public build removes local mirror roots
+from NIA JSON exports; relative inventory paths remain as audit references. The web exporter
 (`data_formalization/scripts/export_nia_web.py`) joins `coverage` rows to
 chains by Senate workbook row id (`sen:rNNNN`, the workbook rows on each
 chain); the one agency-only chain resolves through its agency leaf's Excel
