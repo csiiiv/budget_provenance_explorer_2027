@@ -1,0 +1,9 @@
+{
+ "node": "source/dpwh/hb_ic_3rd_reading_pdf",
+ "type": "source_doc",
+ "path": "HB_BUDGET_3rd_reading/3- HB 10858 FOR 3RD READING VOL I-C .pdf",
+ "content_sha256": "48cb7a11e391bd4da89d4f47cf39a2eba8fe9bfe636dba101c8284b224ac1b1b",
+ "built_by": "House bill Vol I-C 3rd reading (native text layer)",
+ "inputs": [],
+ "registered": "2026-11-22T20:52:25"
+}

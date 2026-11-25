@@ -1,0 +1,314 @@
+{
+ "generated": "2026-11-22T16:15:10+08:00",
+ "summary": "36 checks: 35 passed, 0 failed (blocking), 1 passed (advisory), 0 advisory-fail",
+ "page_citation_details": {
+  "sampled": 252,
+  "title_misses": [],
+  "title_boundary_wraps": [],
+  "known_exceptions": [
+   {
+    "id": "house-reading:13",
+    "reason": "struck-through overlay; replacement span verified at y=612 via PyMuPDF"
+   },
+   {
+    "id": "ib:p886:r38|medical_equipment",
+    "reason": "dataset normalizes \"Northern Samar\" \u2192 \"North Samar\"; row present"
+   },
+   {
+    "id": "ib:p888:r43|infrastructure",
+    "reason": "print defect: PDF truncates \"Sanitarium\"; row present"
+   }
+  ],
+  "amount_misses": []
+ },
+ "checks": [
+  {
+   "check": "pdf-sha256:general-summary",
+   "ok": true,
+   "ours": "actual sha256",
+   "printed": "7345416b34d94c36\u2026",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "pdf-sha256:annex-a",
+   "ok": true,
+   "ours": "actual sha256",
+   "printed": "77065842846fe14f\u2026",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "pdf-sha256:annex-a1",
+   "ok": true,
+   "ours": "actual sha256",
+   "printed": "176ff3411000942d\u2026",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "pdf-sha256:annex-a2",
+   "ok": true,
+   "ours": "actual sha256",
+   "printed": "87ff59ac9f0fbd8e\u2026",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "pdf-sha256:annex-a3",
+   "ok": true,
+   "ours": "actual sha256",
+   "printed": "587dcd6b83f32c17\u2026",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "pdf-sha256:annex-a4",
+   "ok": true,
+   "ours": "actual sha256",
+   "printed": "8b849fd8661d142a\u2026",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "pdf-sha256:annex-a5",
+   "ok": true,
+   "ours": "actual sha256",
+   "printed": "e845de4fdaf72905\u2026",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "pdf-sha256:annex-b",
+   "ok": true,
+   "ours": "actual sha256",
+   "printed": "e562247978059abb\u2026",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "dataset-sha256:README.md",
+   "ok": true,
+   "ours": "",
+   "printed": "",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "dataset-sha256:manifest.json",
+   "ok": true,
+   "ours": "",
+   "printed": "",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "dataset-sha256:senate-2027-annex-a.csv",
+   "ok": true,
+   "ours": "",
+   "printed": "",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "dataset-sha256:senate-2027-checks.csv",
+   "ok": true,
+   "ours": "",
+   "printed": "",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "dataset-sha256:senate-2027-general-summary.csv",
+   "ok": true,
+   "ours": "",
+   "printed": "",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "dataset-sha256:senate-2027-page-misses.csv",
+   "ok": true,
+   "ours": "",
+   "printed": "",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "dataset-sha256:senate-2027-pairings.csv",
+   "ok": true,
+   "ours": "",
+   "printed": "",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "dataset-sha256:senate-2027-projects.csv",
+   "ok": true,
+   "ours": "",
+   "printed": "",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "dataset-sha256:senate-2027-provisions.csv",
+   "ok": true,
+   "ours": "",
+   "printed": "",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "projects row count",
+   "ok": true,
+   "ours": "20835",
+   "printed": "20835",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "A-1 FMR house total",
+   "ok": true,
+   "ours": "19,628,100,000",
+   "printed": "19,628,100,000",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "A-1 FMR senate total",
+   "ok": true,
+   "ours": "16,000,000,000",
+   "printed": "16,000,000,000",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "A-1 FMR region subtotals (16, multiset)",
+   "ok": true,
+   "ours": "16 regions",
+   "printed": "16 printed rows",
+   "note": "per-region (house, senate) sums vs printed REGION rows",
+   "blocking": true
+  },
+  {
+   "check": "A-2 HFEP house + printed grand total == senate",
+   "ok": true,
+   "ours": "10,021,659,000 + 5,491,400,000 = 15,513,059,000",
+   "printed": "5,491,400,000",
+   "note": "annex prints the net HFEP schedule total",
+   "blocking": true
+  },
+  {
+   "check": "A-3 NIA house total",
+   "ok": true,
+   "ours": "17,999,305,000",
+   "printed": "17,999,305,000",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "A-3 NIA senate total",
+   "ok": true,
+   "ours": "17,748,181,000",
+   "printed": "17,748,181,000",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "A-4 DPWH (operations) house total",
+   "ok": true,
+   "ours": "587,075,661,000",
+   "printed": "587,075,661,000",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "A-4 DPWH (operations) senate total",
+   "ok": true,
+   "ours": "520,876,384,250",
+   "printed": "520,876,384,250",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "A-4 DPWH department house row (info)",
+   "ok": true,
+   "ours": "654,102,015,000",
+   "printed": "654,102,015,000",
+   "note": "annex details OPERATIONS only; department row includes continuing items",
+   "blocking": false
+  },
+  {
+   "check": "GS UNPROGRAMMED APPROPRIATIONS printed internal arithmetic",
+   "ok": true,
+   "ours": "111,984,494 + -812,796",
+   "printed": "111,171,698",
+   "note": "house + net == committee, in thousands",
+   "blocking": true
+  },
+  {
+   "check": "GS TOTAL NEW APPROPRIATIONS printed internal arithmetic",
+   "ok": true,
+   "ours": "4,606,066,495 + -812,796",
+   "printed": "4,605,253,699",
+   "note": "house + net == committee, in thousands",
+   "blocking": true
+  },
+  {
+   "check": "GS DEPARTMENTS printed internal arithmetic",
+   "ok": true,
+   "ours": "3,876,048,999 + -28,546,520",
+   "printed": "3,847,502,479",
+   "note": "house + net == committee, in thousands",
+   "blocking": true
+  },
+  {
+   "check": "GS csv total row == printed TOTAL NEW",
+   "ok": true,
+   "ours": "4,605,253,699,000",
+   "printed": "4,605,253,699,000",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "GS csv departments row-wise == printed (43 rows)",
+   "ok": true,
+   "ours": "0 mismatches",
+   "printed": "row-wise name \u2192 committee amount",
+   "note": "all matched",
+   "blocking": true
+  },
+  {
+   "check": "row arithmetic vs_house_php",
+   "ok": true,
+   "ours": "0 mismatches",
+   "printed": "0",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "row arithmetic vs_nep_php",
+   "ok": true,
+   "ours": "0 mismatches",
+   "printed": "0",
+   "note": "",
+   "blocking": true
+  },
+  {
+   "check": "page citations: title on cited page (sample 252, \u00b11 boundary allowed)",
+   "ok": true,
+   "ours": "0 misses",
+   "printed": "",
+   "note": "all present",
+   "blocking": true
+  },
+  {
+   "check": "page citations: senate amount on cited page (252 rows)",
+   "ok": true,
+   "ours": "0 misses",
+   "printed": "",
+   "note": "all present",
+   "blocking": true
+  }
+ ]
+}

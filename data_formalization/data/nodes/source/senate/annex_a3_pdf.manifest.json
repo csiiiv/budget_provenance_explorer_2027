@@ -1,0 +1,9 @@
+{
+ "node": "source/senate/annex_a3_pdf",
+ "type": "source_doc",
+ "path": "Senate_report_data/data/senate_pdf/Annex A-3 BSGC-OEOs-NIA-Details of NIA's Operations Budget.pdf",
+ "content_sha256": "587dcd6b83f32c172b88cbaaab601e69f628c46e136faad0347730cf16895824",
+ "built_by": "Senate CR on HB 10858 annex (born-digital PDF, sha-pinned)",
+ "inputs": [],
+ "registered": "2026-11-22T21:33:35"
+}

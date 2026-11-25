@@ -1,0 +1,9 @@
+{
+ "node": "source/senate/annex_a1_pdf",
+ "type": "source_doc",
+ "path": "Senate_report_data/data/senate_pdf/Annex A-1 DA Farm-to-Market Roads.pdf",
+ "content_sha256": "176ff3411000942d858d9e4850a965cf1d7cafb85e9137d7d1b74d17c80484e8",
+ "built_by": "Senate CR on HB 10858 annex (born-digital PDF, sha-pinned)",
+ "inputs": [],
+ "registered": "2026-11-22T21:33:34"
+}

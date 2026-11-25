@@ -1,0 +1,291 @@
+{
+ "nodes": {
+  "source/fmr/nep_annex_pdf": {
+   "type": "source_doc",
+   "path": "dbm-other-nep-line-data/FMR.pdf",
+   "content_sha256": "07355c115f45a84771b8a8ac22711992ea695ea28f0c9c1b2c71879d4a6dc4ba",
+   "inputs": [],
+   "manifest": "data/nodes/source/fmr/nep_annex_pdf.manifest.json"
+  },
+  "source/fmr/hgab_vol_ib_pdf": {
+   "type": "source_doc",
+   "path": "HB_BUDGET/2 - HB 10858 VOL IB.pdf",
+   "content_sha256": "a82800c4cc2684566a37f7780d8f9131d2e7b2c97444d335d94df012dec065b6",
+   "inputs": [],
+   "manifest": "data/nodes/source/fmr/hgab_vol_ib_pdf.manifest.json"
+  },
+  "source/fmr/da_xlsx_nov5": {
+   "type": "source_doc",
+   "path": "DA_FMR_DATA/Working Draft as of Nov 5_63627eee-5ce6-4da9-bfc5-52c25db9e375 (1).xlsx",
+   "content_sha256": "2c848a2aed4c73414e237c71a1262df94260ffa2c2264413c1662b65bc4bf295",
+   "inputs": [],
+   "manifest": "data/nodes/source/fmr/da_xlsx_nov5.manifest.json"
+  },
+  "source/fmr/da_xlsx_nov12": {
+   "type": "source_doc",
+   "path": "DA_FMR_DATA/REVISED NEP as of Nov 12 2026, 920pm.xlsx",
+   "content_sha256": "b1cfa5f9116ad135d104580db5391c8e879d67dd0ae26be1075c0a927ba7582f",
+   "inputs": [],
+   "manifest": "data/nodes/source/fmr/da_xlsx_nov12.manifest.json"
+  },
+  "snapshot/fmr/nep": {
+   "type": "snapshot",
+   "path": "other-analysis/data/nep_fmr_final_dataset.json",
+   "content_sha256": "e88ce3e23f8eddddc36f0b32ed865958dea0277e0954995f0f9215fcfe8b41d7",
+   "inputs": [
+    "source/fmr/nep_annex_pdf"
+   ],
+   "manifest": "data/nodes/snapshot/fmr/nep.manifest.json"
+  },
+  "snapshot/fmr/hgab": {
+   "type": "snapshot",
+   "path": "other-analysis/data/hgab_fmr_final_dataset.json",
+   "content_sha256": "e0c55b402bd4e7ceebef157129764d188d434300dfd1b97c9714e9e608d13142",
+   "inputs": [
+    "source/fmr/hgab_vol_ib_pdf"
+   ],
+   "manifest": "data/nodes/snapshot/fmr/hgab.manifest.json"
+  },
+  "snapshot/fmr/da_draft_nov5": {
+   "type": "snapshot",
+   "path": "other-analysis/data/da_fmr_draft.json",
+   "content_sha256": "5e0bd4f4b03e6d45c27e2c3fce031082472f6ed07bebea694f4e8b22b67d7fa3",
+   "inputs": [
+    "source/fmr/da_xlsx_nov5"
+   ],
+   "manifest": "data/nodes/snapshot/fmr/da_draft_nov5.manifest.json"
+  },
+  "import/senate_bettergov_2027": {
+   "type": "import",
+   "path": "Senate_report_data/data/bettergov-senate-2027-dataset/senate-2027-dataset/senate-2027-projects.csv",
+   "content_sha256": "0de0b3f728bf41fd14ca75f542dc975f0bea20566aa5d1f9ebf4849536368579",
+   "inputs": [],
+   "manifest": "data/nodes/import/senate_bettergov_2027.manifest.json"
+  },
+  "transition/fmr/nep_to_hgab": {
+   "type": "transition",
+   "path": "data_formalization/data/transitions/fmr/nep_to_hgab.json",
+   "content_sha256": "d82729f0ceb818605d6376536c112927685719b309a6d75ba5b80011335c3de9",
+   "inputs": [
+    "snapshot/fmr/nep",
+    "snapshot/fmr/hgab"
+   ],
+   "manifest": "data/nodes/transition/fmr/nep_to_hgab.manifest.json"
+  },
+  "transition/fmr/da_nov5_linkage": {
+   "type": "transition",
+   "path": "data_formalization/data/transitions/fmr/da_nov5_linkage.json",
+   "content_sha256": "92e9c7eb22d592de9ac845c929c713419e61dc1bbb4cc6f9c48d0bc4cf6c8827",
+   "inputs": [
+    "snapshot/fmr/da_draft_nov5",
+    "snapshot/fmr/nep",
+    "snapshot/fmr/hgab"
+   ],
+   "manifest": "data/nodes/transition/fmr/da_nov5_linkage.manifest.json"
+  },
+  "snapshot/nia/nep": {
+   "type": "snapshot",
+   "path": "analysis-nia/data/nep_nia_dataset.json",
+   "content_sha256": "685dabfc819030a02d6e53b43a038bea59b11dd872e9a4bb262cf13e8a4aa50c",
+   "inputs": [
+    "source/nia/nep_annex_pdf"
+   ],
+   "manifest": "data/nodes/snapshot/nia/nep.manifest.json"
+  },
+  "snapshot/nia/hgab": {
+   "type": "snapshot",
+   "path": "analysis-nia/data/hgab_nia_projects.csv",
+   "content_sha256": "9e650ebc9cadc7b0da874736061f607b4f029a32c0b520f7f71f8264c69c2086",
+   "inputs": [
+    "source/fmr/hgab_vol_ib_pdf"
+   ],
+   "manifest": "data/nodes/snapshot/nia/hgab.manifest.json"
+  },
+  "source/nia/nep_annex_pdf": {
+   "type": "source_doc",
+   "path": "dbm-other-nep-line-data/NIA.pdf",
+   "content_sha256": "eadad324df8539fcc398650da81170b821f83ddb99342c4347f472169b09b632",
+   "inputs": [],
+   "manifest": "data/nodes/source/nia/nep_annex_pdf.manifest.json"
+  },
+  "snapshot/dpwh/stage_trace": {
+   "type": "snapshot",
+   "path": "analysis/data/stage_trace_2027.json",
+   "content_sha256": "265ea417c97348450110fff2fe0f2d9a63d53c105583ad7f3c80f539176d1964",
+   "inputs": [],
+   "manifest": "data/nodes/snapshot/dpwh/stage_trace.manifest.json"
+  },
+  "snapshot/dpwh/comparison_projects": {
+   "type": "snapshot",
+   "path": "analysis/data/comparison_projects_2027.json",
+   "content_sha256": "2795e4b73ca5dae367394a598b5cf14ead8f6fd43b80beadd4ab442ae2245cfe",
+   "inputs": [
+    "snapshot/dpwh/stage_trace"
+   ],
+   "manifest": "data/nodes/snapshot/dpwh/comparison_projects.manifest.json"
+  },
+  "source/nia/agency_recon_xlsx_oct10": {
+   "type": "source_doc",
+   "path": "NIA_DATA/NIA%20FY%202027%20NEP%20OCTOBER%2010%201043PM.xlsx",
+   "content_sha256": "40446706efb618edb46648290d453c6d3b7305c86f1b311b45d66f72bdd48a55",
+   "inputs": [],
+   "manifest": "data/nodes/source/nia/agency_recon_xlsx_oct10.manifest.json"
+  },
+  "source/nia/agency_recon_xlsx_nov13": {
+   "type": "source_doc",
+   "path": "NIA_DATA/NIA_NEP_2026-11-13.xlsx",
+   "content_sha256": "905b84eb4f3efbb1df545c83c9f7a3293007fc857df33d6d9e275a8c6100ed7e",
+   "inputs": [],
+   "manifest": "data/nodes/source/nia/agency_recon_xlsx_nov13.manifest.json"
+  },
+  "snapshot/nia/agency_recon_oct10": {
+   "type": "snapshot",
+   "path": "analysis-nia/data/nia_agency_recon_oct10.json",
+   "content_sha256": "7c1728475f0e87ea7ced7c28d864cc5fce7294b2c551dbf30e5a311f6a1c4985",
+   "inputs": [
+    "source/nia/agency_recon_xlsx_oct10"
+   ],
+   "manifest": "data/nodes/snapshot/nia/agency_recon_oct10.manifest.json"
+  },
+  "snapshot/nia/agency_recon_nov13": {
+   "type": "snapshot",
+   "path": "analysis-nia/data/nia_agency_recon_nov13.json",
+   "content_sha256": "0b9a83e921b2da0681fe7a203c3de620f06ee45b27f824eb5d5771768277ad06",
+   "inputs": [
+    "source/nia/agency_recon_xlsx_nov13"
+   ],
+   "manifest": "data/nodes/snapshot/nia/agency_recon_nov13.manifest.json"
+  },
+  "import/dpwh_hgab_review_set": {
+   "type": "import",
+   "path": "dpwh_HGAB_REVIEW_SET/house-bill-2027-dpwh-projects.csv",
+   "content_sha256": "14d50fce8fe7b31b9672be46fc276ec6e04de7450b3ba6e2323b5146bec30820",
+   "inputs": [],
+   "manifest": "data/nodes/import/dpwh_hgab_review_set.manifest.json"
+  },
+  "view/nia/agency_recon_oct10_to_nov13_diff": {
+   "type": "view",
+   "path": "analysis-nia/data/nia_recon_oct10_to_nov13_diff.json",
+   "content_sha256": "43f759d9a5191914c55c862f12dd9e2de7378f0038bfb6971c41f46a367ed659",
+   "inputs": [
+    "snapshot/nia/agency_recon_oct10",
+    "snapshot/nia/agency_recon_nov13"
+   ],
+   "manifest": "data/nodes/view/nia/agency_recon_oct10_to_nov13_diff.manifest.json"
+  },
+  "snapshot/fmr/da_draft_nov12": {
+   "type": "snapshot",
+   "path": "other-analysis/data/da_fmr_draft_nov12.json",
+   "content_sha256": "694fd15bbc878a8c47a9f66ecf904f2432a8956c79b83b6c5e0b3583635aa940",
+   "inputs": [
+    "source/fmr/da_xlsx_nov12"
+   ],
+   "manifest": "data/nodes/snapshot/fmr/da_draft_nov12.manifest.json"
+  },
+  "view/fmr/da_nov5_to_nov12_diff": {
+   "type": "view",
+   "path": "data_formalization/data/transitions/fmr/da_nov5_to_nov12_diff.json",
+   "content_sha256": "884169f3379ebc09d530c2fef1c121e75cd04c41e8b6cbb16e71e0aec83cb395",
+   "inputs": [
+    "snapshot/fmr/da_draft_nov5",
+    "snapshot/fmr/da_draft_nov12",
+    "transition/fmr/da_nov5_linkage"
+   ],
+   "manifest": "data/nodes/view/fmr/da_nov5_to_nov12_diff.manifest.json"
+  },
+  "source/senate/annex_a4_pdf": {
+   "type": "source_doc",
+   "path": "Senate_report_data/data/senate_pdf/Annex A-4 Details of DPWH's Programs-Projects (FY 2027 General Appropriations Bill Volume I-C).pdf",
+   "content_sha256": "8b849fd8661d142ae9b35d35238e8d3d76d688f279ee4fbca9f1a90e90750194",
+   "inputs": [],
+   "manifest": "data/nodes/source/senate/annex_a4_pdf.manifest.json"
+  },
+  "snapshot/senate/annex_a4_dpwh": {
+   "type": "snapshot",
+   "path": "Senate_report_data/data/derived/senate_annex_a4_dpwh.json",
+   "content_sha256": "ba5ebd0f48b38091da77fd3108b4d14e681ccbd0c8d433ea931e2bd64d7e66bd",
+   "inputs": [
+    "source/senate/annex_a4_pdf"
+   ],
+   "manifest": "data/nodes/snapshot/senate/annex_a4_dpwh.manifest.json"
+  },
+  "view/senate/annex_a4_dpwh_mapped": {
+   "type": "view",
+   "path": "Senate_report_data/data/derived/senate_annex_a4_dpwh_mapped.json",
+   "content_sha256": "e7866b97ecf5bdbf33d9c9d023592751b76b0affc458f54f0a5d53c0c604702a",
+   "inputs": [
+    "snapshot/senate/annex_a4_dpwh",
+    "snapshot/dpwh/hb_ic_3rd_reading_tree"
+   ],
+   "manifest": "data/nodes/view/senate/annex_a4_dpwh_mapped.manifest.json"
+  },
+  "source/dpwh/hb_ic_3rd_reading_pdf": {
+   "type": "source_doc",
+   "path": "HB_BUDGET_3rd_reading/3- HB 10858 FOR 3RD READING VOL I-C .pdf",
+   "content_sha256": "48cb7a11e391bd4da89d4f47cf39a2eba8fe9bfe636dba101c8284b224ac1b1b",
+   "inputs": [],
+   "manifest": "data/nodes/source/dpwh/hb_ic_3rd_reading_pdf.manifest.json"
+  },
+  "snapshot/dpwh/hb_ic_3rd_reading_tree": {
+   "type": "snapshot",
+   "path": "analysis/data/hb_dpwh_native_ic_projects_3rd_reading.json",
+   "content_sha256": "4ab63aea525784ce342d4911c7859f77380b8504eb5483d8e65d48be9377078c",
+   "inputs": [
+    "source/dpwh/hb_ic_3rd_reading_pdf"
+   ],
+   "manifest": "data/nodes/snapshot/dpwh/hb_ic_3rd_reading_tree.manifest.json"
+  },
+  "source/senate/annex_a1_pdf": {
+   "type": "source_doc",
+   "path": "Senate_report_data/data/senate_pdf/Annex A-1 DA Farm-to-Market Roads.pdf",
+   "content_sha256": "176ff3411000942d858d9e4850a965cf1d7cafb85e9137d7d1b74d17c80484e8",
+   "inputs": [],
+   "manifest": "data/nodes/source/senate/annex_a1_pdf.manifest.json"
+  },
+  "snapshot/senate/annex_a1_fmr": {
+   "type": "snapshot",
+   "path": "Senate_report_data/data/derived/senate_annex_a1_fmr.json",
+   "content_sha256": "cafa319815ce8636e5c9a3006136ae3ba272f9d855d54a0e92e9c5ed94a729f9",
+   "inputs": [
+    "source/senate/annex_a1_pdf"
+   ],
+   "manifest": "data/nodes/snapshot/senate/annex_a1_fmr.manifest.json"
+  },
+  "source/senate/annex_a3_pdf": {
+   "type": "source_doc",
+   "path": "Senate_report_data/data/senate_pdf/Annex A-3 BSGC-OEOs-NIA-Details of NIA's Operations Budget.pdf",
+   "content_sha256": "587dcd6b83f32c172b88cbaaab601e69f628c46e136faad0347730cf16895824",
+   "inputs": [],
+   "manifest": "data/nodes/source/senate/annex_a3_pdf.manifest.json"
+  },
+  "snapshot/senate/annex_a3_nia": {
+   "type": "snapshot",
+   "path": "Senate_report_data/data/derived/senate_annex_a3_nia.json",
+   "content_sha256": "5663c9b994f8940ba0682ef5281f0c4af7669d86a114877cfd56eff76fdcedce",
+   "inputs": [
+    "source/senate/annex_a3_pdf"
+   ],
+   "manifest": "data/nodes/snapshot/senate/annex_a3_nia.manifest.json"
+  },
+  "view/senate/annex_a3_nia_mapped": {
+   "type": "view",
+   "path": "Senate_report_data/data/derived/senate_annex_a3_nia_mapped.json",
+   "content_sha256": "dce771a50298660889d91f6397b718b9d860ad9379802b94af3ca1b44a785577",
+   "inputs": [
+    "snapshot/senate/annex_a3_nia",
+    "snapshot/nia/hgab"
+   ],
+   "manifest": "data/nodes/view/senate/annex_a3_nia_mapped.manifest.json"
+  },
+  "view/senate/annex_a1_fmr_mapped": {
+   "type": "view",
+   "path": "Senate_report_data/data/derived/senate_annex_a1_fmr_mapped.json",
+   "content_sha256": "7ddd5f56f583437d792437385ff833585bd23b7844d00454170ec6a1c6dcec53",
+   "inputs": [
+    "snapshot/senate/annex_a1_fmr",
+    "snapshot/fmr/hgab"
+   ],
+   "manifest": "data/nodes/view/senate/annex_a1_fmr_mapped.manifest.json"
+  }
+ }
+}

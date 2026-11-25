@@ -1,0 +1,11 @@
+{
+ "node": "snapshot/senate/annex_a4_dpwh",
+ "type": "snapshot",
+ "path": "Senate_report_data/data/derived/senate_annex_a4_dpwh.json",
+ "content_sha256": "ba5ebd0f48b38091da77fd3108b4d14e681ccbd0c8d433ea931e2bd64d7e66bd",
+ "built_by": "Senate_report_data/scripts/extract_annex_a4.py (adapted from bettergovph/ai-budget parse_annex_a4.py, MIT)",
+ "inputs": [
+  "source/senate/annex_a4_pdf"
+ ],
+ "registered": "2026-11-22T20:47:54"
+}

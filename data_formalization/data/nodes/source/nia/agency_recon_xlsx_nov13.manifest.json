@@ -1,0 +1,9 @@
+{
+ "node": "source/nia/agency_recon_xlsx_nov13",
+ "type": "source_doc",
+ "path": "NIA_DATA/NIA_NEP_2026-11-13.xlsx",
+ "content_sha256": "905b84eb4f3efbb1df545c83c9f7a3293007fc857df33d6d9e275a8c6100ed7e",
+ "built_by": "agency-supplied workbook (sha-pinned)",
+ "inputs": [],
+ "registered": "2026-11-22T19:07:18"
+}

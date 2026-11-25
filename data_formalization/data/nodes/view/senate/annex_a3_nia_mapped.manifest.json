@@ -1,0 +1,16 @@
+{
+ "node": "view/senate/annex_a3_nia_mapped",
+ "type": "view",
+ "path": "Senate_report_data/data/derived/senate_annex_a3_nia_mapped.json",
+ "content_sha256": "dce771a50298660889d91f6397b718b9d860ad9379802b94af3ca1b44a785577",
+ "built_by": "Senate_report_data/scripts/map_annex_projects.py (full within-region replaces)",
+ "inputs": [
+  "snapshot/senate/annex_a3_nia",
+  "snapshot/nia/hgab"
+ ],
+ "registered": "2026-11-22T22:35:48",
+ "meta": {
+  "repair": "re-registered 2026-11-22: remapped with full within-region replaces scorer (NIA still 0 links; note/doc fields updated)"
+ },
+ "note": "re-registered 2026-11-22: remapped with full within-region replaces scorer (NIA still 0 links; note/doc fields updated)"
+}

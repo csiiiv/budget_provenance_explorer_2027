@@ -1,0 +1,9 @@
+{
+ "node": "source/senate/annex_a4_pdf",
+ "type": "source_doc",
+ "path": "Senate_report_data/data/senate_pdf/Annex A-4 Details of DPWH's Programs-Projects (FY 2027 General Appropriations Bill Volume I-C).pdf",
+ "content_sha256": "8b849fd8661d142ae9b35d35238e8d3d76d688f279ee4fbca9f1a90e90750194",
+ "built_by": "Senate CR on HB 10858, Annex A-4 (born-digital PDF, sha-pinned)",
+ "inputs": [],
+ "registered": "2026-11-22T20:47:54"
+}

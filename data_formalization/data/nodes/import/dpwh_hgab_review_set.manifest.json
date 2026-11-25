@@ -1,0 +1,9 @@
+{
+ "node": "import/dpwh_hgab_review_set",
+ "type": "import",
+ "path": "dpwh_HGAB_REVIEW_SET/house-bill-2027-dpwh-projects.csv",
+ "content_sha256": "14d50fce8fe7b31b9672be46fc276ec6e04de7450b3ba6e2323b5146bec30820",
+ "built_by": "bettergov review set (own README manifest; 3 CSVs)",
+ "inputs": [],
+ "registered": "2026-11-22T19:07:18"
+}

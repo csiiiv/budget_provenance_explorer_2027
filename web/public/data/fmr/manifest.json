@@ -1,0 +1,155 @@
+{
+ "program": "fmr",
+ "generated_at": "2026-11-22T23:32:14+0800",
+ "ledger_sha256": "469fa3d359fc6fde4d0168a41fcb0979bec164452e9972fc8fb5d7023ac3a347",
+ "records": 1452,
+ "validation_runs": [
+  {
+   "subject": "import/senate_bettergov_2027",
+   "check": "senate-checks-suite",
+   "result": null,
+   "at": "2026-11-22T18:51:37+0800"
+  },
+  {
+   "subject": "integrity/run",
+   "check": "integrity-fmr",
+   "result": "pass",
+   "at": "2026-11-22T19:20:52+0800"
+  },
+  {
+   "subject": "integrity/run",
+   "check": "integrity-fmr",
+   "result": "pass",
+   "at": "2026-11-22T20:48:11+0800"
+  },
+  {
+   "subject": "integrity/run",
+   "check": "integrity-fmr",
+   "result": "pass",
+   "at": "2026-11-22T20:50:34+0800"
+  },
+  {
+   "subject": "integrity/run",
+   "check": "integrity-fmr",
+   "result": "pass",
+   "at": "2026-11-22T20:52:28+0800"
+  },
+  {
+   "subject": "integrity/senate_a1_corroboration",
+   "check": "senate_a1_vs_bettergov_2027",
+   "result": "clean",
+   "at": "2026-11-22T21:33:35+0800"
+  },
+  {
+   "subject": "integrity/run",
+   "check": "integrity-fmr",
+   "result": "pass",
+   "at": "2026-11-22T21:33:37+0800"
+  },
+  {
+   "subject": "integrity/run",
+   "check": "integrity-fmr",
+   "result": "pass",
+   "at": "2026-11-22T21:34:40+0800"
+  },
+  {
+   "subject": "integrity/run",
+   "check": "integrity-fmr",
+   "result": "pass",
+   "at": "2026-11-22T21:35:33+0800"
+  },
+  {
+   "subject": "integrity/run",
+   "check": "integrity-fmr",
+   "result": "pass",
+   "at": "2026-11-22T22:30:32+0800"
+  },
+  {
+   "subject": "integrity/run",
+   "check": "integrity-fmr",
+   "result": "pass",
+   "at": "2026-11-22T22:35:00+0800"
+  },
+  {
+   "subject": "integrity/run",
+   "check": "integrity-fmr",
+   "result": "pass",
+   "at": "2026-11-22T22:35:51+0800"
+  },
+  {
+   "subject": "integrity/run",
+   "check": "integrity-fmr",
+   "result": "pass",
+   "at": "2026-11-22T23:32:14+0800"
+  }
+ ],
+ "totals": {
+  "nep_m": 16000.0,
+  "house_m": 19628.1,
+  "senate_from_m": 19628.1,
+  "senate_m": 16000.0,
+  "counts": {
+   "nep": 704,
+   "house": 964,
+   "senate_rows": 1355,
+   "nep_only": 98,
+   "senate_insertion": 315,
+   "da_only": 80
+  },
+  "actions": {
+   "nep_house": {
+    "carried": 609,
+    "house_insertion": 355,
+    "reinstated": 81,
+    "dropped": 17
+   },
+   "house_da": {
+    "new": 236,
+    "retain": 287,
+    "dropped": 140,
+    "no_da": 368,
+    "modified": 165,
+    "list_revision": 91
+   },
+   "house_senate": {
+    "realigned": 154,
+    "renamed": 382,
+    "cut": 423,
+    "raised": 3,
+    "reduced": 2,
+    "reinstated": 81,
+    "left_at_nep": 17,
+    "inserted": 310
+   }
+  },
+  "house_insertion_m": 5969.0,
+  "house_annex_matches": 964,
+  "senate_status": {
+   "realigned": 154,
+   "renamed": 382,
+   "cut": 423,
+   "raised": 3,
+   "reduced": 2
+  },
+  "replaces_links": 154,
+  "realigned_house": 154,
+  "true_cuts": 423,
+  "reinstated_nep": 81
+ },
+ "stage_changes": {
+  "nep_house": {
+   "insertions": 5969005000,
+   "removals": -2295905000,
+   "increases": 15000000,
+   "decreases": -60000000,
+   "net": 3628100000
+  },
+  "house_senate": {
+   "insertions": 8385092000,
+   "removals": -12000192500,
+   "increases": 25000500,
+   "decreases": -38000000,
+   "net": -3628100000
+  }
+ }
+}

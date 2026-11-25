@@ -1,0 +1,14 @@
+{
+ "node": "snapshot/fmr/da_draft_nov12",
+ "type": "snapshot",
+ "path": "other-analysis/data/da_fmr_draft_nov12.json",
+ "content_sha256": "f484ebe594beccb19ca4a14a3e4b09f135aeef80327ae0850f8ec4ca523edbe5",
+ "built_by": "other-analysis extract_da_fmr.py (banner-row guard fix)",
+ "inputs": [
+  "source/fmr/da_xlsx_nov12"
+ ],
+ "registered": "2026-11-22T19:54:18",
+ "meta": {
+  "repair": "re-registered 2026-11-22: extractor fix removed a mid-sheet banner row (excel row 34) that leaked in as control \"Control No.\"; see fmr ledger defect.repair on da_fmr:ctrl:Control No."
+ }
+}

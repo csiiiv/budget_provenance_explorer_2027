@@ -1,0 +1,9 @@
+{
+ "node": "snapshot/dpwh/stage_trace",
+ "type": "snapshot",
+ "path": "analysis/data/stage_trace_2027.json",
+ "content_sha256": "265ea417c97348450110fff2fe0f2d9a63d53c105583ad7f3c80f539176d1964",
+ "built_by": "analysis/builders/build_stage_trace.py (NEP API+PDF, House extract)",
+ "inputs": [],
+ "registered": "2026-11-22T18:48:31"
+}

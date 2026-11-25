@@ -1,0 +1,12 @@
+{
+ "node": "view/senate/annex_a4_dpwh_mapped",
+ "type": "view",
+ "path": "Senate_report_data/data/derived/senate_annex_a4_dpwh_mapped.json",
+ "content_sha256": "e7866b97ecf5bdbf33d9c9d023592751b76b0affc458f54f0a5d53c0c604702a",
+ "built_by": "Senate_report_data/scripts/map_annex_a4_structural.py (page-citation-anchored join, offset +8)",
+ "inputs": [
+  "snapshot/senate/annex_a4_dpwh",
+  "snapshot/dpwh/hb_ic_3rd_reading_tree"
+ ],
+ "registered": "2026-11-22T20:47:54"
+}

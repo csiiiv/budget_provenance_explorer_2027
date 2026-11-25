@@ -1,0 +1,9 @@
+{
+ "node": "import/senate_bettergov_2027",
+ "type": "import",
+ "path": "Senate_report_data/data/bettergov-senate-2027-dataset/senate-2027-dataset/senate-2027-projects.csv",
+ "content_sha256": "0de0b3f728bf41fd14ca75f542dc975f0bea20566aa5d1f9ebf4849536368579",
+ "built_by": "colleague dataset (verified: Senate_report_data/docs/VERIFICATION.md)",
+ "inputs": [],
+ "registered": "2026-11-22T17:48:43"
+}

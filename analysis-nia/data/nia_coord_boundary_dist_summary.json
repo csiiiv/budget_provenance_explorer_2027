@@ -1,0 +1,10 @@
+{
+ "method": "fmr_bad_endpoints_pattern_mapper_v5",
+ "points": 432,
+ "verdicts": {
+  "near_boundary": 3,
+  "outside_booked": 14,
+  "ok": 406,
+  "region_mismatch": 9
+ }
+}

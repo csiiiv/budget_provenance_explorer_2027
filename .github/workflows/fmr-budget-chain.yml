@@ -1,0 +1,43 @@
+name: FMR budget-chain checks
+
+on:
+  pull_request:
+    paths:
+      - 'web/**'
+      - 'data_formalization/scripts/export_web.py'
+      - '.github/workflows/fmr-budget-chain.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'web/**'
+      - 'data_formalization/scripts/export_web.py'
+      - '.github/workflows/fmr-budget-chain.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: npm run build
+      - name: Install Playwright
+        run: |
+          python3 -m pip install playwright==1.55.0
+          if [ ! -x /usr/bin/google-chrome ]; then
+            python3 -m playwright install --with-deps chromium
+          fi
+      - run: python3 check_smoke.py

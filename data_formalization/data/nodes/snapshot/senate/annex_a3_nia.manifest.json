@@ -1,0 +1,11 @@
+{
+ "node": "snapshot/senate/annex_a3_nia",
+ "type": "snapshot",
+ "path": "Senate_report_data/data/derived/senate_annex_a3_nia.json",
+ "content_sha256": "5663c9b994f8940ba0682ef5281f0c4af7669d86a114877cfd56eff76fdcedce",
+ "built_by": "Senate_report_data/scripts/extract_annex_projects.py (adapted from bettergovph/ai-budget, MIT)",
+ "inputs": [
+  "source/senate/annex_a3_pdf"
+ ],
+ "registered": "2026-11-22T21:33:35"
+}

@@ -1,0 +1,11 @@
+{
+ "node": "snapshot/dpwh/comparison_projects",
+ "type": "snapshot",
+ "path": "analysis/data/comparison_projects_2027.json",
+ "content_sha256": "2795e4b73ca5dae367394a598b5cf14ead8f6fd43b80beadd4ab442ae2245cfe",
+ "built_by": "stage_trace sibling artifact",
+ "inputs": [
+  "snapshot/dpwh/stage_trace"
+ ],
+ "registered": "2026-11-22T18:48:31"
+}

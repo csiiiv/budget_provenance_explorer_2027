@@ -1,0 +1,11 @@
+{
+ "node": "snapshot/nia/nep",
+ "type": "snapshot",
+ "path": "analysis-nia/data/nep_nia_dataset.json",
+ "content_sha256": "685dabfc819030a02d6e53b43a038bea59b11dd872e9a4bb262cf13e8a4aa50c",
+ "built_by": "analysis-nia v9 extraction",
+ "inputs": [
+  "source/nia/nep_annex_pdf"
+ ],
+ "registered": "2026-11-22T18:48:31"
+}

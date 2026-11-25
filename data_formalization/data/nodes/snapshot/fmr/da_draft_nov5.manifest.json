@@ -1,0 +1,11 @@
+{
+ "node": "snapshot/fmr/da_draft_nov5",
+ "type": "snapshot",
+ "path": "other-analysis/data/da_fmr_draft.json",
+ "content_sha256": "cebf4518ebe0489fe14199fd56ca7483c83b3d1d6343737ab76bb0a5bbf9befb",
+ "built_by": "other-analysis extract_da_fmr.py (xlsx sha-pinned)",
+ "inputs": [
+  "source/fmr/da_xlsx_nov5"
+ ],
+ "registered": "2026-11-22T17:48:43"
+}

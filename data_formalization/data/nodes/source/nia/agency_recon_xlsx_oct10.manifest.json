@@ -1,0 +1,9 @@
+{
+ "node": "source/nia/agency_recon_xlsx_oct10",
+ "type": "source_doc",
+ "path": "NIA_DATA/NIA%20FY%202027%20NEP%20OCTOBER%2010%201043PM.xlsx",
+ "content_sha256": "40446706efb618edb46648290d453c6d3b7305c86f1b311b45d66f72bdd48a55",
+ "built_by": "agency-supplied workbook (sha-pinned)",
+ "inputs": [],
+ "registered": "2026-11-22T19:07:18"
+}

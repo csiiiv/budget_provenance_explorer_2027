@@ -1,0 +1,85 @@
+.nia-coordinate-cell { white-space: nowrap; }
+.nia-coordinate-cell small { display: block; color: var(--dim); font-variant-numeric: tabular-nums; }
+.nia-coordinate-dialog {
+  width: min(840px, calc(100vw - 24px));
+  max-height: calc(100dvh - 24px);
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--text);
+}
+.nia-coordinate-dialog::backdrop { background: rgba(5, 8, 12, .75); }
+.nia-map-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.nia-map-heading h2 { font-size: 17px; margin: 0; }
+.nia-map-heading p { color: var(--dim); margin: 4px 0 12px; }
+.nia-map-basemaps { display: flex; gap: 6px; margin-bottom: 8px; }
+.nia-map-canvas { height: clamp(200px, 53dvh, 470px); border-radius: 6px; background: var(--panel2); }
+.nia-map-canvas .maplibregl-popup { color: #202832; }
+.nia-map-canvas .nia-map-marker {
+  width: 28px;
+  height: 28px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 0;
+  background: #2362a8;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.nia-map-status { margin: 8px 0 0; color: var(--dim); }
+.nia-map-points {
+  margin: 12px 0 0;
+  padding-left: 30px;
+  max-height: 145px;
+  overflow: auto;
+  font-variant-numeric: tabular-nums;
+}
+.nia-map-points li { padding: 4px 0; }
+.nia-map-points li > * { margin-right: 12px; }
+.nia-map-points small { color: var(--dim); }
+
+.nia-map-window header {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  max-width: calc(100% - 64px);
+  padding: 8px 12px;
+  gap: 4px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+.nia-map-window header h1 { flex-basis: 100%; }
+.nia-map-page { display: block; position: relative; height: 100dvh; padding: 0; }
+.nia-map-page .nia-map-canvas { height: 100%; border-radius: 0; }
+.nia-map-page .nia-map-basemaps {
+  position: absolute;
+  z-index: 1;
+  inset: auto auto 36px 10px;
+  margin: 0;
+}
+.nia-map-page > p {
+  position: absolute;
+  z-index: 1;
+  inset: auto 10px 36px auto;
+  max-width: calc(100% - 165px);
+  margin: 0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: var(--panel);
+}
+
+.drawer-current-point {
+  margin: 6px 0;
+  color: var(--dim);
+  overflow-wrap: anywhere;
+}
+.drawer-current-point mark {
+  border-radius: 3px;
+  background: #263c58;
+  color: #e0edff;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}

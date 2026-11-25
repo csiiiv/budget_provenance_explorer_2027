@@ -1,0 +1,31 @@
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+*.log
+.~lock.*#
+
+# --- 8.2G source drop: NOT committed (rebuildable from the PBC Drive) ---
+# Brackets must be escaped (\[ \]) or git treats them as glob char classes.
+NIA_DATA/\[POW\ FOR\ REVIEW\]\ PROGRAM\ OF\ WORKS\ AND\ PICTURES/
+
+# --- No-LFS policy: exclude every file over 20M ---
+# Large source PDFs / workbooks (72M OCR PDF, 80M ledger, HB bills) —
+# re-acquire from upstream (House, DBM, PBC Drive) or regenerate via the
+# scripts in this repo.
+dbm-nep-data/NEP-2027-VOLUME-2B_OCR.pdf
+data_formalization/data/ledger/dpwh.jsonl
+HB_BUDGET/*.pdf
+HB_BUDGET_3rd_reading/*.pdf
+dpwh_HGAB_REVIEW_SET/house-bill-2027-dpwh-documents.csv
+dpwh_HGAB_REVIEW_SET/house-bill-2027-dpwh-projects.csv
+dpwh_HGAB_REVIEW_SET/house-bill-2027-dpwh-red-flags.csv
+Senate_report_data/data/bettergov-senate-2027-dataset/senate-2027-dataset/senate-2027-projects.csv
+
+# Large derived bundles (33–54M) — regenerate with the analysis exporters.
+analysis/data/comparison_projects_2027.json
+analysis/data/stage_trace_2027.json
+analysis/data/hb_dpwh_native_ic_projects_3rd_reading.json
+web/public/data/dpwh.json

@@ -1,0 +1,11 @@
+{
+ "node": "snapshot/nia/hgab",
+ "type": "snapshot",
+ "path": "analysis-nia/data/hgab_nia_projects.csv",
+ "content_sha256": "9e650ebc9cadc7b0da874736061f607b4f029a32c0b520f7f71f8264c69c2086",
+ "built_by": "analysis-nia extraction",
+ "inputs": [
+  "source/fmr/hgab_vol_ib_pdf"
+ ],
+ "registered": "2026-11-22T18:48:31"
+}

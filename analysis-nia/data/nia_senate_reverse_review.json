@@ -1,0 +1,139 @@
+[
+  {
+    "senate_id": "senate_a3:p3:r41",
+    "nep_id": "nep-nia-p01-y532",
+    "oct10_row": 67,
+    "nov13_row": 67,
+    "decision": "join",
+    "note": "Both NIA submission titles match the Senate scope, station range, and endpoints. The November review records a Tarlac booking change, while the submission and Senate identify Nueva Ecija."
+  },
+  {
+    "senate_id": "senate_a3:p3:r42",
+    "nep_id": "nep-nia-p01-y553",
+    "oct10_row": 69,
+    "nov13_row": 69,
+    "decision": "join",
+    "note": "The name hyphen and @/at wording differ. The scope, stations and endpoints agree. The November review reports a Tarlac booking change, while the submission and Senate retain Nueva Ecija."
+  },
+  {
+    "senate_id": "senate_a3:p17:r246",
+    "nep_id": "nep-nia-p05-y317",
+    "oct10_row": 384,
+    "nov13_row": 384,
+    "decision": "join",
+    "note": "The Senate title matches October, including the full set of stations. The November title ends partway through the description."
+  },
+  {
+    "senate_id": "senate_a3:p27:r385",
+    "nep_id": "nep-nia-p07-y771",
+    "oct10_row": 610,
+    "nov13_row": 610,
+    "decision": "join",
+    "note": "The Senate title matches October, including the two check dams, stations, and coordinate text. The November title ends partway through the description."
+  },
+  {
+    "senate_id": "senate_a3:p44:r640",
+    "nep_id": "nep-nia-p12-y626",
+    "oct10_row": 1063,
+    "nov13_row": 1063,
+    "decision": "join",
+    "note": "The system name is spelled IguirIndon in the Senate and Eguirendon in NIA. All listed works and station ranges agree."
+  },
+  {
+    "senate_id": "senate_a3:p52:r763",
+    "nep_id": "nep-nia-p14-y705",
+    "oct10_row": 1282,
+    "nov13_row": 1282,
+    "decision": "join",
+    "note": "The Senate matches the November revision, including updated station endpoints and the added DSFD #1A segment. November records that the change followed the latest validation."
+  },
+  {
+    "senate_id": "senate_a3:p58:r847",
+    "nep_id": "nep-nia-p16-y402",
+    "oct10_row": 1422,
+    "nov13_row": 1422,
+    "decision": "join",
+    "note": "The Senate title matches the October scope, pump specifications, and coordinates. The November title ends partway through the description."
+  },
+  {
+    "senate_id": "senate_a3:p78:r1097",
+    "nep_id": "nep-nia-p23-y498",
+    "oct10_row": 1872,
+    "nov13_row": 1879,
+    "decision": "review",
+    "note": "NIA describes Barangay Camias and the Senate describes Barangay Balite at the same coordinates. The November review also flags a booking conflict. Verify the locality attribution."
+  },
+  {
+    "senate_id": "senate_a3:p79:r1098",
+    "nep_id": "nep-nia-p23-y529",
+    "oct10_row": 1874,
+    "nov13_row": 1881,
+    "decision": "join",
+    "note": "The site, unit specifications, barangay, and coordinates agree. The workbook repeats quotation marks in the coordinates and flags a province reassignment."
+  },
+  {
+    "senate_id": "senate_a3:p89:r1248",
+    "nep_id": "nep-nia-p27-y184",
+    "oct10_row": 2151,
+    "nov13_row": 2158,
+    "decision": "review",
+    "note": "The coordinates and work agree. The Senate adds Barangay Curva to the NIA description of Barangay Tindog. Verify whether this changes the stated coverage."
+  },
+  {
+    "senate_id": "senate_a3:p90:r1254",
+    "nep_id": "nep-nia-p27-y306",
+    "oct10_row": 2163,
+    "nov13_row": 2170,
+    "decision": "review",
+    "note": "The coordinates and work agree. The Senate adds Sinsin to the NIA description of Barangay Sudlon I. Verify whether this changes the stated coverage."
+  },
+  {
+    "senate_id": "senate_a3:p93:r1304",
+    "nep_id": "nep-nia-p28-y234",
+    "oct10_row": 2248,
+    "nov13_row": 2255,
+    "decision": "review",
+    "note": "The Senate uses the November barangay name, Cabangcalan, but gives different coordinates. The November remarks document a barangay correction."
+  },
+  {
+    "senate_id": "senate_a3:p93:r1305",
+    "nep_id": "nep-nia-p28-y254",
+    "oct10_row": 2250,
+    "nov13_row": 2257,
+    "decision": "review",
+    "note": "The Senate uses the November barangay name, Bagumbayan, but gives different coordinates. November cites the irrigators’ association and right-of-way concerns."
+  },
+  {
+    "senate_id": "senate_a3:p93:r1306",
+    "nep_id": "nep-nia-p28-y274",
+    "oct10_row": 2252,
+    "nov13_row": 2259,
+    "decision": "join",
+    "note": "Both NIA submissions and the Senate describe one Taytayan CIS solar pump at Barangay Taytayan with the same ₱10M allocation. NIA gives 7°43′59.5″N, 126°26′40.2″E. The Senate gives 7°43′55.84″N, 126°25′55.65″E. The source records do not explain the coordinate change.",
+    "detail_difference": "coordinates"
+  },
+  {
+    "senate_id": "senate_a3:p13:r204",
+    "decision": "unmatched",
+    "note": "The reverse search found no zero-House NIA candidate with the same region, province, and amount."
+  },
+  {
+    "senate_id": "senate_a3:p13:r205",
+    "decision": "unmatched",
+    "note": "The reverse search found no zero-House NIA candidate with the same region, province, and amount."
+  },
+  {
+    "senate_id": "senate_a3:p13:r206",
+    "decision": "unmatched",
+    "note": "The reverse search found no zero-House NIA candidate with the same region, province, and amount."
+  },
+  {
+    "senate_id": "senate_a3:p34:r493",
+    "decision": "reallocation",
+    "note": "Both NIA workbooks submit ₱2M for Luttuad at row 785. October row 783 documents the transfer from Gabriela Silang CIS. The Senate cuts Gabriela Silang by ₱2M and inserts Luttuad for the same amount.",
+    "oct10_row": 785,
+    "nov13_row": 785,
+    "donor_oct10_row": 783,
+    "donor_senate_id": "senate_a3:p34:r492"
+  }
+]

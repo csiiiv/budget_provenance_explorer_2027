@@ -1,0 +1,11 @@
+{
+ "node": "snapshot/nia/agency_recon_nov13",
+ "type": "snapshot",
+ "path": "analysis-nia/data/nia_agency_recon_nov13.json",
+ "content_sha256": "0b9a83e921b2da0681fe7a203c3de620f06ee45b27f824eb5d5771768277ad06",
+ "built_by": "extract_nia_recon.py",
+ "inputs": [
+  "source/nia/agency_recon_xlsx_nov13"
+ ],
+ "registered": "2026-11-22T19:07:18"
+}

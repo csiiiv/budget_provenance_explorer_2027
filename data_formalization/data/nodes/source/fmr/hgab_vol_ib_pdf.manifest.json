@@ -1,0 +1,9 @@
+{
+ "node": "source/fmr/hgab_vol_ib_pdf",
+ "type": "source_doc",
+ "path": "HB_BUDGET/2 - HB 10858 VOL IB.pdf",
+ "content_sha256": "a82800c4cc2684566a37f7780d8f9131d2e7b2c97444d335d94df012dec065b6",
+ "built_by": "byte-identical acquisition",
+ "inputs": [],
+ "registered": "2026-11-22T17:48:43"
+}

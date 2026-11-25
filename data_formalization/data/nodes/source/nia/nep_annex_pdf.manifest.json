@@ -1,0 +1,9 @@
+{
+ "node": "source/nia/nep_annex_pdf",
+ "type": "source_doc",
+ "path": "dbm-other-nep-line-data/NIA.pdf",
+ "content_sha256": "eadad324df8539fcc398650da81170b821f83ddb99342c4347f472169b09b632",
+ "built_by": "NIA FY2027 NEP annex (embedded OCR text layer)",
+ "inputs": [],
+ "registered": "2026-11-22T18:48:31"
+}

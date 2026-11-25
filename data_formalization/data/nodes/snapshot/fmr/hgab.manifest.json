@@ -1,0 +1,11 @@
+{
+ "node": "snapshot/fmr/hgab",
+ "type": "snapshot",
+ "path": "other-analysis/data/hgab_fmr_final_dataset.json",
+ "content_sha256": "e0c55b402bd4e7ceebef157129764d188d434300dfd1b97c9714e9e608d13142",
+ "built_by": "other-analysis trusted HGAB extraction",
+ "inputs": [
+  "source/fmr/hgab_vol_ib_pdf"
+ ],
+ "registered": "2026-11-22T17:48:43"
+}

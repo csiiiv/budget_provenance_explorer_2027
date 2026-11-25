@@ -1,0 +1,23 @@
+{
+ "schema_version": 1,
+ "type": "view",
+ "compares": [
+  "snapshot/nia/agency_recon_oct10",
+  "snapshot/nia/agency_recon_nov13"
+ ],
+ "key": "title_key",
+ "summary": {
+  "added": 1,
+  "removed": 1,
+  "amount_changed": 0
+ },
+ "diff": {
+  "added": [
+   "santamariapumpirrigationprojectisabela"
+  ],
+  "removed": [
+   "santamariapumpirrigationprojectcagayan"
+  ],
+  "amount_changed": []
+ }
+}

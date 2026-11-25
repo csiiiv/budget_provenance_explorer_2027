@@ -1,0 +1,11 @@
+{
+ "node": "snapshot/dpwh/hb_ic_3rd_reading_tree",
+ "type": "snapshot",
+ "path": "analysis/data/hb_dpwh_native_ic_projects_3rd_reading.json",
+ "content_sha256": "4ab63aea525784ce342d4911c7859f77380b8504eb5483d8e65d48be9377078c",
+ "built_by": "scripts/hb_native_ic_rollup.py (project/fap_project tree)",
+ "inputs": [
+  "source/dpwh/hb_ic_3rd_reading_pdf"
+ ],
+ "registered": "2026-11-22T20:52:25"
+}

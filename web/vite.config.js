@@ -1,0 +1,46 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import { cpSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
+
+// The Python exporter (data_formalization/scripts/export_web.py) writes
+// bundles straight into web/data/<program>/ — served as static files by the
+// dev server, and copied into dist/ on build so `vite preview` works too.
+export default defineConfig({
+  plugins: [
+    react(),
+    {
+      name: 'copy-ledger-data',
+      apply: 'build',
+      closeBundle() {
+        cpSync(
+          new URL('./public/data', import.meta.url),
+          new URL('./dist/data', import.meta.url),
+          { recursive: true },
+        )
+      },
+    },
+  ],
+  build: {
+    rollupOptions: {
+      input: {
+        fmr: fileURLToPath(new URL('./index.html', import.meta.url)),
+        nia: fileURLToPath(new URL('./nia.html', import.meta.url)),
+        'nia-map': fileURLToPath(new URL('./nia_map.html', import.meta.url)),
+        'nia-titles': fileURLToPath(new URL('./nia-titles.html', import.meta.url)),
+        dpwh: fileURLToPath(new URL('./dpwh.html', import.meta.url)),
+      },
+    },
+  },
+  // `allowedHosts` permits access through reverse proxies / Cloudflare
+  // tunnels that forward an external Host header to the dev server.
+  // `true` allows any host (needed for random quick-tunnel hostnames);
+  // to lock it down, use an explicit list instead, e.g.
+  //   allowedHosts: ['g7-test-2.simple-systems.dev']
+  server: {
+    port: 5180,
+    allowedHosts: true,
+  },
+  // inotify watches fail under this sandbox (EMFILE); polling keeps HMR alive
+  watch: { usePolling: true, interval: 300 },
+})

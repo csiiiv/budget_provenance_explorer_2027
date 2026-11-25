@@ -1,0 +1,13 @@
+{
+ "node": "transition/fmr/da_nov5_linkage",
+ "type": "transition",
+ "path": "data_formalization/data/transitions/fmr/da_nov5_linkage.json",
+ "content_sha256": "92e9c7eb22d592de9ac845c929c713419e61dc1bbb4cc6f9c48d0bc4cf6c8827",
+ "built_by": "transitions_fmr.py replay from ledger",
+ "inputs": [
+  "snapshot/fmr/da_draft_nov5",
+  "snapshot/fmr/nep",
+  "snapshot/fmr/hgab"
+ ],
+ "registered": "2026-11-22T18:35:36"
+}

@@ -1,0 +1,228 @@
+[
+ {
+  "key": "I",
+  "label": "Region I - ILOCOS",
+  "nep_m": 1630.0,
+  "house_m": 1590.0,
+  "da_m": 1760.0,
+  "senate_from_m": 1590.0,
+  "senate_m": 1760.0,
+  "senate_status": {
+   "cut": 56,
+   "raised": 61,
+   "renamed": 39
+  }
+ },
+ {
+  "key": "II",
+  "label": "Region II - CAGAYAN VALLEY",
+  "nep_m": 1865.0,
+  "house_m": 2133.2,
+  "da_m": 2045.0,
+  "senate_from_m": 2133.2,
+  "senate_m": 2045.0,
+  "senate_status": {
+   "renamed": 55,
+   "raised": 30,
+   "cut": 43
+  }
+ },
+ {
+  "key": "III",
+  "label": "Region III - CENTRAL LUZON",
+  "nep_m": 3025.0,
+  "house_m": 3418.8,
+  "da_m": 3224.05,
+  "senate_from_m": 3418.8,
+  "senate_m": 3224.05,
+  "senate_status": {
+   "renamed": 46,
+   "cut": 126,
+   "raised": 95
+  }
+ },
+ {
+  "key": "IVA",
+  "label": "Region IVA - CALABARZON",
+  "nep_m": 1627.0,
+  "house_m": 2403.4,
+  "da_m": 1827.45,
+  "senate_from_m": 2403.4,
+  "senate_m": 1827.45,
+  "senate_status": {
+   "renamed": 44,
+   "raised": 49,
+   "cut": 88,
+   "reduced": 1
+  }
+ },
+ {
+  "key": "IVB",
+  "label": "Region IVB - MIMAROPA",
+  "nep_m": 795.0,
+  "house_m": 1005.35,
+  "da_m": 775.0,
+  "senate_from_m": 1005.35,
+  "senate_m": 775.0,
+  "senate_status": {
+   "renamed": 26,
+   "cut": 18,
+   "raised": 9
+  }
+ },
+ {
+  "key": "V",
+  "label": "Region V - BICOL",
+  "nep_m": 915.0,
+  "house_m": 1391.2,
+  "da_m": 1040.0,
+  "senate_from_m": 1391.2,
+  "senate_m": 1040.0,
+  "senate_status": {
+   "renamed": 34,
+   "raised": 23,
+   "cut": 43
+  }
+ },
+ {
+  "key": "VI",
+  "label": "Region VI - WESTERN VISAYAS",
+  "nep_m": 500.0,
+  "house_m": 1042.75,
+  "da_m": 515.0,
+  "senate_from_m": 1042.75,
+  "senate_m": 515.0,
+  "senate_status": {
+   "renamed": 18,
+   "raised": 11,
+   "cut": 32
+  }
+ },
+ {
+  "key": "VII",
+  "label": "Region VII - CENTRAL VISAYAS",
+  "nep_m": 225.0,
+  "house_m": 315.0,
+  "da_m": 245.0,
+  "senate_from_m": 315.0,
+  "senate_m": 245.0,
+  "senate_status": {
+   "cut": 12,
+   "raised": 9,
+   "renamed": 7
+  }
+ },
+ {
+  "key": "VIII",
+  "label": "Region VIII - EASTERN VISAYAS",
+  "nep_m": 535.0,
+  "house_m": 996.8,
+  "da_m": 726.0,
+  "senate_from_m": 996.8,
+  "senate_m": 726.0,
+  "senate_status": {
+   "renamed": 18,
+   "cut": 34,
+   "raised": 18
+  }
+ },
+ {
+  "key": "IX",
+  "label": "Region IX - ZAMBOANGA PENINSULA",
+  "nep_m": 445.0,
+  "house_m": 580.0,
+  "da_m": 540.0,
+  "senate_from_m": 580.0,
+  "senate_m": 540.0,
+  "senate_status": {
+   "cut": 19,
+   "raised": 18,
+   "renamed": 13
+  }
+ },
+ {
+  "key": "X",
+  "label": "Region X - NORTHERN MINDANAO",
+  "nep_m": 455.0,
+  "house_m": 683.4,
+  "da_m": 555.0,
+  "senate_from_m": 683.4,
+  "senate_m": 555.0,
+  "senate_status": {
+   "raised": 13,
+   "cut": 19,
+   "renamed": 14
+  }
+ },
+ {
+  "key": "XI",
+  "label": "Region XI - DAVAO",
+  "nep_m": 535.0,
+  "house_m": 475.0,
+  "da_m": 535.0,
+  "senate_from_m": 475.0,
+  "senate_m": 535.0,
+  "senate_status": {
+   "renamed": 6,
+   "cut": 14,
+   "raised": 8
+  }
+ },
+ {
+  "key": "XII",
+  "label": "Region XII - SOCCSKSARGEN",
+  "nep_m": 240.0,
+  "house_m": 425.0,
+  "da_m": 250.0,
+  "senate_from_m": 425.0,
+  "senate_m": 250.0,
+  "senate_status": {
+   "renamed": 8,
+   "cut": 20,
+   "raised": 9
+  }
+ },
+ {
+  "key": "XIII",
+  "label": "Region XIII - CARAGA",
+  "nep_m": 1208.0,
+  "house_m": 938.2,
+  "da_m": 905.0,
+  "senate_from_m": 938.2,
+  "senate_m": 905.0,
+  "senate_status": {
+   "cut": 24,
+   "raised": 22,
+   "renamed": 26,
+   "reduced": 1
+  }
+ },
+ {
+  "key": "CAR",
+  "label": "CORDILLERA ADMINISTRATIVE REGION (CAR)",
+  "nep_m": 1540.0,
+  "house_m": 1565.0,
+  "da_m": 639.0,
+  "senate_from_m": 1565.0,
+  "senate_m": 639.0,
+  "senate_status": {
+   "renamed": 10,
+   "cut": 12,
+   "raised": 11
+  }
+ },
+ {
+  "key": "NIR",
+  "label": "NEGROS ISLAND REGION (NIR)",
+  "nep_m": 460.0,
+  "house_m": 665.0,
+  "da_m": 418.5,
+  "senate_from_m": 665.0,
+  "senate_m": 418.5,
+  "senate_status": {
+   "cut": 17,
+   "raised": 8,
+   "renamed": 18
+  }
+ }
+]

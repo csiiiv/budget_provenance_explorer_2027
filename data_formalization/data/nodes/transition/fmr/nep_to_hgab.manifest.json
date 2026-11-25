@@ -1,0 +1,12 @@
+{
+ "node": "transition/fmr/nep_to_hgab",
+ "type": "transition",
+ "path": "data_formalization/data/transitions/fmr/nep_to_hgab.json",
+ "content_sha256": "d82729f0ceb818605d6376536c112927685719b309a6d75ba5b80011335c3de9",
+ "built_by": "transitions_fmr.py replay from ledger",
+ "inputs": [
+  "snapshot/fmr/nep",
+  "snapshot/fmr/hgab"
+ ],
+ "registered": "2026-11-22T18:35:36"
+}

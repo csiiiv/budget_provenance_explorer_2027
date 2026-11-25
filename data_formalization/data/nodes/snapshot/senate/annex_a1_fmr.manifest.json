@@ -1,0 +1,11 @@
+{
+ "node": "snapshot/senate/annex_a1_fmr",
+ "type": "snapshot",
+ "path": "Senate_report_data/data/derived/senate_annex_a1_fmr.json",
+ "content_sha256": "cafa319815ce8636e5c9a3006136ae3ba272f9d855d54a0e92e9c5ed94a729f9",
+ "built_by": "Senate_report_data/scripts/extract_annex_projects.py (adapted from bettergovph/ai-budget, MIT)",
+ "inputs": [
+  "source/senate/annex_a1_pdf"
+ ],
+ "registered": "2026-11-22T21:33:34"
+}

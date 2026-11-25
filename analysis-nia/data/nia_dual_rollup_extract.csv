@@ -1,0 +1,795 @@
+row,eg_region,eg_province,tu_region,tu_province,label,has_v
+14,Cordillera Administrative Region,Abra,Cordillera Administrative Region,Abra,Abra River Irrigation System: Construction of Service Road w/ Protection Works and Appurte,True
+17,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,West Apayao Abulug Irrigation System: Concreting of Existing Service Road,True
+20,Cordillera Administrative Region,Ifugao,Cordillera Administrative Region,Ifugao,Hapid Irrigation System: Construction of Service Road at Barangay Magulon area,True
+23,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,Upper Chico River Irrigation System: Construction of Protection Works and Portland Cement ,True
+27,Region 1,Ilocos Sur,Region 1,Ilocos Sur,Banaoang PIS: Concreting of Access Road at Lateral B Sta. 0+200 - 0+300,True
+30,Region 1,Pangasinan,Region 1,Pangasinan,Agno RIS: Concreting of Service Road @ Lateral L (Sta. 6+500 - 7+000),True
+33,Region 1,Pangasinan,Region 1,Pangasinan,Amburayan RIS: Concreting of Canal Service Road w/ Pavement Protection @ Sta. 6+000.00 - S,True
+35,Region 1,Pangasinan,Region 1,Pangasinan,Masalip RIS: Concreting of Canal Service Road w/ Pavement Protection @ Sta. 4+830.00 to St,True
+39,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,Colocol INIS: Construction of Concrete Road S,True
+42,Region 2,Isabela,Region 2,Isabela,Pasa SRIS: Construction of Concrete Road at Sta. 1+680.00 - 2+080.00 along main Canal,True
+45,Region 2,Quirino,Region 2,Quirino,Addalam River Irrigation System (ADRIS): Construction of Concrete Road along Lateral A at ,True
+49,MARIIS,Isabela,MARIIS,Isabela,"MAGAT-RIS: Concreting of Canal Service Road Along - MMC, Sta. 24+130 - 24+880 (0.750 km)",True
+51,MARIIS,Isabela,MARIIS,Isabela,"MAGAT-RIS: Concreting of Canal Service Road Along - OC-4, Sta. 0+000 - 0+200 (0.200 km)",True
+55,REGION 3,Aurora,REGION 3,Aurora,Amro RIS: Construction of Service Road along Brgy. Calantas (Sta. 0+000 - Sta. 0+500),True
+58,REGION 3,Tarlac,REGION 3,Tarlac,TASMORIS (Tarlac RIS): Concreting of Service Road at Lateral ABC-1 (Amucao East FIA) Sta. ,True
+62,UPRIIS,Bulacan,UPRIIS,Nueva Ecija,"Penaranda RIS: Construction of PCCP as Solar Dryer @ Lateral C Extension, Sta. 0+000-0+260",True
+65,UPRIIS,Tarlac,UPRIIS,Nueva Ecija,TRIS Lower: Construction of PCCP at Lateral G3b TRIS Lower at Sta. 1+237.78 - 1+404.28,True
+67,UPRIIS,Tarlac,UPRIIS,Nueva Ecija,"Pampanga River IS: Construction of PCCP at PRIS C, Sta. 14+693.00 - 14+883.00",True
+69,UPRIIS,Tarlac,UPRIIS,Nueva Ecija,"Pamaldan Cinco Cinco Irrigation System: Construction of PCCP @DC-2, Sta. 17+178.00 - Sta. ",True
+71,UPRIIS,Tarlac,UPRIIS,Nueva Ecija,PRIS-SDC: Improvement of Irrigation Canal Roadways (Science City of Muñoz area) PCCP Later,True
+73,UPRIIS,Tarlac,UPRIIS,Nueva Ecija,PRIS-SDC PH2: Construction of Portland Cement Concrete Pavement (PCCP) at Sub-Lateral L-5 ,True
+77,Region IV-A,Laguna,Region IV-A,Laguna,Sta. Maria RIS: Construction of Service Road,True
+80,Region IV-A,Batangas,Region IV-A,Batangas,Palico RIS: Construction of Concrete Pavement,True
+84,Region IV-B,Palawan,Region IV-B,Palawan,"Batang-Batang RIS: Concreting of Service Road at Lateral C Supply Canal, 0+000.00- 0+400.0",True
+87,Region IV-B,Oriental Mindoro,Region IV-B,Oriental Mindoro,Bansud RIS: Concreting of Service Road (N. Lateral C Sta. 0+000.00 - 0+300.00),True
+90,Region IV-B,Occidental Mindoro,Region IV-B,Occidental Mindoro,Pagbahan RIS: Construction of Service Road from Sta. 0+173 to Sta. 0+353 Main Canal,True
+94,Region 5,Camarines Norte,Region 5,Camarines Norte,Daet-Talisay RIS: Concreting of Service Road South Main Canal Sta. 0+000 -0+430,True
+97,Region 5,Camarines Sur,Region 5,Camarines Sur,Libmanan-Cabusao PIS: Concreting of Service Road along Main Canal (Sta. 2+718.00 - 2+754.0,True
+99,Region 5,Camarines Sur,Region 5,Camarines Sur,Tigman-Hinagyanan-Inarihan RIS: Concreting of Service Road along Turnout #10 Sta. 0+000.00,True
+101,Region 5,Camarines Sur,Region 5,Camarines Sur,Tigman-Hinagyanan-Inarihan RIS: Concreting of service road along Lateral C1 (Sta.1+854.00 ,False
+104,Region 5,Sorsogon,Region 5,Sorsogon,San Ramon RIS: Concreting of NIS Service Roads (Sta. 1264.11 -1+334.2 of Main Canal),True
+106,Region 5,Sorsogon,Region 5,Sorsogon,San Francisco RIS: Concreting of Service Roads (Sta. 3+266.00 - 3+332.00 of Main Canal),True
+110,Region 6,Negros Occidental,Region 6,Negros Occidental,Bago RIS: Concreting of Service Roads,True
+113,Region 6,Antique,Region 6,Antique,Sibalom-San Jose RIS: Concreting of Service Road along Lat. B (Proper) Road,True
+116,Region 6,Iloilo,Region 6,Iloilo,Jalaur RIS: Concreting of NIA Service Road (Extension Area),True
+120,Region 7,Bohol,Region 7,Bohol,Bohol Integrated Irrigation System (Bayongan IS): Repair and Improvements of Service Road ,True
+122,Region 7,Bohol,Region 7,Bohol,Bohol Integrated Irrigation System (Malinao IS): Repair and Improvements of Service Road w,True
+124,Region 7,Bohol,Region 7,Bohol,Tubigon (Ilihan) SRIS: Repair and Improvements of Service Roads from Sta. 0+100 to Sta.0+5,True
+128,Region 8,Leyte,Region 8,Leyte,Bao RIS: Road Concreting along Lateral D,True
+130,Region 8,Leyte,Region 8,Leyte,Hindang-Hilongos IS: Road Concreting of Main Canal,True
+134,Region 9,Zaboanga del Sur,Region 9,Zaboanga del Sur,Dipolo RIS: Concreting of existing Service Road at Dipolo MC1 Sta. 5+165-6+000 and Guitran,True
+136,Region 9,Zaboanga del Sur,Region 9,Zaboanga del Sur,Salug RIS: Concreting of Existing Service Roads along Lateral A1 West Sta. 0+000 - 0+200,True
+138,Region 9,Zaboanga del Sur,Region 9,Zaboanga del Sur,Salug RIS: Concreting of Existing Service Roads along Lateral A (Balogo) Sta. 0+000 - 0+21,True
+142,Region 10,Lanao del Sur,Region 10,Lanao del Sur,Malaig RIS: Repair and Improvement of Service Roads @ Main Canal Sta. 0+000-2+501,True
+146,Region 11,Davao Oriental,Region 11,Davao Oriental,Lupon IS: Concreting of 0.10 kilometers Service Road along Lateral C to improve accessibil,True
+149,Region 11,Davao de Oro,Region 11,Davao de Oro,Batutu RIS: Concreting of Service Roads along MC East Sta. 0+749.2 to Sta. 0+849.2 (Cogono,True
+152,Region 11,Davao del Norte,Region 11,Davao del Norte,Saug RIS: Road Concreting along Lateral A West Sta. 0+300-1+000,True
+154,Region 11,Davao del Norte,Region 11,Davao del Norte,Lasang RIS: Road Concreting along Lateral A4 Sta. 0+000-0+150,True
+157,Region 11,Daval del Sur,Region 11,Davao del Sur,Padada RIS: Concreting of Service Road along Parat RMC at Sta. 0+000.00 - 0+300 to provide,True
+159,Region 11,Daval del Sur,Region 11,Davao del Sur,Mal RIS: Concreting of Service Road along RMC and RMC Supplementary at Sta. 0+000.00 - 0 +,True
+163,Region 12,Cotabato,Region 12,Cotabato,Mlang RIS: Road Concreting of Service Road at Main Canal Sta. 0+370 - 0+620,True
+166,Region 12,Sultan Kudarat,Region 12,Sultan Kudarat,"Lambayong RIS: Road Surfacing 1. Lateral D4 (Sta. 0+000-1+300) L=1,300 mts",True
+169,Region 12,Maguindanao,Region 12,Maguindanao,Alip RIS: Road concreting of 0.090-km linking Road Lat. B to Damawato Road Sta. 0+000 - 0+,True
+171,Region 12,Maguindanao,Region 12,Maguindanao,Kabulnan RIS: Concreting of 0.090-km Service Road at Left Main Canal Sta. 0+550-0+640,True
+174,Region 12,South Cotabato,Region 12,South Cotabato,Siluay RIS: Improvement of Service Roads along Main Canal,True
+176,Region 12,South Cotabato,Region 12,South Cotabato,Buayan RIS: Improvement of Service Roads along Main Canal from Tinagacan Diversion Structu,True
+178,Region 12,South Cotabato,Region 12,South Cotabato,Marbel 1 RIS: Improvement of Service Roads along Lateral I (Road Surfacing),True
+182,Region 13,Agusan del Norte,Region 13,Agusan del Norte,Cabadbaran-Taguibo RIS: Concreting of Service Roads at Taguibo MC (Sta. 0+000-0+145),True
+184,Region 13,Agusan del Norte,Region 13,Agusan del Norte,MAP IS: Concreting of Service Roads at Main Canal (Sta. 9+221-9+295),True
+187,Region 13,Agusan del Sur,Region 13,Agusan del Sur,Simulao RIS: Concreting of Service Roads at Main Canal,True
+192,Region 7,Bohol,Region 7,Bohol,Malinao Dam Improvement Project: Modification of Dam and Spillway and Irrigation Facilitie,True
+197,Region 12,North Cotabato,Region 12,North Cotabato,Maridagao River Irrigation System Improvement Project: Construction of Flood Road Dike alo,True
+200,Region 12,North Cotabato,Region 12,North Cotabato,Rehabilitation and Protection of Watershed Management,True
+205,Cordillera Administrative Region,Abra,Cordillera Administrative Region,Abra,"Abra River Irrigation System: Repair of Canal Lining along the Diversion Canal, Sub-latera",True
+208,Cordillera Administrative Region,Ifugao,Cordillera Administrative Region,Ifugao,Hapid Irrigation System: Repair/Rehabilitation of Canal Lining,True
+211,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,"Upper Chico River Irrigation System: Repair of Canal Lining, Protection Works & Canal Stru",True
+214,Cordillera Administrative Region,Isabela,Cordillera Administrative Region,Isabela,Upper Chico River Irrigation System: Protection works,True
+218,Region 1,Ilocos Norte,Region 1,Ilocos Norte,Madongan RIS: Construction of Canal Lining at MR-1 Extension Canal at Sta. 0+000 - 0+650,True
+220,Region 1,Ilocos Norte,Region 1,Ilocos Norte,Laoag-Vintar RIS: Improvement of Bacsil North Water Impounding System,True
+222,Region 1,Ilocos Norte,Region 1,Ilocos Norte,Bonga Pump No. 2 PIS: Construction of Protection Works (Groundsill),False
+225,Region 1,Ilocos Sur,Region 1,Ilocos Sur,Banaoang PIS: Repair of Canal Lining at Lateral I Sta. 5+156.50 - Sta. 5+683.00,True
+228,Region 1,La Union,Region 1,La Union,"Amburayan RIS: Repair of Canal Lining @ Sta.15+963.00 - 15+993.00, MC",True
+230,Region 1,La Union,Region 1,La Union,"Amburayan RIS: Repair of Canal Lining @Sta. 12+681.00 - 12+751.00, MC",True
+232,Region 1,La Union,Region 1,La Union,"Masalip RIS: Repair of Canal Lining @ Sta. 0+127.00-0+224.70, Sta. 0+242.70-0+351.00, Lat.",True
+234,Region 1,La Union,Region 1,La Union,"Masalip RIS: Canal Lining @ Sta. 3+070.00 - 3+150.00, Sta. 3+829.00 - 3+925.50, Sta. 3+968",True
+237,Region 1,Pangasinan,Region 1,Pangasinan,Ambayoan RIS: Repair of Canal Lining @ ADRIS Main Canal (Sta. 4+000 - 4+585),True
+241,Region 2,Cagayan,Region 2,Cagayan,Magapit Pump Irrigation System: Improvement of Canals and Canal Structures,True
+243,Region 2,Cagayan,Region 2,Cagayan,Zinundungan River Irrigation System: Improvement of Canals and Canal Structures,True
+245,Region 2,Cagayan,Region 2,Cagayan,Chico River Pump Irrigation System: Improvement of Siphon Along Lateral E,True
+247,Region 2,Cagayan,Region 2,Cagayan,Visitacion IS: Construction of Embankment Protection with Steel Sheet Pile,True
+250,Region 2,Isabela,Region 2,Isabela,Pasa SRIS: Repair of Canal Lining at Sta. 2+246-2+280 and 2+930-2+960 along lateral A Sta.,True
+252,Region 2,Isabela,Region 2,Isabela,San Pablo-Cabagan IS: Construction of Concrete Canal Lining at Stations 2+612.97 - 2+780.0,True
+254,Region 2,Isabela,Region 2,Isabela,Mallig River Irrigation System: Construction of Structured Wall Pipe at Station 1+970.55-2,True
+256,Region 2,Isabela,Region 2,Isabela,Mallig RIS: Construction of Slope Protection at Mallig Dam Intake and Construction of Slop,True
+258,Region 2,Isabela,Region 2,Isabela,Mallig River Irrigation System: Construction of Gabion Slope Protection and CHB Canal Lini,False
+260,Region 2,Isabela,Region 2,Isabela,Upper Chico RIS: Improvement of irrigation facilities,False
+263,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,Colocol INIS: Construction of Bench Flume,True
+266,Region 2,Quirino,Region 2,Quirino,Addalam River Irrigation System (ADRIS): Improvement of MC Canal Lining @ Station 13+145.5,True
+270,MARIIS,Isabela,MARIIS,Isabela,Magat RIS: Furnish and Installation of type II U-shaped Sheet Pile through Rehabilitation ,True
+272,MARIIS,Isabela,MARIIS,Isabela,Magat RIS: Furnish and Install of Type II U shaped sheetpile through rehabilitation of Sco,False
+276,Region 3,Pampanga,Region 3,Pampanga,"Angat Maasim RIS: Improvement of Bitukang Manok Creek, Lateral C, Lateral C-Extra and vari",True
+279,Region 3,Tarlac,Region 3,Tarlac,TASMORIS (O'donnell Side): Construction of Canal Lining at Lateral B-1 and Concreting of S,True
+281,Region 3,Tarlac,Region 3,Tarlac,TASMORIS (Tarlac RIS): Improvement of Facilities of TASMORIS-Lacson Canal and Road improve,True
+283,Region 3,Tarlac,Region 3,Tarlac,TASMORIS (O'donnell Side): Construction of Canal Lining at Lateral B-1 and Concreting of S,True
+286,Region 3,Zambales,Region 3,Tarlac,STRIS (Cavite Dam): Repair/Improvement of Cavite Diversion Dam and Canal Lining and Servic,False
+289,Region 3,Tarlac,Region 3,Tarlac,TASMORIS (Tarlac RIS): Improvement of Irrigation Facilities of TASMORIS – Lacson Canal (St,False
+293,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,"Aliaga IS: Repair of Scoured Embankment @ Santiago Dam, Construction of Concrete Lining @ ",True
+295,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC: Construction of Slope Protection at Nagpandayan Reservoir,True
+297,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,"Construction of Concrete Canal Lining at lateral B-7, SDA, and Improvement of Drainage Wat",True
+299,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,"TRIS Lower: Concrete Canal Lining at Lateral F-1A, SDA @ Sta. 2+455.26 - 3+473.87 and Reha",False
+301,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,"TRIS Lower: CHB Canal Lining at Lateral B-3, SDA @ Sta. 2+080.23 - 2+805.03",False
+303,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,TRIS Lower: Improvement of Cojuangco Dam and Lateral G-2 (Sta. 1+438.10+635.49),False
+305,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,Aliaga IS: Construction of Concrete Lining @ Lateral AM-5 Sta. 2+960 - 5+896,False
+307,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PBRIS EXTN: Repair of Lateral A-7 Sta. 0+226 - 0+927,False
+309,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC PH2: Repair of Sub-Lateral O-1 (Construction of Concrete Lining at Sta. 0+120 - S,False
+311,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC PH2: Repair of Sub-Lateral P-2a (Construction of Concrete Lining at Sta. 0+330 - ,False
+313,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC PH2: Repair of Sub-Lateral L-6a (Construction of Concrete Lining at Sta. 0+000 - ,False
+315,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC PH2: Repair of Lateral S (Construction of Concrete Lining at Sta. 0+324.00 - Sta.,False
+317,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC PH2: Repair of Sub-Lateral P-2 (Construction of Concrete Lining at Sta. 0+560 - S,False
+319,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC PH2: Construction of Re-Use Check Structure and Desilting of Ambassador Creek,False
+323,Region 4A,Quezon,Region 4A,Quezon,"Quipot IS: Construction of Canal Lining, Canal Structures and Other Irrigation Facilities",True
+327,Region 4B,Occidental Mindoro,Region 4B,Occidental Mindoro,Lumintao RIS: Repair of Canal Lining and Canal Structure from Sta. 0+165 to 0+365 Matabiag,True
+329,Region 4B,Occidental Mindoro,Region 4B,Occidental Mindoro,Mongpong RIS: Repair of Canal Lining and Canal Structure from Sta. 3+400 to 3+600 MC-8,True
+332,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,Pula RIS: Repair of Downstream Apron,True
+334,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,Bansud RIS: Concreting of Canal Lining Lateral AX Sta. 0+000.00 - 0+300.00),True
+337,Region 4B,Palawan,Region 4B,Palawan,Batang-Batang RIS: Construction of Canal Lining and Canal Structures at Sta. 4+276.00- 4+6,True
+339,Region 4B,Palawan,Region 4B,Palawan,"Malatgao RIS: Construction of Canal Lining at Canal Structures at Sta. 2+670.00- 2+793.00,",True
+343,Region 5,Camarines Norte,Region 5,Camarines Norte,"Daet-Talisay RIS: Repair/Improvement of Canal Lining at Sta. 0+000-0+514.20, Lat. A-1b; In",True
+345,Region 5,Camarines Norte,Region 5,Camarines Norte,Daet-Talisay RIS: Repair/Improvement of Canal Lining at Sta. 3+115.50-4+216.80 SMC,True
+348,Region 5,Camarines Sur,Region 5,Camarines Sur,Libmanan-Cabusao PIS: Repair/Rehabilitation of Trapezoidal Canal Left and Right Embankment,True
+350,Region 5,Camarines Sur,Region 5,Camarines Sur,Libmanan-Cabusao PIS: Repair/Rehabilitation of Trapezoidal Canal Embankment (Main Canal St,True
+352,Region 5,Camarines Sur,Region 5,Camarines Sur,Tigman-Hinagyanan-Inarihan RIS: Repair/Rehabilitation of Canalization at MC-1 Canal (Sta. ,True
+354,Region 5,Camarines Sur,Region 5,Camarines Sur,"Barit RIS: Repair/Rehabilitation of Canal Embankment at Sta. 0+048.20 - 0+117.25, Repair o",True
+357,Region 5,Sorsogon,Region 5,Sorsogon,"San Ramon RIS: Repair of Canal Structures along Sta 6+204.90 - 6+207.90, Sta 2+408.16 CL o",True
+359,Region 5,Sorsogon,Region 5,Sorsogon,"San Francisco RIS: Repair of Canal Lining along Sta 0+522.70-1+720.00, Canal Structure alo",True
+363,Region 6,Aklan,Region 6,Aklan,Aklan RIS: Rehabilitation of Aklan RIS - West Side,True
+366,Region 6,Antique,Region 6,Antique,"Sibalom-San Jose RIS: Canal Lining/Bench Flume Lat. A Proper, Lat. B Proper, Lat. D-1 Prop",True
+368,Region 6,Antique,Region 6,Antique,"Sibalom-San Jose RIS: Canal Lining/Bench Flume Lat. D-3, Lat. D-4",True
+371,Region 6,Iloilo,Region 6,Iloilo,Aganan RIS: Repair/ Rehabilitation (Concreting) of Canal @ Main Canal,True
+374,Region 6,Negros Occidental,Region 6,Negros Occidental,Bago RIS: Rehab/Improvement of Bench Flume and Drainage Canal,True
+376,Region 6,Negros Occidental,Region 6,Negros Occidental,"Pangiplan RIS: Construction of Slope Protection, Concreting of Bench flume Lareral D-2",True
+380,Region 7,Bohol,Region 7,Bohol,"Bohol Integrated Irrigation System (Malinao IS): Repair/Construction of I-1 (0+500-0+650),",True
+382,Region 7,Bohol,Region 7,Bohol,Bohol Integrated Irrigation System (Malinao IS): Repair/Construction MFD Lining MC-25A (0+,True
+384,Region 7,Bohol,Region 7,Bohol,"Mabini SRIS: Repair of Canal MC 5A, MC 5A Gap, MC 9-2 Canal Cover, Lateral D, Lateral D Co",True
+387,Region 7,Cebu,Region 7,Cebu,Can-asujan SRIS: Repair of Siphon at Lateral D with a total length of 729 meters at Sta. 0,True
+390,Region 7,Negros Oriental,Region 7,Negros Oriental,Dauin SRIS: Repair of Lined Canal with Cover (Sta. 0+050 - 0+072),True
+392,Region 7,Negros Oriental,Region 7,Negros Oriental,Sta. Agueda-Datagon IS: Repair of Lined Canal at Naga Intake (Sta. 0+300 - 0+650),True
+396,Region 8,Leyte,Region 8,Leyte,Tibak RIS: Repair/Improvement of Kilot Checkgate & Tahaw Diversion Canal Sta. 0+000-0+600,True
+398,Region 8,Leyte,Region 8,Leyte,Dagutan RIS: Repair/Improvement of Diversion Dam (Downstream Apron),True
+400,Region 8,Leyte,Region 8,Leyte,Bao RIS: Repair/Improvement of Canal Lining at Lateral A Sta. 0+528 - 1+188,True
+402,Region 8,Leyte,Region 8,Leyte,Hindang-Hilongos IS: Repair/Improvement of Diversion Works (Slope Protection Upstream),True
+404,Region 8,Leyte,Region 8,Leyte,Guinarona RIS - Tabontabon: Repair of irrigation facilities,False
+407,Region 8,Southern Leyte,Region 8,Southern Leyte,Das-ay RIS: Repair/Improvement of Diversion Works & Canal System,True
+410,Region 8,Eastern Samar,Region 8,Southern Leyte,Jicontol IS: REPAIR/REHAB OF IRRIGATION FACILITIES AND SOLAR-POWERED PUMP IRRIGATION SYSTE,False
+414,Region 9,Zamboanga del Sur,Region 9,Zamboanga del Sur,Labangan RIS: Installation of Interlocking Concrete Blocks (I-Blocks) Downstream of Bokong,True
+417,Region 9,Zamboanga Sibugay,Region 9,Zamboanga del Sur,Gaulan IP: Construction of irrigation structure,False
+421,Region 10,Bukidnon,Region 10,Bukidnon,Pulangui RIS: Sedimentation Control and Irrigation Project,True
+423,Region 10,Bukidnon,Region 10,Bukidnon,Roxas Kuya RIS: Rehabilitation of Roxas Kuya Main Diversion Structure,False
+425,Region 10,Bukidnon,Region 10,Bukidnon,Pulangi RIS: Pulangi River Sedimentation Control and Irrigation Project Phase 2 Package A,False
+427,Region 10,Bukidnon,Region 10,Bukidnon,Pulangi RIS: Pulangi River Sedimentation Control and Irrigation Project Phase 2 Package B,False
+429,Region 10,Bukidnon,Region 10,Bukidnon,Pulangi RIS: Pulangi River Sedimentation Control and Irrigation Project Phase 2 Package C,False
+432,Region 10,Misamis Oriental,Region 10,Bukidnon,Balingasag RIS: Dam Revetment and Improvement with slope protection (Rosario Dam),False
+434,Region 10,Misamis Oriental,Region 10,Bukidnon,Balingasag RIS: Removed and Repair of Slope Protection (R/D),False
+436,Region 10,Misamis Oriental,Region 10,Bukidnon,Balingasag RIS: Removed and Repair of Slope Protection (R/D),False
+438,Region 10,Misamis Oriental,Region 10,Bukidnon,Balingasag RIS: Extension of Slope protection (Left Side),False
+440,Region 10,Misamis Oriental,Region 10,Bukidnon,Balingasag RIS: Extension of Slope protection (Left Side),False
+442,Region 10,Misamis Oriental,Region 10,Bukidnon,Balingasag RIS: Extension of Slope protection (Left Side),False
+446,Region 11,Davao del Norte,Region 11,Davao del Norte,Lasang RIS: Repair and Rehabilitation of Existing Embankment in Tuganay Creek Junction Dra,True
+448,Region 11,Davao del Norte,Region 11,Davao del Norte,Libuganon RIS: Repair and Rehabilitation of Existing Embankment in Magcreek Brgy. Salvacio,True
+450,Region 11,Davao del Norte,Region 11,Davao del Norte,Kipaliku RIS: Repair and Rehabilitation of Existing Embankment in Lunga-og Dam Upstream Le,True
+454,Region 12,Cotabato,Region 12,Cotabato,Kabacan RIS: Concreting of Canal at PACD2 Sta.0+425-0+635,True
+456,Region 12,Cotabato,Region 12,Cotabato,Malasila RIS: Construction of Protection Works at New Barbaza Downstream 35meters,True
+458,Region 12,Cotabato,Region 12,Cotabato,Libungan RIS: Construction of Slope Protection @ Sadaan Glad MD (35m),True
+461,Region 12,Maguindanao,Region 12,Maguindanao,Alip RIS: Concreting of 0.250 km Earth Canal Sedada MC Sta. 1+390 - 1+640,True
+463,Region 12,Maguindanao,Region 12,Maguindanao,Kabulnan RIS: Repair of 0.100-km Main Canal at Main Cana Sta. 0+000-0+100,True
+466,Region 12,South Cotabato,Region 12,South Cotabato,Ala RIS: Repair of Lateral C Sta. 1+523 - 1+533; and Repair/Replacement of 10 Steelgates a,True
+468,Region 12,South Cotabato,Region 12,South Cotabato,Marbel 2 RIS: Repair of Structure and Construction of Bank Protection Works at Agura Struc,True
+471,Region 12,Sultan Kudarat,Region 12,Sultan Kudarat,Tacurong RIS: Damaged Protection Dike Downstream Remove and Replace at Buenacosa C&W (Sta.,True
+475,Region 13,Surigao del Sur,Region 13,Surigao del Sur,Tago RIS: Repair of Irrigation Canal,True
+477,Region 13,Surigao del Sur,Region 13,Surigao del Sur,Sta. Felomina CIS: Repair & Completion of Dam with its Appurtenant Structures,True
+480,Region 13,Agusan del Norte,Region 13,Surigao del Sur,CABTRIS: Rehabilitation & Retrofitting of Main Dam (Cabadbaran Source),False
+485,Cordillera Administrative Region,Abra,Cordillera Administrative Region,Abra,Abra River Irrigation System: Restoration of Canal Lining along the Supplemental Source of,True
+488,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,West Apayao Abulug Irrigation System: Restoration of Damaged/Deteriorated Canal Structures,True
+491,Cordillera Administrative Region,Ifugao,Cordillera Administrative Region,Ifugao,Hapid Irrigation System: Restoration of Concrete Canals,True
+494,Cordillera Administrative Region,Isabela,Cordillera Administrative Region,Isabela,Upper Chico River Irrigation System: Restoration of Canal Lining & Canal Structure,True
+498,Region 1,Ilocos Norte,Region 1,Ilocos Norte,Papa RIS: Construction of Canal Lining at Sta. 3+000-4+000 OGF PR-2,True
+501,Region 1,Ilocos Sur,Region 1,Ilocos Sur,Banaoang PIS: Repair of Canal Lining at Lateral G Sta. 2+892 - Sta. 3+160 and Various Cana,True
+503,Region 1,Ilocos Sur,Region 1,Ilocos Sur,Sta. Lucia-Candon NIS: Repair of Canal Lining,True
+506,Region 1,Pangasinan,Region 1,Pangasinan,San Fabian RIS: Construction of Canal Lining @ Lateral AF (Sta.0+552.5 - 0+800),True
+510,Region 2,Cagayan,Region 2,Cagayan,Baggao Irrigation System: Construction of Canal Lining along Main Canal,True
+512,Region 2,Cagayan,Region 2,Cagayan,East Apayao Abulug Irrigation System: Construction of Canal Lining and Canal Structures,True
+514,Region 2,Cagayan,Region 2,Cagayan,Visitacion Irrigation System: Construction of Canal Lining along Main Canal and Lateral A,True
+516,Region 2,Cagayan,Region 2,Cagayan,Baua River Irrigation System: Improvement and Repair of Canal Lining and Canal Structures,True
+518,Region 2,Cagayan,Region 2,Cagayan,Banurbur Creek Irrigation System: Improvement and Repair of Canal Lining and Canal Structu,True
+520,Region 2,Cagayan,Region 2,Cagayan,Iguig Alcala Amulung Pump Irrigation System: Improvement and Repair of Canal Lining and Ca,True
+522,Region 2,Cagayan,Region 2,Cagayan,Dummun River Irrigation System: Improvement and Repair of Canal Lining and Canal Structure,True
+524,Region 2,Cagayan,Region 2,Cagayan,Lower Chico River Irrigation System: Improvement and Repair of Canal Lining and Canal Stru,True
+526,Region 2,Cagayan,Region 2,Cagayan,Solana Pump Irrigation System: Improvement and Repair of Canal Lining and Canal Structures,True
+529,Region 2,Isabela,Region 2,Isabela,San Pablo-Cabagan IS: Improvement of Irrigation Facilities at Main Canal,True
+531,Region 2,Isabela,Region 2,Isabela,Mallig River Irrigation System: Improvement of Irrigation Facilities at Lateral B,True
+535,MARIIS,Isabela,MARIIS,Isabela,Baligatan-DD: Modernization and Improvement of Existing Irrigation System,True
+537,MARIIS,Isabela,MARIIS,Isabela,Baligatan DD: Restoration of Area thru Improvement of Irrigation Facility (Construction of,True
+541,Region 3,Bataan,Region 3,Bataan,CLBRIS (Colo RIS): Canalization of Colo Main Canal,True
+543,Region 3,Bataan,Region 3,Bataan,Tangilad SRIS (Samal): Improvement of Canal System,True
+546,Region 3,Bulacan,Region 3,Bulacan,Angat-Maasim RIS: Rehabilitation of Canal System - Canalization - Lat. J-5-A-1 Sta. (0+000,True
+549,Region 3,Pampanga,Region 3,Pampanga,PDRIS (Cong Dadong Dam): Improvement of Diversion Works and Embankment Formation upstream ,True
+551,Region 3,Pampanga,Region 3,Pampanga,PDRIS (Virgen Dam): Repair and Rehabilitation of Virgen Dam and Improvement of Irrigation ,True
+554,Region 3,Tarlac,Region 3,Tarlac,"Camiling RIS: Improvement of Canal System (Sta. 0+100-1+994.35), Canal Structures at Later",True
+556,Region 3,Tarlac,Region 3,Tarlac,TASMORIS (Tarlac RIS): Improvement of Canal Structures at Lateral F Headgate Sta. 0+000 (1,True
+558,Region 3,Tarlac,Region 3,Tarlac,"TASMORIS (Tarlac RIS): Repair of Steel Gates, Improvement of Canal System at Sub-Lateral B",True
+562,Region 4B,Occidental Mindoro,Region 4B,Occidental Mindoro,Lumintao RIS: Construction of Canal Lining and Canal Structure from Sta. 1+782 to Sta. 1+8,True
+564,Region 4B,Occidental Mindoro,Region 4B,Occidental Mindoro,Caguray RIS: Construction of Canal Lining and Canal Structure from Sta. 1+708 to Sta. 2+10,True
+566,Region 4B,Occidental Mindoro,Region 4B,Occidental Mindoro,Pagbahan RIS: Construction of Canal Lining and Canal Structure from Sta. 1+887 to Sta. 2+0,True
+569,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,Baco-Bucayao RIS: Proposed Concreting of Earth Canal (Sta. 3+753 - 4+540) Lateral B2a & Pr,True
+572,Region 4B,Romblon,Region 4B,Romblon,Cantingas RIS: Construction of Canal Lining & Structures at Sta. 2+000 to 2+300,True
+576,Region 5,Camarines Norte,Region 5,Camarines Norte,Matogdon RIS: Restoration of Lateral A (Sta 1+005-1+117); Improvement/Rehabilitation of Ca,True
+579,Region 5,Camarines Sur,Region 5,Camarines Sur,Lower-Lalo RIS: Restoration of 5 Intake Gates and Forebay Intake Structure Fence and Concr,True
+581,Region 5,Camarines Sur,Region 5,Camarines Sur,"Lower-Lalo RIS: Restoration of Main Canal (5+982.80-6+022.80, 9+595.60-9+780.60) and Repai",True
+583,Region 5,Camarines Sur,Region 5,Camarines Sur,"Lower-Lalo RIS: Restoration of Canal Lining at RAMC 16 (Sta. 0+018.5-0+586.5, RAMC 16 A 0+",True
+585,Region 5,Camarines Sur,Region 5,Camarines Sur,"Barit RIS: Restoration of Canal Lining and Canal Structures (RAMC 27B, RALAT A2-13, RALAT ",True
+588,Region 5,Albay,Region 5,Albay,Cabilogan-San Juan RIS: Restoration of Sub-Lateral C-2-1 (Sta. 0+000 - 0+250),True
+592,Region 6,Aklan,Region 6,Aklan,Panakuyan RIS: Restoration of Lateral K Canal and Canal Structures and Provision of Gate,True
+595,Region 6,Iloilo,Region 6,Iloilo,Jalaur RIS: Repair/ Rehabilitation (Concreting) of Canal @ Main Canal,True
+597,Region 6,Iloilo,Region 6,Iloilo,Sibalom RIS: Repair/ Rehabilitation (Concreting) of Canal @ Main Canal,True
+600,Region 6,Negros Occidental,Region 6,Negros Occidental,Bago RIS: Concreting of Bench Flume and Canal Structure,True
+602,Region 6,Negros Occidental,Region 6,Negros Occidental,Pangiplan RIS: Concreting of Bench Flume and Canal Structure @ Lateral D-1,True
+606,Region 7,Bohol,Region 7,Bohol,Bohol Integrated Irrigation System (Bayongan IS): Improvement of Concrete Canal Lining H-1,True
+608,Region 7,Bohol,Region 7,Bohol,Bohol Integrated Irrigation System (Bayongan IS): Improvement of Concrete Canal Lining BMC,True
+610,Region 7,Bohol,Region 7,Bohol,Ilaya SRIS: Improvement of Impounding Dam,True
+612,Region 7,Bohol,Region 7,Bohol,Tugas-Can-Olin SRIS: Improvement of Canal Structures and Concrete Canal Lining Canalizatio,True
+615,Region 7,Negros Oriental,Region 7,Negros Oriental,"Bayawan NIS: Repair of Main Canal (Sta. 1+350 - 1+780), Lateral A (Sta. 0+000 - 1+700), La",True
+619,Region 8,Eastern Samar,Region 8,Eastern Samar,Jicontol IS: Repair/Improvement of the Dilapidated Canal Lining along the Trapezoidal Main,True
+622,Region 8,Northern Samar,Region 8,Northern Samar,Catubig IS: Construction of Canal Lining and Appurtenant Structures along Catubig Right Ma,True
+626,Region 9,Zamboanga del Sur,Region 9,Zamboanga del Sur,Salug RIS: Construction of a 50-meter Protection Dike along Salug Diut River for the Prote,True
+628,Region 9,Zamboanga del Sur,Region 9,Zamboanga del Sur,"Labangan RIS: Construction of Canal Lining at Lateral A3, Lateral A2",True
+630,Region 9,Zamboanga del Sur,Region 9,Zamboanga del Sur,Dipolo RIS: Repair of Dipolo MC2 Siphon,True
+633,Region 9,Zamboanga Sibugay,Region 9,Zamboanga Sibugay,Sibuguey Valley IS: Construction of Canalization at Lateral 7,True
+637,Region 10,Lanao del Sur,Region 10,Lanao del Sur,Rugnan RIS: Construction of Lateral G-1 @ Sta. 0+000-1+200 and its Appurtenant Structures,True
+640,Region 10,Misamis Oriental,Region 10,Misamis Oriental,Balingasag RIS: Repair of Damaged Canal Lining along A 0-000-3+320,True
+644,Region 11,Davao del Norte,Region 11,Davao del Norte,"Lasang RIS: Embankment of Protection Dike along Lateral G, Establishment of Pump Irrigatio",True
+647,Region 11,Davao Oriental,Region 11,Davao Oriental,"Cateel IIS: Rehabilitation of approximately 1,000 linear meters of the Right Main Canal, i",True
+651,Region 12,Cotabato,Region 12,Cotabato,Maridagao RIS: 1. Concreting of Canal along lateral E 0+000 - 0+700 (UMSA at DALFIA) 2. De,True
+654,Region 12,Maguindanao,Region 12,Maguindanao,Alip RIS: Improvement of Intake,True
+656,Region 12,Maguindanao,Region 12,Maguindanao,Kabulnan RIS: Repair of 0.300-km Concrete Canal at Lateral RH-2 Sta. 5+086-5+386 and 1- un,True
+659,Region 12,Sultan Kudarat,Region 12,Sultan Kudarat,Lambayong: 1. Construction of 1 km Canal Lining at Pasamic (Sta. 4+691 - 5+691) 2. Supply ,True
+661,Region 12,Sultan Kudarat,Region 12,Sultan Kudarat,Lambayong RIS: 1. Construction of Check and weir and 4 km lined canal at New Sebu Area 2. ,False
+666,Region 2,Cagayan,Region 2,Cagayan,Baggao Irrigation System: Improvement of Pared Intake Structure and Gates,True
+668,Region 2,Cagayan,Region 2,Cagayan,Visitacion Irrigation System: Retrofitting of VIS Dam,True
+670,Region 2,Cagayan,Region 2,Cagayan,"Dummun River Irrigation System: Dam Retrofitting and Strengthening, Improvement of Intake ",True
+672,Region 2,Cagayan,Region 2,Cagayan,Zinundungan River Irrigation System: Improvement of Tulong Intake Structure and Gates,True
+674,Region 2,Cagayan,Region 2,Cagayan,East Apayao Abulug Irrigation System: Dam Retrofitting and Strengthening of Gattu Dam (Slu,True
+676,Region 2,Cagayan,Region 2,Cagayan,Iguig Alcala Amulung Pump Irrigation System: Improvement of Amulung Intake Pilot Channel,True
+679,Region 2,Isabela,Region 2,Isabela,"Pasa SRIS: Supply, Delivery and Installation of Intermediate Monitoring System and Constru",True
+681,Region 2,Isabela,Region 2,Isabela,"San Pablo-Cabagan IS: Supply, Delivery and Installation of Sluice Gates and Construction o",True
+683,Region 2,Isabela,Region 2,Isabela,"Dabubu River Irrigation System: Supply, Delivery and Installation of Telemetry and Automat",True
+685,Region 2,Isabela,Region 2,Isabela,"Mallig River Irrigation System: Supply, Delivery and Installation of Telemetry and Automat",True
+688,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,NVBIS: Improvement of Diversion Dam,True
+690,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,Colocol INIS: Improvement of Intake,True
+693,Region 2,Quirino,Region 2,Quirino,Addalam River Irrigation System (ADRIS): Establishment of SMS Telemetered Rainfall/River G,True
+699,Region 2,ISABELA,Region 2,ISABELA,Dicamay CIS: Rehabilitation of Dam and Construction of Slope Protection,True
+701,Region 2,ISABELA,Region 2,ISABELA,Masipi West CIS: Replacement of Trash Rack at Intake Sta. 0+000; Propose Steel Gate at Int,True
+703,Region 2,ISABELA,Region 2,ISABELA,Simanu CIS: Propose Steel Gate & Lifting Mechanism at Intake Sta. 0+000 Rehabilitation/Dre,True
+706,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,Upper Decabacan CIS: Improvement of Diversion Dam,True
+708,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,Dapat CIS: Improvement of Slope Protection at Diversion Dam,True
+711,Region 2,Quirino,Region 2,Quirino,San Francisco CIS: Retrofitting of Diversion Dam,True
+713,Region 2,Quirino,Region 2,Quirino,Lower Nagbitin CIS: Retrofitting of Diversion Dam,True
+718,Region 6,Aklan,Region 6,Aklan,San Jose CIS: Construction of Slope Protection at upstream Rigth Side Portion and Slope Pr,True
+722,Region 6,Antique,Region 6,Antique,Hamtic CIS: Retrofitting of Dam,True
+724,Region 6,Antique,Region 6,Antique,Lombuyan CIS: Retrofitting of Dam,True
+728,Region 6,ILOILO,Region 6,ILOILO,Sto. Rosario I CIS: Repair of Canal Structures,True
+732,Region 6,NEGROS OCCIDENTAL,Region 6,NEGROS OCCIDENTAL,"MBCIIS (Binalawan): Repair of Steelgates, dam mechanization and enclosure of dam mechaniza",True
+737,Cordillera Administrative Region,Abra,Cordillera Administrative Region,Abra,Manabo CIS: Concreting of Service Road,True
+740,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,Consuelo CIS: Concreting of Service Road,True
+743,Cordillera Administrative Region,Benguet,Cordillera Administrative Region,Benguet,Nakidol Creek-Poblacion CIS: Concreting of the 0.410 KM Service Road and Protection Struct,True
+746,Cordillera Administrative Region,Ifugao,Cordillera Administrative Region,Ifugao,Camandag CIS: Construction of Service Road,True
+749,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,Balong Norte CIS: Concreting of Service Road w/ protection works,True
+752,Cordillera Administrative Region,Mountain Province,Cordillera Administrative Region,Mountain Province,Dodoan CIS: Road Opening and Construction of PCCP,True
+757,Region 1,Ilocos Sur,Region 1,Ilocos Sur,Simabusa-Nagbayruangan CIS: Concreting of Access Road at Lateral B Sta. 0+200 - 0+300,True
+761,Region 2,ISABELA,Region 2,ISABELA,Casala Del Pilar CIS: Construction of Concrete Road at Sta. 1+720.00 - 2+000.00 along Casa,True
+763,Region 2,ISABELA,Region 2,ISABELA,Masipi East CIS: Construction of Concrete Road at Sta. 0+000 - 0+600 along Main Canal,True
+767,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,Matuno Sto. Domingo CIS: Construction of PCCP Service Road,True
+769,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,Benay Wangeon CIS: Construction of Concrete Road,False
+771,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,Bone CIS: Construction of Concrete Road,False
+775,Region 2,Quirino,Region 2,Quirino,Ditabuan SPIS: Construction of Concrete Road at (Station 0+000.00 - Station 0+550.00),True
+777,Region 2,Quirino,Region 2,Quirino,Lower Nagbitin CIS: Construction of Concrete Road (Station 0+000.00 - Station 0+400.00),True
+779,Region 2,Quirino,Region 2,Quirino,Maria Clara CIS: Construction of Concrete Road (Station 0+000.00 - Station 0+400.00),True
+781,Region 2,Quirino,Region 2,Quirino,Mangandingay CIS: Construction of Concrete Road (Station 0+000.00 - Station 0+400.00),True
+783,Region 2,Quirino,Region 2,Quirino,Gabriela Silang CIS: Construction of Concrete Road (Station 0+000.00 - Station 0+610.00),True
+787,Region 2,Quirino,Region 2,Quirino,Dumanisi CIS: Construction of Concrete Road (Station 0+000.00 - Station 0+170.00),True
+789,Region 2,Quirino,Region 2,Quirino,Lower Villahermosa CIS: Construction of Concrete Road (Station 0+000.00 - Station 0+550.00,True
+794,Region 3,AURORA,Region 3,AURORA,Disolon CIS: Construction of Service Road along Brgy. Ditinigyan (Sta. 0+000 - Sta. 0+300),True
+798,Region 3,BULACAN,Region 3,BULACAN,Sta. Catalina CIS: Road Concreting (Sta. 0+360 to 0+660),True
+800,Region 3,BULACAN,Region 3,BULACAN,Partida CIS: Road Concreting (Sta. 0+000 to 0+350),True
+802,Region 3,BULACAN,Region 3,BULACAN,Sibul CIS: Road Concreting (Sta. 0+698 to 1+048),True
+806,Region 3,NUEVA ECIJA,Region 3,NUEVA ECIJA,Sta. Lucia Old CIS: Construction of Service Road along Brgy. Sta. Lucia Old (Sta. 0+000 - ,True
+808,Region 3,NUEVA ECIJA,Region 3,NUEVA ECIJA,Cadaclan CIS: Construction of Service Road along Brgy. Cadaclan (Sta. 0+000 - Sta. 0+210),True
+810,Region 3,NUEVA ECIJA,Region 3,NUEVA ECIJA,Laur CIS: Construction of Service Road along Brgy. San Juan (Sta. 0+000 - Sta. 0+800),True
+812,Region 3,NUEVA ECIJA,Region 3,NUEVA ECIJA,Pulang Lupa SWIS: Construction of Service Road along Brgy. Rio Chico (Sta. 0+000 - Sta. 0+,True
+816,Region 3,PAMPANGA,Region 3,PAMPANGA,San Miguel PIS: Improvement of Service Road (Along Main Canal),True
+818,Region 3,PAMPANGA,Region 3,PAMPANGA,Caulaman CIS: Improvement of Service Road,True
+820,Region 3,PAMPANGA,Region 3,PAMPANGA,San Juan CIS: Improvement of Service Road,True
+824,Region 3,TARLAC,Region 3,TARLAC,Castillo CIS: Concreting of Service Road at Castillo CIS,True
+828,Region 3,ZAMBALES,Region 3,ZAMBALES,Nibangon CIS: Improvement of Service Road (Main Canal Sta. 0+000 - 1+240),True
+830,Region 3,ZAMBALES,Region 3,ZAMBALES,Tondo Alusiis CIS: Improvement of Service Road (Main Canal Sta. 0+000 - 0+857),True
+835,Region 4A,BATANGAS,Region 4A,BATANGAS,Santol CIS: Construction of Concrete Pavement,True
+840,Region 7,BOHOL,Region 7,BOHOL,Cagyo SIS: Repair and Improvements of Service Roads from Sta. 0+000 to Sta. 0+460 leading ,True
+844,Region 7,SIQUIJOR,Region 7,SIQUIJOR,Cang-atuyom CIS: Repair and Improvements of Service Roads from Sta. 0+000 to Sta. 0+156.00,True
+849,Region 11,Davao de Oro,Region 11,Davao de Oro,Cabidianan CIS: Concreting of Service Roads along Lateral B1 Sta. 0+000 to Sta. 0+400 to p,True
+851,Region 11,Davao de Oro,Region 11,Davao de Oro,Kidawa CIS: Concreting of Service Road at Main Canal of Tagmanok Dam from Sta. 0+351 to St,True
+855,Region 11,Davao del Norte,Region 11,Davao del Norte,Bunawan-Kipalili CIS: Road Concreting along Main Canal Sta. 0+000-0+155,True
+859,Region 11,Davao del Sur,Region 11,Davao del Sur,Lanuro CIS: Concreting of Service Road along main canal to provide easy access for the del,True
+861,Region 11,Davao del Sur,Region 11,Davao del Sur,Miral SRIS: Concreting of Service Road along LMC2-Road 1 at Sta. 0+000.00 - 0+500 to provi,True
+865,Region 11,Davao Oriental,Region 11,Davao Oriental,Manorigao 1 CIS: Concreting of .13 kilometers Service Road from Sta. 0+000.00 to Sta. 0+13,True
+870,Cordillera Administrative Region,Benguet,Cordillera Administrative Region,Benguet,Coog CIS: Repair of Diversion structure of Main Pipeline 01; Concreting of the Canal Linin,True
+872,Cordillera Administrative Region,Benguet,Cordillera Administrative Region,Benguet,Bedbed CIS: Repair of the Dilapidated Pipeline; Construction of Reservoir Tank,True
+875,Cordillera Administrative Region,Mountain Province,Cordillera Administrative Region,Mountain Province,Gayang CIS: Repair of Canal Structures and Installation of Pipeline,True
+877,Cordillera Administrative Region,Mountain Province,Cordillera Administrative Region,Mountain Province,Favarey CIS: Repair of Canal Lining and Canal Structures,True
+879,Cordillera Administrative Region,Mountain Province,Cordillera Administrative Region,Mountain Province,Natonin CIS: Repair of intake and Canal Lining with Canal Protection,True
+884,Region 1,Ilocos Norte,Region 1,Mountain Province,Estancia CIS: Construction of Sabo Dam,False
+886,Region 1,Ilocos Norte,Region 1,Mountain Province,Dupitac CIS: Construction of Sabo Dam,False
+891,Region 1,Ilocos Sur,Region 1,Ilocos Sur,Baybayabas CIS: Repair of Diversion Dam and Appurtenant Structures,True
+893,Region 1,Ilocos Sur,Region 1,Ilocos Sur,"Bucao CIS: Modification of Dam, Repair of Canal Lining w/ Cover @ Sta. 2+850 - 4+390.00, M",False
+895,Region 1,Ilocos Sur,Region 1,Ilocos Sur,Nagsabaran CIS: Repair of Downstream Apron,False
+897,Region 1,Ilocos Sur,Region 1,Ilocos Sur,"Dasay CIS: Construction of Canal Protection Works @ Sta. 0+100.00 - 0+140.00, MC and Canal",False
+899,Region 1,Ilocos Sur,Region 1,Ilocos Sur,"Bakes-Balbalayang CIS: Construction of Elevated Flume @ Sta. 0+833.00 - 0+938.60, MC",False
+903,Region 1,La Union,Region 1,La Union,"Bucao CIS: Repair of Canal Lining w/ Cover @ Sta. 2+850 - 2+990.00, MC",True
+907,Region 1,PANGASINAN,Region 1,PANGASINAN,Ngayaongaoan CIS: Repair of Canal Lining (Sta. 0+000 - 0+800),True
+909,Region 1,PANGASINAN,Region 1,PANGASINAN,Dolaoan CIS: Repair of Dam,False
+911,Region 1,PANGASINAN,Region 1,PANGASINAN,Banog Sur CIS: Repair of Impounding Dam,False
+913,Region 1,PANGASINAN,Region 1,PANGASINAN,Tipor CIS: Repair of Impounding Dam and Repair of Canal Lining (Sta. 0+000 - 0+750),False
+915,Region 1,PANGASINAN,Region 1,PANGASINAN,Sampaloc CIS: Repair of Dam and Construction of Canal Lining (Sta. 0+000 - 0+500),False
+917,Region 1,PANGASINAN,Region 1,PANGASINAN,Bugarin CIS: Repair of Dam,False
+919,Region 1,PANGASINAN,Region 1,PANGASINAN,Siwasiw CIS: Repair of Canal Lining (Sta. 0+000 - 1+200),False
+921,Region 1,PANGASINAN,Region 1,PANGASINAN,Masidem SRIP: Repair of Intake Gate and Canal Lining and Structures (Sta. 0+518 - 2+565),False
+923,Region 1,PANGASINAN,Region 1,PANGASINAN,Pau Tupa CIS: Construction of Canal Lining (Sta. 0+050 - 0+920),False
+925,Region 1,PANGASINAN,Region 1,PANGASINAN,Tanobong CIS: Modification of Dam and Canal Lining (Sta. 0+742 - 1+315),False
+930,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,Manamtam CIS: Improvement and Repair of Canal Lining & Canal Structures,True
+932,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,"Lamoy Ubbog CIS: Repair of Intake, Canal Lining (Sta. 0+000 - 1+370 MC) & Canal Structures",True
+934,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,"Concreting of Canal Lining at Brgy. Bugnay Daldalayap CIS, Diadi",False
+936,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,"Concreting of Canal Lining at Brgy. Poblacion Inalangan CIS, Diadi",False
+938,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,"Concreting of Canal Lining at Brgy. Duraarong CIS, Diadi",False
+940,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,"Concreting of Canal Lining at Brgy. Balete CIS, Diadi",False
+942,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,"Concreting of Canal Lining at Upper and Lower Decabacan CIS, Diadi",False
+946,Region 2,Quirino,Region 2,Quirino,Dabobo CIS: Repair of Canal Lining along Lateral A at Station 0+000 - 0+525.00; Repair of ,True
+948,Region 2,Quirino,Region 2,Quirino,Villarose CIS: Repair of Canal Lining along Main Canal at Station 0+000.00 - 0+300.00; Con,True
+953,Region 3,Bataan,Region 3,Bataan,Tanato CIS: Improvement of Canal System and Slope Protection Works (Main Canal Sta. 1+000 ,True
+955,Region 3,Bataan,Region 3,Bataan,Manimas CIS: Improvement of Canal System and Slope Protection Works (Lateral Canal Sta. 0+,True
+957,Region 3,Bataan,Region 3,Bataan,Duale-alangan: Improvement of Canal System (Main Canal Sta. 0+310 to Sta. 1+110),True
+959,Region 3,Bataan,Region 3,Bataan,Magsaysay CIS (Tabon ng Bayan): Construction of Canal Lining (Main Canal Sta. 0+310 to Sta,True
+961,Region 3,Bataan,Region 3,Bataan,Magsaysay CIS (Panikian Irrigation System): Improvement of Irrigation Facilities of Paniki,False
+963,Region 3,Bataan,Region 3,Bataan,Repair and Rehabilitation of Diversion Works and Slope Protection Works Upstream and Downs,False
+967,Region 3,Tarlac,Region 3,Tarlac,San Martin CIS: Construction of Slope Protection and Improvement of Intake Structure inclu,True
+970,Region 3,Pampanga,Region 3,Tarlac,Natividad CIS: Improvement of irrigation facilities,False
+973,Region 3,Bulacan,Region 3,Tarlac,Binagbag CIS: Repair of Slope Protection (Sta. 0+321 to 0+473.25),False
+978,Region 4A,Batangas,Region 4A,Batangas,Matala CIS: Construction / Repair of Irrigation Structures and Canal System,True
+980,Region 4A,Batangas,Region 4A,Batangas,San Ignacio CIS: Construction / Repair of Irrigation Structures and Canal System,True
+982,Region 4A,Batangas,Region 4A,Batangas,Quilo-Quilo CIS: Construction / Repair of Irrigation Structures and Canal System,True
+984,Region 4A,Batangas,Region 4A,Batangas,Namuco CIS: Construction / Repair of Irrigation Structures and Canal System,True
+986,Region 4A,Batangas,Region 4A,Batangas,Balimbing CIS: Construction / Repair of Irrigation Structures and Canal System,True
+988,Region 4A,Batangas,Region 4A,Batangas,Lobo CIS: Construction / Repair of Irrigation Structures and Canal System,True
+990,Region 4A,Batangas,Region 4A,Batangas,Malitlit CIS: Construction / Repair of Irrigation Structures and Canal System,True
+992,Region 4A,Batangas,Region 4A,Batangas,Apar CIS: Construction / Repair of Irrigation Structures and Canal System,True
+994,Region 4A,Batangas,Region 4A,Batangas,Jaybanga CIS: Construction / Repair of Irrigation Structures and Canal System,True
+996,Region 4A,Batangas,Region 4A,Batangas,Nagtaluntong CIS: Construction / Repair of Irrigation Structures and Canal System,True
+1000,Region 4A,Quezon,Region 4A,Quezon,Tinamnan CIS: Repair of Canal System,True
+1002,Region 4A,Quezon,Region 4A,Quezon,Kulapi CIS: Repair of Canal System,True
+1004,Region 4A,Quezon,Region 4A,Quezon,Ayuti CIS: Repair of Canal System,True
+1006,Region 4A,Quezon,Region 4A,Quezon,"Bislian Malaki CIS: Repair of Dam, Construction of Canal Lining and Provision of Pump",True
+1008,Region 4A,Quezon,Region 4A,Quezon,Angib CIS: Construction of Canal Lining and Repair of Dam,True
+1010,Region 4A,Quezon,Region 4A,Quezon,Kawayan - Alitap CIS: Construction of Canal Lining,True
+1015,Region 4B,Occidental Mindoro,Region 4B,Occidental Mindoro,Tanyag CIS: Construction of Canal Lining and Canal 0+000 to 0+030,True
+1019,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,Lapog CIS: Repair of Dam,True
+1023,Region 4B,Palawan,Region 4B,Palawan,"Tigman CIS: Construction of Elevated Flume, Canal Lining and Canal Structure at Sta. 2+100",True
+1027,Region 4B,Romblon,Region 4B,Romblon,Pili Sur CIS: Improvement of Concrete Canal Lining and Structures at Sta. 1+380 - 1+480,True
+1032,Region 5,Albay,Region 5,Albay,"Cabangan CIS: Repair/rehabilitation of Slope Protection at Upstream, Right side (Sta. 0+01",True
+1034,Region 5,Albay,Region 5,Albay,Basud Magurang (HRISIA) CIS: Repair/Rehabilitation of Right Main Canal (Sta. 0+514 - 1+323,True
+1036,Region 5,Albay,Region 5,Albay,Centro Occidental CIS: Repair/Rehabilitation of Dam (Sta. 0+000.00) and Canalization works,True
+1038,Region 5,Albay,Region 5,Albay,Buhay na Kudos CIS: Repair/Rehabilitation of Diversion Works (Falling Shutter Dam at Sta. ,True
+1040,Region 5,Albay,Region 5,Albay,Nagas-Maramba CIS: Repair/Rehabilitation of Canal Structures & Canalization Works at Main ,True
+1042,Region 5,Albay,Region 5,Albay,Lower Talisay CIS: Repair/Rehabilitation of Diversion Works and Slope Protection at downst,True
+1044,Region 5,Albay,Region 5,Albay,Padang CIS: Repair/Rehabilitation of Left Main Canal (Sta. 0+310.50 - 0+342) and Canalizat,False
+1046,Region 5,Albay,Region 5,Albay,"Buyo CIS: Repair/Rehabilitation of Diversion Works (Sta. 0+000), Slope Protection Works at",False
+1048,Region 5,Albay,Region 5,Albay,"Rapu Rapu CIS: Repair/Rehabilitation of Diversion Works (Sta. 0+000), Slope Protection at ",False
+1052,Region 5,Sorsogon,Region 5,Sorsogon,"Cawayan CIS-BGTP: Rehabilitation of Diversion, Repair of 300 meters Embankment Protection,",True
+1054,Region 5,Sorsogon,Region 5,Sorsogon,"Naagtan CIS: Repair/Rehabilitation of Canal lining at Sta 0+152.40 - 0+282.60 MC01, Sta 0+",False
+1056,Region 5,Sorsogon,Region 5,Sorsogon,"Bagacay CIS: Repair/Rehabilitation of Canal lining at Sta 0+235.00 - 0+264.90 Lat. B., Sta",False
+1058,Region 5,Sorsogon,Region 5,Sorsogon,Bon-Ot CIS: Repair/Rehabilitation of Canal Lining at Sta 0+481.90 - 0+795.00 of Main Canal,False
+1063,Region 6,Antique,Region 6,Antique,Eguirendon CIS: Repair of Damage Benchflume and Collapsed Closed Conduit,True
+1065,Region 6,Antique,Region 6,Antique,"Igbarawan CIS: Repair of Collapsed Benchflume, Exposed Column Footing @ Inlet",True
+1069,Region 6,ILOILO,Region 6,ILOILO,San Florentino CIS: Repair and Construction of Canal and Dam Structures,True
+1073,Region 6,Negros Occidental,Region 6,Negros Occidental,"Natuyay CIS: Typhoon Tino: Construction of Dam, Slope Protection, Tepair of Siphon and Con",True
+1078,Region 7,CEBU,Region 7,CEBU,"Lumpan CIS: Construction of 1 unit Sumptank, Solar Pumping System, 1 unit Intake, and Repa",True
+1082,Region 7,Negros Oriental,Region 7,Negros Oriental,Luan-luan CIS: Repair of Elevated Flume (Sta. 0+120 - 0+140),True
+1084,Region 7,Negros Oriental,Region 7,Negros Oriental,Kalumboyan CIS: Repair of Main Canal Cut and Cover (Sta. 0+060 - 0+180),True
+1086,Region 7,Negros Oriental,Region 7,Negros Oriental,Jimalalud CIS: Repair of Main Canal (Sta. 0+200 - 0+250),True
+1088,Region 7,Negros Oriental,Region 7,Negros Oriental,Calasgaan CIS: Repair of Intake,True
+1090,Region 7,Negros Oriental,Region 7,Negros Oriental,Cambaguio CIS: Replacement of Damage Pipes & Desilting of Dam,True
+1092,Region 7,Negros Oriental,Region 7,Negros Oriental,"Budlasan CIS: Repair of Right Main Canal (Sta. 1+250 - 1+380, Sta. 1+520 - 1+670, Sta. 1+8",True
+1094,Region 7,Negros Oriental,Region 7,Negros Oriental,Elicia CIS: Repair of Main Canal (Sta. 0+120 - 0+220),True
+1099,Region 8,SAMAR,Region 8,SAMAR,Naga CIS: Repair/Improvement and Construction of Additional Pipeline and Concrete Canal,True
+1103,Region 8,NORTHERN SAMAR,Region 8,NORTHERN SAMAR,Rosario CIS: Repair and Improvement of Existing Supplemental Dam and Construction of Damag,True
+1107,Region 8,BILIRAN,Region 8,BILIRAN,Biliran CIS: Repair/Improvement of Downstream Apron and Retaining Wall of Dam,True
+1109,Region 8,BILIRAN,Region 8,BILIRAN,Calambis-Mapula CIS: Repair/Improvement of Diversion works & canal system,False
+1114,Region 9,Zamboanga City,Region 9,Zamboanga City,San Isidro Bunguiao CIS: Proposed Construction and Repair of Canals and Canal Structures,True
+1118,Region 9,Zamboanga del Norte,Region 9,Zamboanga del Norte,Upper Bobongan CIS: Rehabilitation of Diversion Works,True
+1120,Region 9,Zamboanga del Norte,Region 9,Zamboanga del Norte,"LANAWAN SIP: Rehabilitation of Diversion Works, Canalization and Canal Structures",False
+1124,Region 9,Zamboanga del Sur,Region 9,Zamboanga del Sur,Limas CIS: Repair of Teruvian Intake,True
+1126,Region 9,Zamboanga del Sur,Region 9,Zamboanga del Sur,Dawa CIS: Repair of Pipeline at Main Canal 1 Sta. 4+305.98-4+703.41,True
+1128,Region 9,Zamboanga del Sur,Region 9,Zamboanga del Sur,Bag-ong Kahayag CIS: Repair of Canal Lining at Main Canal Sta. 0+000-0+120,True
+1132,Region 9,Zamboanga Sibugay,Region 9,Zamboanga Sibugay,Catituan CIS: Repair of Cut and Cover and Road Crossing at Main Canal Construction of Cana,True
+1137,Region 10,Camiguin,Region 10,Camiguin,"Kuguita Baylao Lumad CIS: Rehabilitation of Dam 0+000, Construction of Canal Lining and St",True
+1139,Region 10,Camiguin,Region 10,Camiguin,"Mahinog CIS: Repair of Dam Sta. 0+000, Desiltation and Provision of Steel Gates and Repair",True
+1141,Region 10,Camiguin,Region 10,Camiguin,Bugwak CIS: Repair of Diversion Dam at Sta. 0+000 and Repair of Canal Lining,True
+1143,Region 10,Camiguin,Region 10,Camiguin,Itom CIS: Repair of Dam and Construction of Canal Lining,True
+1146,Region 10,Misamis Oriental,Region 10,Camiguin,Bal-ason CIS: Construction of protection dike along Main Canal,False
+1148,Region 10,Misamis Oriental,Region 10,Camiguin,Bal-ason CIS: Construction of protection dike along Main Canal,False
+1150,Region 10,Misamis Oriental,Region 10,Camiguin,Altubo-guinotang CIS: Repair & Extension of Slope Protection (L/D),False
+1152,Region 10,Misamis Oriental,Region 10,Camiguin,Mat-I CIS: Repair & Extension of Slope Protection (L/D),False
+1154,Region 10,Misamis Oriental,Region 10,Camiguin,Sigbulan CIS: Construction of Canal Lining and Other Irrigation Structure,False
+1156,Region 10,Misamis Oriental,Region 10,Camiguin,Mat-i CIS: Construction of Bench Flume and Other Irrigation Structures,False
+1162,Region 11,Davao City,Region 11,Davao City,Titugop SIS: Construction of 20-meter Spur Dike at Upstream Portion of the Existing Divers,True
+1166,Region 11,Davao de Oro,Region 11,Davao de Oro,Nuevo Iloco CIS: Repair of Damaged Elevated Flume along Main Canal of Hijo Dam from Statio,True
+1170,Region 11,Davao del Norte,Region 11,Davao del Norte,Upper Tuganay CIS: Canal Heightening at Main Canal Sta. 0+000-0+170,True
+1174,Region 11,Davao del Sur,Region 11,Davao del Sur,Dakinus CIS: Repair/Rehabilitation of Existing Dilapidated Canal at Sta. 0+661.00 to Sta. ,True
+1178,Region 11,Davao Oriental,Region 11,Davao Oriental,Cabuyawan CIS: Rehabilitation of the Canal and Installation of a Concrete Canal Cover from,True
+1180,Region 11,Davao Oriental,Region 11,Davao Oriental,Baclinan CIS: Rehabilitation of approximately 100 linear meters of the Main Canal and Cons,True
+1185,Region 12,COTABATO,Region 12,COTABATO,Raradangan CIS: Construction of Canal Lining at Main Canal Sta. 0+340 - 0+420 and Lateral ,True
+1189,Region 12,MAGUINDANAO,Region 12,MAGUINDANAO,Dinganen CIS: Concreting 0.54-km Earth Canal at Supplemental Canal Station 0 + 643.48 - 1+,True
+1191,Region 12,MAGUINDANAO,Region 12,MAGUINDANAO,"Dinganen CIS: Repair of Stream Check at Delatina, concreting of 0.635 -km lined canal at M",False
+1195,Region 12,SOUTH COTABATO,Region 12,SOUTH COTABATO,"Lambusong CIS: Lateral A - Gardose area - 1,210 meters (remove and replace) & Continuation",True
+1199,Region 12,Sultan Kudarat,Region 12,Sultan Kudarat,Blingkong CIS: 3. Levelling of Canal Outlet to Palavilla CIS 4. Remove and replace of Late,True
+1204,Region 13,DINAGAT ISLANDS,Region 13,DINAGAT ISLANDS,Dona Helene CIS: Repair of Canal,True
+1206,Region 13,DINAGAT ISLANDS,Region 13,DINAGAT ISLANDS,Bolodbolod CIS: Repair of Canal Structure and Canal,True
+1208,Region 13,DINAGAT ISLANDS,Region 13,DINAGAT ISLANDS,Diaz CIS: Repair of Canal and Repair of Protection Works at Siphon,True
+1212,Region 13,SURIGAO DEL NORTE,Region 13,SURIGAO DEL NORTE,Kamalig CIS: Repair of Lateral Canal,True
+1214,Region 13,SURIGAO DEL NORTE,Region 13,SURIGAO DEL NORTE,Libertad CIS: Repair and Construction of Canal,True
+1217,Region 13,SURIGAO DEL SUR,Region 13,SURIGAO DEL NORTE,Sta. Felomina Cis: Completion of Diversion Dam,False
+1222,Cordillera Administrative Region,Benguet,Cordillera Administrative Region,Benguet,Barangay Nawal CIS: Replacement the old and deteriorated ordinary pipeline into HDPE pipe;,True
+1224,Cordillera Administrative Region,Benguet,Cordillera Administrative Region,Benguet,Elengan CIS: Installation of Pipeline and Construction of Tower and Anchor for the Suspend,True
+1227,Cordillera Administrative Region,Mountain Province,Cordillera Administrative Region,Mountain Province,Agcuyo CIS: Restoration of Canal Lining,True
+1229,Cordillera Administrative Region,Mountain Province,Cordillera Administrative Region,Mountain Province,Lichan Tumhar CIS: Restoration of Canal Lining,True
+1233,Region 1,Ilocos Sur,Region 1,Ilocos Sur,Lungog CIS: Repair of Diversion Dam and Appurtenant Structures,True
+1236,Region 1,La Union,Region 1,La Union,Bued #1 CIS: Construction of Canal Lining and Slope Protection Works @ Sta. 0+760.00 - 0+8,True
+1240,Region 1,PANGASINAN,Region 1,PANGASINAN,Estanza CIS: Repair of Canal Lining (Sta. 0+000 - 0+855),True
+1242,Region 1,PANGASINAN,Region 1,PANGASINAN,Cayungnan CIS: Repair of Dam and Construction of Canal Lining and Structures (Sta. 0+000 -,False
+1246,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,Allay Nangcalapan CIS: Construction of Diversion Dam (Sta. 0+000) and Canal Structures,True
+1248,Region 2,Nueva Vizcaya,Region 2,Nueva Vizcaya,Salvacion CIS: Improvement and Repair Canal Lining & Canal Structures,True
+1251,Region 2,Quirino,Region 2,Quirino,"South Balligui CIS: Improvement of HDPE Pipelines, and Construction of Protection Works al",True
+1253,Region 2,Quirino,Region 2,Quirino,"Sangbay 1 CIS: Improvement of Canal Lining along MC at Station 0+155.00 - 0+160.00, 0+518.",True
+1256,Region 2,Isabela,Region 2,Quirino,Gappal CPIS: Construction of 7.5 HP solar PV submersible pumping system (Phase 03),False
+1258,Region 2,Isabela,Region 2,Quirino,Gappal CPIS: Construction of 7.5 HP solar PV submersible pumping system (Phase 04),False
+1262,Region 3,BULACAN,Region 3,BULACAN,Sapang Dayap: Improvement of Canal System (0+000 to 0+100),True
+1265,Region 3,NUEVA ECIJA,Region 3,NUEVA ECIJA,"Cordero CIS: Improvement of Diversion, and Protection Works",True
+1268,Region 3,PAMPANGA,Region 3,PAMPANGA,Pasama CIS: Improvement Canal System,True
+1271,Region 3,ZAMBALES,Region 3,ZAMBALES,Lower Prenza CIS: Improvement of Canal System of Lower Prenza CIS Sta. (0+000 - 0+300),True
+1275,Region 4A,LAGUNA,Region 4A,LAGUNA,Cavinti CIS: Rehabilitation of Existing Check Structure and Construction of Concrete Canal,True
+1277,Region 4A,LAGUNA,Region 4A,LAGUNA,Sumucab CIS: Construction of Concrete Canal Lining,True
+1279,Region 4A,LAGUNA,Region 4A,LAGUNA,Sta. Isabel CIS: Rehabilitation of Existing Check Structure and Construction of Concrete C,True
+1282,Region 4A,RIZAL,Region 4A,RIZAL,Salang Matanda CIS: Construction of Concrete Canal Lining,True
+1286,Region 4B,Occidental Mindoro,Region 4B,Occidental Mindoro,Baluguhan CIS: Re-installation of HDPE Pipe at Sta. 0+000 to Sta. 0+000 2+000 to Lateral A,True
+1289,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,Tagumpay CIS: Construction of Canal Lining and its Appurtenant Structures (Sta. 3+603.93 -,True
+1292,Region 4B,Palawan,Region 4B,Palawan,"Sandoval CIS: Construction of Canal Lining and Elevated Flume at Sta. 1+244.00- 1+280.00, ",True
+1296,Region 5,ALBAY,Region 5,ALBAY,SS MISAN CIS: Restoration of Diversion Works at Dam #1 (Sta. 0+000),True
+1298,Region 5,ALBAY,Region 5,ALBAY,Cotmon CIS: Restoration of Main Canal (Sta. 0+310.10 - 0+610.00),True
+1300,Region 5,ALBAY,Region 5,ALBAY,Cotmon CIS: Restoration of Damaged Main Canal (Sta. 0+610.00–0+910.00),False
+1303,Region 5,Catanduanes,Region 5,Catanduanes,Baniaga CIS: Restoration of Steel Pipe Siphon at Main Canal Sta. 0+815.00 - 0+827.00,True
+1306,Region 5,Masbate,Region 5,Masbate,JAMORAWON CIS: Restoration of Canal at Lateral A Sta. 0+415-0+615,True
+1308,Region 5,Masbate,Region 5,Masbate,"BURACAN CIS: Restoration of Irrigation Facilities, Concrete Canal Lining of Earth Canal at",True
+1312,Region 5,Sorsogon,Region 5,Sorsogon,"PANDAN SWIS: Restoration of Canal Structures along Sta 2+939.00 - 2+977.50 of MC, Sta. 3+7",True
+1314,Region 5,Sorsogon,Region 5,Sorsogon,"PAWIC CIS: Restoration of Canal Lining at 0+713.50 - 0+723.00 of Lateral A, and Sta 1+121.",True
+1317,Region 5,Camarines Sur,Region 5,Sorsogon,San Vicente Balingbing CIS: Restoration of Lead Canal damaged by Typhoon Kristine (Pipelin,False
+1321,Region 6,Antique,Region 6,Antique,"Bacalan -Alegre CIS: Restoration of Damaged Benchflume, Submerged Intake & wasteway, Silte",True
+1324,Region 6,ILOILO,Region 6,ILOILO,Langca CIS: Restoration of Diversion Dam and Installation of PVC Pipe,True
+1327,Region 6,Negros Occidental,Region 6,Negros Occidental,"Sipalay CIS: Replacement of Main Canal Siphon, Construction of Bench Flume and Canal Struc",True
+1331,Region 7,CEBU,Region 7,CEBU,"Basak CIS: Repair of Pipelines, Solar Pumping System",True
+1333,Region 7,CEBU,Region 7,CEBU,"Tindog CIS: Development of a New Source, Pipeline Repair (500m), Solar Pumping System, New",True
+1336,Region 7,SIQUIJOR,Region 7,SIQUIJOR,Gabayan CIS: Improvement / Installation of Pipeline (Main Pipe from Reservoir #1 to Reserv,True
+1341,Region 8,NORTHERN SAMAR,Region 8,NORTHERN SAMAR,Palanit CIS: Repair and Improvement of Canals and Structures,True
+1343,Region 8,NORTHERN SAMAR,Region 8,NORTHERN SAMAR,Capul CIS: Repair and Improvement of Canals and Structures,True
+1347,Region 8,SAMAR,Region 8,SAMAR,Basiao CIS: Contruction of Canal Lining and its Irrigation Structures,True
+1351,Region 8,SOUTHERN LEYTE,Region 8,SOUTHERN LEYTE,Malibago-Esperanza CIS: Repair/Improvement of Diversion Works,True
+1356,Region 9,Zamboanga City,Region 9,Zamboanga City,Davuy CIS: Proposed Construction and Repair of Canals and Canal Structures,True
+1360,Region 9,Zamboanga del Norte,Region 9,Zamboanga del Norte,San Pedro Gutayan CIS: Restoration and Construction of Canalization (2 + 734.91 - 4 + 000),True
+1364,Region 9,Zamboanga del Sur,Region 9,Zamboanga del Sur,Dagohoy CIS Extension: Repair of Damage Canal Lining,True
+1366,Region 9,Zamboanga del Sur,Region 9,Zamboanga del Sur,Baking CIS: Repair of Canal Lining,True
+1370,Region 9,Zamboanga Sibugay,Region 9,Zamboanga Sibugay,Guilawa CIS: Installation of Steel Gates at Diversion Dam and Repair of Main Canal,True
+1372,Region 9,Zamboanga Sibugay,Region 9,Zamboanga Sibugay,La Dicha CIS: Construction of Canalization and Canal Structures at Lateral B (Sta. 0+000-0,True
+1377,Region 10,MISAMIS ORIENTAL,Region 10,MISAMIS ORIENTAL,Kidampas-Ampianga CIS: Construction of Damage Elevated Flume with Protection Structure Dam,True
+1382,Region 11,Davao de Oro,Region 11,Davao de Oro,Kidawa CIS: Repair of Damaged 200m Lined Canal along Main Canal of Tagmanok Dam and Repair,True
+1386,Region 11,Davao Oriental,Region 11,Davao Oriental,"Buguis CIS: Rehabilitation of approximately 1,000 linear meters of Canal, Rehabilitation o",True
+1388,Region 11,Davao Oriental,Region 11,Davao Oriental,Cabasagan CIS: Rehabilitation of approximately 70 linear meters of Canal and Construction ,True
+1393,Region 12,SOUTH COTABATO,Region 12,SOUTH COTABATO,"Lamkot CIS: Continuation of Canal Lining of Right Main Canal, 130 meters Canal Cover of Ri",True
+1397,Region 12,Sultan Kudarat,Region 12,Sultan Kudarat,Busok CIS: 1. Repair of Main Canal Sta. 0+000 - Sta. 0+241,True
+1402,Region 13,SURIGAO DEL NORTE,Region 13,SURIGAO DEL NORTE,Magallanes CIS: Repair of Canal Structures,True
+1406,Region 13,SURIGAO DEL SUR,Region 13,SURIGAO DEL SUR,Bayoyo-ay CIS: Repair of Canal Lining (Modification of Damaged Trapezoidal Canal to Rectan,True
+1408,Region 13,SURIGAO DEL SUR,Region 13,SURIGAO DEL SUR,Tagbina CIS: Repair of Closed Conduit Sta. 4+328 - 4+480,True
+1414,Region 1,Ilocos Norte,Region 1,Ilocos Norte,BONGA PUMP IRRIGATION SYSTEM: Repair/Rehabilitation/Replacement of Existing Pump and Motor,True
+1418,Region 2,Cagayan,Region 2,Cagayan,SOLANA PUMP IRRIGATION SYSTEM: Repair/Rehabilitation/Replacement of Existing Pump and Moto,True
+1420,Region 2,Cagayan,Region 2,Cagayan,IGUIG-AMULUNG PUMPING IRRIGATION SYSTEM: Repair/Rehabilitation/ Replacement of Existing Pu,True
+1422,Region 2,Cagayan,Region 2,Cagayan,NASSIPING PUMP IRRIGATION SYSTEM: Repair/Rehabilitation/Replacement of Existing Pump and M,True
+1426,MARIIS,Isabela,MARIIS,Isabela,MARIIS PUMPING STATION NO. 1: Repair/Rehabilitation/Replacement of Existing Pump and Motor,True
+1430,Region 3,Pampanga,Region 3,Pampanga,GATIAWIN PUMP IRRIGATION SYSTEM: Repair/Rehabilitation/Replacement of Existing Pump and Mo,True
+1433,Region 3,Bulacan,Region 3,Bulacan,ANGAT-BUSTOS-PANDI (ANBUSPA) PUMP IRRIGATION SYSTEM: Repair/Rehabilitation/Replacement of ,True
+1437,Region 4A,Laguna,Region 4A,Laguna,DAMBO PUMP IRRIGATION SYSTEM: Repair/Rehabilitation/Replacement of Existing Pump and Motor,True
+1442,Region 4B,Occidental Mindoro,Region 4B,Occidental Mindoro,TANGKALAN CPIS: Repair/Rehabilitation/Replacement of Existing Pump and Motors and Upgradin,True
+1446,Region 5,Camarines Sur,Region 5,Camarines Sur,LIBMANAN PUMP IRRIGATION SYSTEM: Repair/Rehabilitation/Replacement of Existing Pump and Mo,True
+1450,Region 7,Cebu,Region 5,Camarines Sur,"Lungkuyab CIS: Pipeline Repair (1500m), Improvement of Solar Pumping System with Battery",False
+1452,Region 7,Cebu,Region 5,Camarines Sur,"Sinsin CIS: Repair of Pipelines (600m), Improvement of Solar Pumping System with Battery",False
+1456,Region 13,Agusan del Norte,Region 13,Agusan del Norte,AUPAGAN PUMPING STATION: Repair/Rehabilitation/Replacement of Existing Pump and Motors and,True
+1458,Region 13,Agusan del Norte,Region 13,Agusan del Norte,BIT-OS PUMPING STATION: Repair/Rehabilitation/Replacement of Existing Pump and Motors and ,True
+1461,Region 13,Agusan del Sur,Region 13,Agusan del Sur,STA. JOSEFA PUMP IRRIGATION SYSTEM: Repair/Rehabilitation/Replacement of Existing Pump and,True
+1468,Cordillera Administrative Region,Ifugao,Cordillera Administrative Region,Ifugao,Dilan Neighborhood SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Mo,True
+1470,Cordillera Administrative Region,Ifugao,Cordillera Administrative Region,Ifugao,Purok 2 Salamague SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Mon,True
+1472,Cordillera Administrative Region,Ifugao,Cordillera Administrative Region,Ifugao,Aurelia SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sy,True
+1474,Cordillera Administrative Region,Ifugao,Cordillera Administrative Region,Ifugao,Olilicon SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1476,Cordillera Administrative Region,Ifugao,Cordillera Administrative Region,Ifugao,Compra SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sys,True
+1478,Cordillera Administrative Region,Ifugao,Cordillera Administrative Region,Ifugao,Matobato SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1480,Cordillera Administrative Region,Ifugao,Cordillera Administrative Region,Ifugao,Caba SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syste,True
+1483,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,Santa Maria-Cabaggaoan SPIP: Establishment of Solar-Powered Pump Irrigation Project with A,True
+1485,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,Emilia SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sys,True
+1487,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,San Mariano SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+1489,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,San Jose SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1491,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,Talifugo CIS SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1493,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,Allig SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,True
+1495,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,Cuba SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syste,True
+1497,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,Sitio Culilimtao SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Moni,True
+1499,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,San Isidro Norte SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Moni,True
+1501,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,Rang-ay Ti Panay SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Moni,True
+1503,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,Patayan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sy,True
+1505,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,Salvacion Maclit CIS SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI ,True
+1507,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,Sitio Panawagan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monit,True
+1509,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,Guinaang CIS SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1511,Cordillera Administrative Region,Apayao,Cordillera Administrative Region,Apayao,Ripang CIS SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring,True
+1514,Cordillera Administrative Region,Isabela,Cordillera Administrative Region,Isabela,Mangga Farmers SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monito,True
+1516,Cordillera Administrative Region,Isabela,Cordillera Administrative Region,Isabela,San Juan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1518,Cordillera Administrative Region,Isabela,Cordillera Administrative Region,Isabela,Curiwet Banaba SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monito,True
+1520,Cordillera Administrative Region,Isabela,Cordillera Administrative Region,Isabela,Maleq Farmers SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitor,True
+1522,Cordillera Administrative Region,Isabela,Cordillera Administrative Region,Isabela,Maleq Farmers SPIP 2: Establishment of Solar-Powered Pump Irrigation Project with AI Monit,True
+1524,Cordillera Administrative Region,Isabela,Cordillera Administrative Region,Isabela,Magat RIS: Construction of 4-units 10hp Solar Powered Submersible Pumps at Cauayan City,False
+1527,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,Green Valley SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1529,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,Kapayapaan Liwan West SPIP: : Establishment of Solar-Powered Pump Irrigation Project with ,True
+1531,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,Liwan West SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring,True
+1533,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,United Calaocan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monit,True
+1535,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,Alibangbang Liwan West: Establishment of Solar-Powered Pump Irrigation Project with AI Mon,True
+1537,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,Lacnog SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sys,True
+1539,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,MBF SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring System,True
+1541,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,Malagnat Pinukpuk SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Mon,True
+1543,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,Pinococ SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sy,True
+1545,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,Dugpa SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,True
+1547,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,Cagwayan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1549,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,Bawac SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,True
+1551,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,Kilong Tubod SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1553,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,Lay-asan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1555,Cordillera Administrative Region,Kalinga,Cordillera Administrative Region,Kalinga,Pangol SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sys,True
+1559,Region 1,Ilocos Norte,Region 1,Ilocos Norte,Buduan PCIS SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+1561,Region 1,Ilocos Norte,Region 1,Ilocos Norte,Pulangi SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sy,True
+1563,Region 1,Ilocos Norte,Region 1,Ilocos Norte,Sta. Elena SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring,True
+1565,Region 1,Ilocos Norte,Region 1,Ilocos Norte,Cabatuan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1567,Region 1,Ilocos Norte,Region 1,Ilocos Norte,Ingunglo SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1569,Region 1,Ilocos Norte,Region 1,Ilocos Norte,Sangil SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sys,True
+1571,Region 1,Ilocos Norte,Region 1,Ilocos Norte,Tanap Avis Terruv SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Mon,True
+1573,Region 1,Ilocos Norte,Region 1,Ilocos Norte,Carusipan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+1576,Region 1,Ilocos Sur,Region 1,Ilocos Sur,Narvacan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1578,Region 1,Ilocos Sur,Region 1,Ilocos Sur,Balaweg-Mapisi CIS SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Mo,True
+1580,Region 1,Ilocos Sur,Region 1,Ilocos Sur,Sumayaat CIS SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1583,Region 1,Pangasinan,Region 1,Pangasinan,Maniana SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sy,True
+1585,Region 1,Pangasinan,Region 1,Pangasinan,Canit SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,True
+1587,Region 1,Pangasinan,Region 1,Pangasinan,Resereccion SPIP: Procurement/Installation of 1-unit Solar-Powered Pump/Solar Power Driven,False
+1589,Region 1,Pangasinan,Region 1,Pangasinan,Bracbac SPIP: Procurement/Installation of 1-unit Solar-Powered Pump/Solar Power Driven Pum,False
+1591,Region 1,Pangasinan,Region 1,Pangasinan,Tayug SPIP: Procurement/Installation of 1-unit Solar-Powered Pump/Solar Power Driven Pump,False
+1593,Region 1,Pangasinan,Region 1,Pangasinan,Natividad SPIP: Procurement/Installation of 1-unit Solar-Powered Pump/Solar Power Driven P,False
+1595,Region 1,Pangasinan,Region 1,Pangasinan,Rosales SPIP: Procurement/Installation of 1-unit Solar-Powered Pump/Solar Power Driven Pum,False
+1597,Region 1,Pangasinan,Region 1,Pangasinan,San Nicolas SPIP: Procurement/Installation of 1-unit Solar-Powered Pump/Solar Power Driven,False
+1599,Region 1,Pangasinan,Region 1,Pangasinan,Santa Maria SPIP: Procurement/Installation of 1-unit Solar-Powered Pump/Solar Power Driven,False
+1601,Region 1,Pangasinan,Region 1,Pangasinan,San Quintin SPIP: Procurement/Installation of 1-unit Solar-Powered Pump/Solar Power Driven,False
+1603,Region 1,Pangasinan,Region 1,Pangasinan,Asingan SPIP: Procurement/Installation of 1-unit Solar-Powered Pump/Solar Power Driven Pum,False
+1605,Region 1,Pangasinan,Region 1,Pangasinan,Balungao SPIP: Procurement/Installation of 1-unit Solar-Powered Pump/Solar Power Driven Pu,False
+1608,Region 1,La Union,Region 1,Pangasinan,Zaragosa SPIP: Construction of 3-units Solar-Powered Pump with AI Satellite-Assisted Monit,False
+1610,Region 1,La Union,Region 1,Pangasinan,Bulala SPIP: Construction of 2-units Solar-Powered Pump with AI Satellite-Assisted Monitor,False
+1614,Region 2,Cagayan,Region 2,Cagayan,Capissayan Sur SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monito,True
+1616,Region 2,Cagayan,Region 2,Cagayan,"Mamil Pump Irrigation Project, Cagayan",True
+1618,Region 2,Cagayan,Region 2,Cagayan,"Catugan Pump Irrigation Project, Cagayan",True
+1622,Region 2,Isabela,Region 2,Isabela,Naganacan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+1624,Region 2,Isabela,Region 2,Isabela,Maui SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syste,True
+1626,Region 2,Isabela,Region 2,Isabela,Sunrise Farmers SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monit,True
+1628,Region 2,Isabela,Region 2,Isabela,Aneg SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syste,True
+1630,Region 2,Isabela,Region 2,Isabela,Calinigan Sur SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitor,True
+1632,Region 2,Isabela,Region 2,Isabela,Carmencita SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring,True
+1634,Region 2,Isabela,Region 2,Isabela,Manaring SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1636,Region 2,Isabela,Region 2,Isabela,Casalatan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+1638,Region 2,Isabela,Region 2,Isabela,Manaog SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sys,True
+1640,Region 2,Isabela,Region 2,Isabela,Rang Ayan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+1642,Region 2,Isabela,Region 2,Isabela,San Juan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1644,Region 2,Isabela,Region 2,Isabela,Santo Rosario SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitor,True
+1646,Region 2,Isabela,Region 2,Isabela,Villa Pereda SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1648,Region 2,Isabela,Region 2,Isabela,Bubug SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,True
+1650,Region 2,Isabela,Region 2,Isabela,Gapal SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,True
+1652,Region 2,Isabela,Region 2,Isabela,Rizal SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,True
+1654,Region 2,Isabela,Region 2,Isabela,Antagan 1st SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+1656,Region 2,Isabela,Region 2,Isabela,"San Juan, Ilagan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Moni",True
+1658,Region 2,Isabela,Region 2,Isabela,San Antonio SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+1660,Region 2,Isabela,Region 2,Isabela,Bantug Lungkot SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monito,True
+1662,Region 2,Isabela,Region 2,Isabela,Concepcion SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring,True
+1664,Region 2,Isabela,Region 2,Isabela,San Ramon SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+1666,Region 2,Isabela,Region 2,Isabela,SANMANVILFER SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1668,Region 2,Isabela,Region 2,Isabela,Lapogan CPIS: Conversion to Solar-Powered with AI Monitoring System,True
+1670,Region 2,Isabela,Region 2,Isabela,Alibad CPIP: Conversion to Solar-Powered with AI Monitoring System,True
+1672,Region 2,Isabela,Region 2,Isabela,Dibuluan RIP: Solar pumping irrigation project and rehabilitation of irrigation facilities,False
+1674,Region 2,Isabela,Region 2,Isabela,"Cagayan-River Jones Clustered PIP: construction of pump house, pump sump, irrigation facil",False
+1676,Region 2,Isabela,Region 2,Isabela,"Santa Maria Pump Irrigation Project, Isabela",True
+1679,Region 2,Quirino,Region 2,Quirino,Ditabuan Balete SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monit,True
+1681,Region 2,Quirino,Region 2,Quirino,Carndenas SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+1683,Region 2,Quirino,Region 2,Quirino,Villa Santiago SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monito,True
+1685,Region 2,Quirino,Region 2,Quirino,Villa Santiago SPIP 2: Establishment of Solar-Powered Pump Irrigation Project with AI Moni,True
+1689,MARIIS,Isabela,MARIIS,Isabela,BRD Irrigators SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monito,True
+1691,MARIIS,Isabela,MARIIS,Isabela,Sta. Luciana SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1693,MARIIS,Isabela,MARIIS,Isabela,San Isidro SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring,True
+1695,MARIIS,Isabela,MARIIS,Isabela,CEE Lower Council SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Mon,True
+1697,MARIIS,Isabela,MARIIS,Isabela,CPPL PILOT SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring,True
+1699,MARIIS,Isabela,MARIIS,Isabela,Dadap San Carlos SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Moni,True
+1701,MARIIS,Isabela,MARIIS,Isabela,DPT IA SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sys,True
+1703,MARIIS,Isabela,MARIIS,Isabela,Faustino SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1705,MARIIS,Isabela,MARIIS,Isabela,Gaddasan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1707,MARIIS,Isabela,MARIIS,Isabela,Golden Grain SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1709,MARIIS,Isabela,MARIIS,Isabela,Golden Hope SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+1711,MARIIS,Isabela,MARIIS,Isabela,Golden Fields SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitor,True
+1713,MARIIS,Isabela,MARIIS,Isabela,Luzon SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,True
+1715,MARIIS,Isabela,MARIIS,Isabela,M2N2 Liwanag SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1717,MARIIS,Isabela,MARIIS,Isabela,Macanao Pilot SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitor,True
+1719,MARIIS,Isabela,MARIIS,Isabela,Nagsil Pilot SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1721,MARIIS,Isabela,MARIIS,Isabela,Ramon Ragsak SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1723,MARIIS,Isabela,MARIIS,Isabela,Reina Salvacion SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monit,True
+1725,MARIIS,Isabela,MARIIS,Isabela,Salucag SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sy,True
+1727,MARIIS,Isabela,MARIIS,Isabela,San Francisco Pilot SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI M,True
+1729,MARIIS,Isabela,MARIIS,Isabela,Timek-Ti Mannalon SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Mon,True
+1731,MARIIS,Isabela,MARIIS,Isabela,Viga Region SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+1733,MARIIS,Isabela,MARIIS,Isabela,Licaray PIS: Conversion to Solar-Powered with AI Monitoring System,True
+1735,MARIIS,Isabela,MARIIS,Isabela,Quitbayag PIS: Conversion to Solar-Powered with AI Monitoring System,True
+1737,MARIIS,Isabela,MARIIS,Isabela,Patanad PIS: Conversion to Solar-Powered with AI Monitoring System,True
+1739,MARIIS,Isabela,MARIIS,Isabela,Ingud Norte PIS: Conversion to Solar-Powered with AI Monitoring System,True
+1741,MARIIS,Isabela,MARIIS,Isabela,RM5: Conversion to Solar-Powered with AI Monitoring System,True
+1743,MARIIS,Isabela,MARIIS,Isabela,Magat RIS: Water-use Optimization and Restoration Initiative along the Ganano River thru C,False
+1746,MARIIS,Quirino,MARIIS,Quirino,Dumatata PIS: Conversion to Solar-Powered with AI Monitoring System,True
+1750,Region 3,Aurora,Region 3,Aurora,Ibuna Planters SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monito,True
+1752,Region 3,Aurora,Region 3,Aurora,Mandiweng SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+1755,Region 3,Bulacan,Region 3,Bulacan,MMMB SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syste,True
+1757,Region 3,Bulacan,Region 3,Bulacan,Edilita Garcia Maronquillo SPIP: Establishment of Solar-Powered Pump Irrigation Project wi,True
+1759,Region 3,Bulacan,Region 3,Bulacan,Kaypian SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sy,True
+1761,Region 3,Bulacan,Region 3,Bulacan,Cabago SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sys,True
+1763,Region 3,Bulacan,Region 3,Bulacan,Bunay SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,True
+1765,Region 3,Bulacan,Region 3,Bulacan,Maligaya SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1767,Region 3,Bulacan,Region 3,Bulacan,Abo-Baras SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+1769,Region 3,Bulacan,Region 3,Bulacan,Abo-Ibayo SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+1772,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Macarse SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sy,True
+1774,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Bakod Bayan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+1776,Region 3,Nueva Ecija,Region 3,Nueva Ecija,San Joseph PIS: Conversion to Solar-Powered with AI Monitoring System,True
+1778,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Rio Chico SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+1780,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Bonifacio SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+1782,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Paitan Sur SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring,True
+1784,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Colosboa SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1786,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Macarse PIS (STW): Conversion to Solar-Powered with AI Monitoring System,True
+1788,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Simimbaan SWIS: Conversion to Solar-Powered with AI Monitoring System,True
+1790,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Bibiclat CIS SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1792,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Sabit PIP: Conversion to Solar-Powered with AI Monitoring System,True
+1794,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Salagusog PIP: Conversion to Solar-Powered with AI Monitoring System,True
+1796,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Sitio Saranay PIP: Conversion to Solar-Powered with AI Monitoring System,True
+1798,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Laur PIP: Conversion to Solar-Powered with AI Monitoring System,True
+1800,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Macarse CIS SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+1802,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Sitio Alurma SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1804,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Bakod Bayan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+1806,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Gapumaca CIS: Construction of Two (2) Units 10hp Drilled Solar-Powered Pump System,False
+1808,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Calancuasan PIS: Construction of Two (2) Units 10hp Drilled Solar-Powered Pump System,False
+1810,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Bonifacio SPIP: Construction of Two (2) Units 15hp Drilled Solar-Powered Pump System,False
+1812,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Paitan Sur SPIP: Construction of Two (2) Units 15hp Drilled Solar-Powered Pump System,False
+1814,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Colosboa SPIP: Construction of Two (2) Units 15hp Drilled Solar-Powered Pump System,False
+1816,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Macarse PIS (STW): Construction of One (1) Unit 10hp Water Surface Solar-Powered Pump Syst,False
+1818,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Simimbaan SWIS: Construction of One (1) Unit 15hp Drilled Solar-Powered Pump System,False
+1820,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Bibiclat CIS: Modification of Aliaga Solar-Powered Pump System and Improvement of Canal Sy,False
+1822,Region 3,Nueva Ecija,Region 3,Nueva Ecija,Salagusog PIP: Construction of Pump Irrigation System,False
+1825,Region 3,Pampanga,Region 3,Pampanga,Sinipit Malaki SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monito,True
+1827,Region 3,Pampanga,Region 3,Pampanga,Balanayaw-Calusa-Caballada SPIP : Establishment of Solar-Powered Pump Irrigation Project w,True
+1829,Region 3,Pampanga,Region 3,Pampanga,Cansinala SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+1832,Region 3,Tarlac,Region 3,Tarlac,Lab CIS SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sy,True
+1834,Region 3,Tarlac,Region 3,Tarlac,TASMORIS RIS SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1836,Region 3,Tarlac,Region 3,Tarlac,TARLAC GROUND WATER (PURA): Conversion to Solar-Powered with AI Monitoring System,True
+1838,Region 3,Tarlac,Region 3,Tarlac,TARLAC GROUND WATER (CONCEPCION): Conversion to Solar-Powered with AI Monitoring System,True
+1840,Region 3,Tarlac,Region 3,Tarlac,TARLAC GROUND WATER (VICTORIA): Conversion to Solar-Powered with AI Monitoring System,True
+1842,Region 3,Tarlac,Region 3,Tarlac,TARLAC GROUND WATER (PANIQUI): Conversion to Solar-Powered with AI Monitoring System,True
+1844,Region 3,Tarlac,Region 3,Tarlac,TARLAC GROUND WATER (LA PAZ): Conversion to Solar-Powered with AI Monitoring System,True
+1846,Region 3,Tarlac,Region 3,Tarlac,TARLAC GROUND WATER (MONCADA): Conversion to Solar-Powered with AI Monitoring System,True
+1848,Region 3,Tarlac,Region 3,Tarlac,TARLAC GROUND WATER (RAMOS): Conversion to Solar-Powered with AI Monitoring System,True
+1850,Region 3,Tarlac,Region 3,Tarlac,TARLAC GROUND WATER (ANAO): Conversion to Solar-Powered with AI Monitoring System,True
+1853,Region 3,Zambales,Region 3,Zambales,Balaybay SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1855,Region 3,Zambales,Region 3,Zambales,Guring-Guro SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+1859,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syste,True
+1861,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS SPIP II: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sy,True
+1863,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PBRIS EXTN SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring,True
+1865,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PBRIS EXTN SPIP II: Establishment of Solar-Powered Pump Irrigation Project with AI Monitor,True
+1867,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,Bigkis Patubigan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Moni,True
+1869,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,Buga Sapang SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+1871,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,Kadaluyan-Pag-Asa SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Mon,True
+1873,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,Hacienda Kab SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1875,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,Sanitab SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sy,True
+1877,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,Garlang Anyatam SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monit,True
+1879,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,Galas Malayantoc SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Moni,True
+1881,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,Bantog SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sys,True
+1883,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PBRIS EXTN SPIP III: Establishment of Solar-Powered Pump Irrigation Project with AI Monito,True
+1885,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PBRIS EXTN SPIP IV: Establishment of Solar-Powered Pump Irrigation Project with AI Monitor,True
+1887,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PBRIS EXTN SPIP V: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1889,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS SDC SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1891,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS SDC SPIP II: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+1893,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS SDC SPIP III: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+1895,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,VCIS/LTRIS: Construction of Solar-Powered Pump and Appurtenant Structures,False
+1897,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,MCIS: Construction of Solar-Powered Pump and Appurtenant Structures,False
+1899,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC PHS: Construction of Solar Power Pump,False
+1901,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,MCIS: Construction of Solar-Powered Pump with AI Satellite-Assisted Monitoring System at B,False
+1903,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,MCIS: Construction of Solar-Powered Pump with AI Satellite-Assisted Monitoring System at B,False
+1905,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,VCIS: Construction of Solar-Powered Pump with AI Satellite-Assisted Monitoring System at B,False
+1907,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,VCIS: Construction of Solar-Powered Pump with AI Satellite-Assisted Monitoring System at B,False
+1909,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,VCIS: Construction of Solar-Powered Pump with AI Satellite-Assisted Monitoring System at B,False
+1911,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS: Construction of Solar-Powered Pump with AI Satellite-Assisted Monitoring System at B,False
+1913,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS: Construction of Solar-Powered Pump with AI Satellite-Assisted Monitoring System at B,False
+1915,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PBRIS EXTN: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,False
+1917,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PBRIS EXTN: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,False
+1919,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,ALIAGA IS: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syste,False
+1921,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC: Construction of Solar-Powered Pump at Brgy. Cavite (MTG Pliviriscaf IA),False
+1923,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC: Construction of Solar-Powered Pump at Brgy. Subol (BM Capuso IA),False
+1925,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC: Construction of Solar-Powered Pump at Brgy. Calem (BM Capuso IA),False
+1927,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC: Construction of Solar-Powered Pump at Brgy. Sinulatan (Kasangga ng Rang Ay IA),False
+1929,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC: Construction of Solar-Powered Pump at Culong (Glorya sa Bagong Milenyo IA),False
+1931,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC: Construction of Solar-Powered Pump at Bunol (Glorya sa Bagong Milenyo IA),False
+1933,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,"PRIS-SDC PH2: Construction of Solar Power Pump (Narvacan, Casongsong, Cavite)",False
+1935,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,"PRIS-SDC PH2: Construction of Solar Power Pump (San Miguel, Manggang Marikit)",False
+1937,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,"PRIS-SDC PH2: Construction of Solar Power Pump (San Rafael, Galvan, Partida I)",False
+1939,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC PH2: Construction of Solar Power Pump (Lennec),False
+1941,UPRIIS,Nueva Ecija,UPRIIS,Nueva Ecija,PRIS-SDC PH2: Construction of Solar Power Pump (San Agustin),False
+1945,Region 4A,Batangas,Region 4A,Batangas,Sitio Panagsagan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Moni,True
+1947,Region 4A,Batangas,Region 4A,Batangas,Cahigam SPIP: Construction of a Water Source and Pump Facilities,False
+1949,Region 4A,Batangas,Region 4A,Batangas,Mayuro SPIP: Construction of a Water Source and Pump Facilities,False
+1951,Region 4A,Batangas,Region 4A,Batangas,Lumbangan SPIP: Construction of a Water Source and Pump Facilities,False
+1953,Region 4A,Batangas,Region 4A,Batangas,Molino CIS: Construction of a Water Source and Pump Facilities,False
+1955,Region 4A,Batangas,Region 4A,Batangas,Pinagbayanan CIS: Construction of a Water Source and Pump Facilities,False
+1957,Region 4A,Batangas,Region 4A,Batangas,Quilo-Quilo CIS: Construction of a Water Source and Pump Facilities,False
+1960,Region 4A,Cavite,Region 4A,Cavite,Sitio Kalaanan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monito,True
+1963,Region 4A,Laguna,Region 4A,Laguna,Purok 3 San Benito SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Mo,True
+1965,Region 4A,Laguna,Region 4A,Laguna,Sta. Cruz RIS: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+1967,Region 4A,Laguna,Region 4A,Laguna,Sta. Cruz RIS - Pila Area: Establishment of Solar-Powered Pump Irrigation Project with AI ,True
+1969,Region 4A,Laguna,Region 4A,Laguna,Sta. Cruz RIS - Pila Area: Establishment of Solar-Powered Pump Irrigation Project with AI ,True
+1973,Region 4A,Quezon,Region 4A,Quezon,Barangay Bislian Munti SPIP: Establishment of Solar-Powered Pump Irrigation Project with A,True
+1975,Region 4A,Quezon,Region 4A,Quezon,Barangay Camohaguin SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI M,True
+1977,Region 4A,Quezon,Region 4A,Quezon,Barangay Mabunga SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Moni,True
+1979,Region 4A,Quezon,Region 4A,Quezon,Barangay Talaan Aplaya SPIP: Establishment of Solar-Powered Pump Irrigation Project with A,True
+1981,Region 4A,Quezon,Region 4A,Quezon,Buenavista CIS: Establishment of Solar-Powered Pump Irrigation Project,False
+1983,Region 4A,Quezon,Region 4A,Quezon,Guinhalinan CIP: Establishment of Solar-Powered Pump Irrigation Project,False
+1985,Region 4A,Quezon,Region 4A,Quezon,San Vicente SPIP: Establishment of Solar-Powered Pump Irrigation Project,False
+1988,Region 4A,Rizal,Region 4A,Rizal,Sitio Lamuan Brgy. Quisao SPIP: Establishment of Solar-Powered Pump Irrigation Project wit,True
+1990,Region 4A,Rizal,Region 4A,Rizal,Maybancal SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+1992,Region 4A,Rizal,Region 4A,Rizal,"Pulong Munti, San Pedro SPIP: Establishment of Solar-Powered Pump Irrigation Project with ",True
+1994,Region 4A,Rizal,Region 4A,Rizal,San Lorenzo CIS SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monit,True
+1998,Region 4B,Marinduque,Region 4B,Marinduque,Sta. Cruz SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+2001,Region 4B,Occidental Mindoro,Region 4B,Occidental Mindoro,Bantay Oksi SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+2003,Region 4B,Occidental Mindoro,Region 4B,Occidental Mindoro,Lubang Island SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitor,True
+2006,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,Bulalacao SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+2008,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,San Teodoro SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+2010,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,Calapan City SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+2012,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,Calapan City SPIP 2: Establishment of Solar-Powered Pump Irrigation Project with AI Monito,True
+2014,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,Pola SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syste,True
+2016,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,Naujan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sys,True
+2018,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,Naujan SPIP 2: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+2020,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,Naujan SPIP 3: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+2022,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,Naujan SPIP 4: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+2024,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,Roxas SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,True
+2026,Region 4B,Oriental Mindoro,Region 4B,Oriental Mindoro,Bulalacao SPIP 2: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+2029,Region 4B,Palawan,Region 4B,Palawan,Capinaan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+2031,Region 4B,Palawan,Region 4B,Palawan,Araywan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sy,True
+2033,Region 4B,Palawan,Region 4B,Palawan,Malis SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,True
+2035,Region 4B,Palawan,Region 4B,Palawan,Labog SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,True
+2038,Region 4B,Romblon,Region 4B,Romblon,Looc SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syste,True
+2040,Region 4B,Romblon,Region 4B,Romblon,Odiongan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+2044,Region 5,Camarines Sur,Region 5,Camarines Sur,RIIS-RIDA SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+2046,Region 5,Camarines Sur,Region 5,Camarines Sur,Bagadion SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring S,True
+2048,Region 5,Camarines Sur,Region 5,Camarines Sur,Catalotoan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring,True
+2050,Region 5,Camarines Sur,Region 5,Camarines Sur,HARBFA SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sys,True
+2052,Region 5,Camarines Sur,Region 5,Camarines Sur,Libmanan PIS: Conversion to Solar-Powered with AI Monitoring System,True
+2055,Region 5,Masbate,Region 5,Masbate,Cawayan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sy,True
+2057,Region 5,Masbate,Region 5,Masbate,Nabongsoran SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+2059,Region 5,Masbate,Region 5,Masbate,Pulanduta SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+2062,Region 5,Sorsogon,Region 5,Sorsogon,Butag SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,True
+2064,Region 5,Sorsogon,Region 5,Sorsogon,Lumbang SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sy,True
+2066,Region 5,Sorsogon,Region 5,Sorsogon,Burabod SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sy,True
+2068,Region 5,Sorsogon,Region 5,Sorsogon,Dinapa SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sys,True
+2070,Region 5,Sorsogon,Region 5,Sorsogon,Tiris SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,True
+2072,Region 5,Sorsogon,Region 5,Sorsogon,San Roque Malbog SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Moni,True
+2076,Region 6,Aklan,Region 6,Aklan,Agcawilan SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+2078,Region 6,Aklan,Region 6,Aklan,Sitio Dalipe SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitori,True
+2081,Region 6,Antique,Region 6,Antique,Barusbus CIS: Establishment of Solar Pump Irrigation Project with AI Monitoring System,True
+2083,Region 6,Antique,Region 6,Antique,Flores SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sys,True
+2085,Region 6,Antique,Region 6,Antique,Maradiona SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring ,True
+2087,Region 6,Antique,Region 6,Antique,Tipulan Dam SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitorin,True
+2090,Region 6,Iloilo,Region 6,Iloilo,Tuburan - Aganan RIS: Establishment of Solar-Powered Pump Irrigation Project with AI Monit,True
+2092,Region 6,Iloilo,Region 6,Iloilo,Dalid SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Syst,True
+2094,Region 6,Iloilo,Region 6,Iloilo,Sitio Paradise SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monito,True
+2096,Region 6,Iloilo,Region 6,Iloilo,Langca SPIP: Establishment of Solar-Powered Pump Irrigation Project with AI Monitoring Sys,True
+2099,Region 6,Negros Occidental,Region 6,Negros Occidental,Sumacawe Murcia SPIP: Establishment of Solar Pump Irrigation Project with AI Monitoring Sy,True

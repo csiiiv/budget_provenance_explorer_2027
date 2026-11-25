@@ -1,0 +1,368 @@
+[
+  {
+    "workbook_row": 234,
+    "nep_id": "nep-nia-p03-y432",
+    "house_id": "ib:p899:r5",
+    "pdf_page": 3,
+    "full_nep_title": "Masalip RIS: Canal Lining @ Sta. 3+070.00 - 3+150.00, Sta. 3+829.00 - 3+925.50, Sta. 3+968.40 - 4+031.40, Sta. 4+061.50 - 4+126.50, Sta. 4+602.30 - 4+617.60, Lat. A-Extra and Repair of Road Crossing @ sta. 3+240.00+3+269.00",
+    "decision": "join",
+    "note": "The full NEP title and amount agree with the House after restoring the continuation lines."
+  },
+  {
+    "workbook_row": 279,
+    "nep_id": "nep-nia-p04-y113",
+    "house_id": "ib:p900:r3",
+    "pdf_page": 4,
+    "decision": "review",
+    "basis": "workbook_pair_senate_attribution_review",
+    "note": "Two ₱15M NEP and House entries share this title. October workbook row 279 describes Lateral B-2 and row 283 describes Sta. Rita Creek. Both mapped Senate titles describe Lateral B-2. Verify the Senate attribution."
+  },
+  {
+    "workbook_row": 283,
+    "nep_id": "nep-nia-p04-y175",
+    "house_id": "ib:p900:r5",
+    "pdf_page": 4,
+    "decision": "review",
+    "basis": "workbook_pair_senate_attribution_review",
+    "note": "October workbook row 283 describes Sta. Rita Creek, but the mapped Senate title describes Lateral B-2, also listed for row 279. Verify the Senate attribution."
+  },
+  {
+    "workbook_row": 297,
+    "nep_id": "nep-nia-p04-y259",
+    "house_id": "ib:p900:r10",
+    "pdf_page": 4,
+    "full_nep_title": "Construction of concrete canal lining at lateral B-7, SDA, and improvement of drainage waterway at Brgy. 1 & Pulong Bahay: Construction of concrete canal lining at lateral B-7, SDA, and improvement of drainage waterway at Brgy. 1 & Pulong Bahay",
+    "decision": "join",
+    "note": "The full NEP title and amount agree with the House after restoring the continuation lines."
+  },
+  {
+    "workbook_row": 348,
+    "nep_id": "nep-nia-p04-y527",
+    "house_id": "ib:p901:r13",
+    "pdf_page": 4,
+    "full_nep_title": "Libmanan-Cabusao PIS: Repair/Rehabilitation of Trapezoidal Canal Left and Right Embankment (Main Canal Sta. 7+642-8+300), Headgates (MC-1 Sta. 8+593.00, MC-2 Sta, 9+393.00, and F1-1 Sta. 9+844), and construction of waste way (Sta. 11+145)",
+    "decision": "join",
+    "note": "The full NEP title and amount agree with the House after restoring the continuation lines."
+  },
+  {
+    "workbook_row": 350,
+    "nep_id": "nep-nia-p04-y568",
+    "house_id": "ib:p901:r14",
+    "pdf_page": 4,
+    "full_nep_title": "Libmanan-Cabusao PIS: Repair/Rehabilitation of Trapezoidal Canal Embankment (Main Canal Sta. 0 + 0 0 0 . 0 0 - 0+720.00, Sta. 0 + 5 4 2 . 0 0 - 0 + 5 6 2 . 0 0 , 4 + 4 7 1 . 0 0 - 4 + 8 6 2 . 0 0 , 5+000.00-5+200.00), Headgate Lateral B (Sta 5+550.00) and Heagdate Lateral C (Sta. 6+920.00)",
+    "decision": "join",
+    "note": "Workbook row 350 identifies both ₱14M budget lines. The restored NEP station values agree with House after repairing PDF digit spacing. The NEP spelling Heagdate is preserved in the source title.",
+    "basis": "workbook_original_title_variant"
+  },
+  {
+    "workbook_row": 352,
+    "nep_id": "nep-nia-p04-y611",
+    "house_id": "ib:p902:r1",
+    "pdf_page": 4,
+    "full_nep_title": "Tigman-Hinagyanan-Inarihan RIS: Repair/Rehabilitation of Canalization at MC-1 Canal (Sta 0+000.00 -0+100.00) at Tigman Main Canal, Canal Lining at Inarihan Line-Main Canal (Sta 9+320.00 - 9+4652.00), construction of outfall structure at Sta 9+562.00 (Inarihan Main Canal), Rehabilitation of Qutfall B-3 Structure, MC-SP2 Outfall Structure-Replacement of Steelgate, TO1 (Sta. 0 + 2 0 0 . 0 0 - 0 + 3 0 0 . 0 0 ) , TO2 (Sta. 0 + 0 3 0 . 0 0 - 0 + 0 8 0 . 0 0 ) , Turnout 11 (Sta. 0 + 0 5 0 . 0 0 - 0+100.00) along hinagyanan line, Lateral A (raising of canal) (Sta 1+040-1+240) at Inarihan Line, and Replacement of turnoutgates at MC7A-1 , Lateral D4, TO Al-1 and A1-2 within Inarihan Line",
+    "decision": "join",
+    "note": "Workbook row 352 and matching base titles identify one ₱9M Tigman–Hinagyanan–Inarihan line. The original NEP and House descriptions print different end stations for the Inarihan Main Canal segment. Both complete NIA submissions agree with the Senate revision.",
+    "basis": "unique_workbook_base_title_and_amount",
+    "detail_difference": "nep_house_station"
+  },
+  {
+    "workbook_row": 357,
+    "nep_id": "nep-nia-p04-y728",
+    "house_id": "ib:p902:r3",
+    "pdf_page": 4,
+    "full_nep_title": "SAN RAMON RIS: Repair of Canal Structures along Sta 6+204.90 - 6+207.90 , Sta 2+408.16 CL of Main Canal, Concreting of Sublateral Canals 0+000.00-0+300 including electrification for Diversion's Water Master's Quarter and Automated Gates",
+    "decision": "join",
+    "note": "The full NEP title and amount agree with the House after restoring the continuation lines."
+  },
+  {
+    "workbook_row": 374,
+    "nep_id": "nep-nia-p05-y194",
+    "house_id": "ib:p902:r7",
+    "pdf_page": 5,
+    "decision": "join",
+    "basis": "title_abbreviation",
+    "note": "October workbook row 374 links both ₱6M source lines. The original NEP and House titles differ only by Rehab versus Rehabilitation. Annex A-3 repeats the House title and carries the Lateral C-1a submission scope shown in both NIA workbooks."
+  },
+  {
+    "workbook_row": 485,
+    "nep_id": "nep-nia-p06-y234",
+    "house_id": "ib:p904:r8",
+    "pdf_page": 6,
+    "full_nep_title": "Abra River Irrigation System: Restoration of Canal Lining along the supplemental Source of Upper Primary Canal and Construction of Appurtenant structures. Replacement of Delapidated Steel Gates along the Upper Primary Canal and Construction of Appurtenant Structures",
+    "decision": "join",
+    "note": "The full NEP title and amount agree with the House after restoring the continuation lines."
+  },
+  {
+    "workbook_row": 576,
+    "nep_id": "nep-nia-p07-y402",
+    "house_id": "ib:p906:r1",
+    "pdf_page": 7,
+    "full_nep_title": "Matogdon RIS: Restoration of Lateral A (Sta 1+005-1+117); Improvement/Rehabilitation of canal structure and canalization works at Sta. 0+005-0+390, 1+888-1+998.50 Lat. C, Sta. 1+420- 1+646.50 Lat. C-1; Installation of diesel engine pump at the tail end of lateral Alc",
+    "decision": "join",
+    "note": "Workbook row 576 identifies both ₱10M budget lines. The restored NEP title and House agree on the listed station ranges. The NEP pump lateral reads Alc; the House reads A1c.",
+    "basis": "workbook_original_title_variant"
+  },
+  {
+    "workbook_row": 579,
+    "nep_id": "nep-nia-p07-y442",
+    "house_id": "ib:p906:r2",
+    "pdf_page": 7,
+    "full_nep_title": "Lower-Lalo RIS: Restoration of 5 Intake Gates and Forebay Intake Structure fence and concrete slab, RALCC A-3 Extension (Sta. 0+234 -0+650), Replacement of Road crossing at RALCCA-3 (Sta. 0+000 -0+006), Replacement of Road crossing at RALCCA (Sta. 0+030 -0+050),",
+    "decision": "join",
+    "note": "The full NEP title and amount agree with the House after restoring the continuation lines."
+  },
+  {
+    "workbook_row": 583,
+    "nep_id": "nep-nia-p07-y517",
+    "house_id": "ib:p906:r4",
+    "pdf_page": 7,
+    "full_nep_title": "Lower-Lalo RIS: Restoration of Canal Lining at RAMC 16 (Sta. 0+018.5-0+586.5, RAMC 16 A 0+067- 0+308, RAMC 17 0+150-0+506, RAMC 17A 14-853.5-2+120, RAMC 14-1 0+000-0+109.5, RAMC 15- A 0+886.2-0+994.5",
+    "decision": "join",
+    "note": "Workbook row 583 and matching base titles identify one ₱4M Lower-Lalo line. Preserve the differing RAMC 17A station notation in the original titles. Both NIA submissions agree with the Senate revision.",
+    "basis": "unique_workbook_base_title_and_amount",
+    "detail_difference": "nep_house_station"
+  },
+  {
+    "workbook_row": 626,
+    "nep_id": "nep-nia-p08-y227",
+    "house_id": "ib:p906:r15",
+    "pdf_page": 8,
+    "full_nep_title": "Salug RIS: Construction of a 50-meter protection dike along Salug Diut River for the protection of the Lateral E canal lining serving 1,000 hectares",
+    "decision": "join",
+    "note": "The full NEP title and amount agree with the House after restoring the continuation lines."
+  },
+  {
+    "workbook_row": 651,
+    "nep_id": "nep-nia-p08-y424",
+    "house_id": "ib:p907:r4",
+    "pdf_page": 8,
+    "full_nep_title": "Maridagao RIS: 1. Concreting of Canal along lateral E 0+000 - 0+700 (UMSA at DALFIA) 2. DESILTING AT LATERAL DRAINAGE FROM PULANGI RIVER TO LATERAL Al (BAGONABATI IA)",
+    "decision": "join",
+    "note": "Workbook row 651 identifies both ₱16.5M budget lines. The restored NEP title and House agree on the work; the drainage lateral reads Al in NEP and A1 in House.",
+    "basis": "workbook_original_title_variant"
+  },
+  {
+    "workbook_row": 659,
+    "nep_id": "nep-nia-p08-y515",
+    "house_id": "ib:p907:r7",
+    "pdf_page": 8,
+    "full_nep_title": "Lambayong: 1. Construction of 1 km canal lining at Pasamic (Sta. 4+691 - 5+691) 2. Supply and Installation of Pasamic 3 - Units Sluice Gates 3. Construction of 5 units Canal Structures and 6 Terminal Facilities",
+    "decision": "join",
+    "note": "The full NEP title and amount agree with the House after restoring the continuation lines."
+  },
+  {
+    "workbook_row": 693,
+    "nep_id": "nep-nia-p09-y182",
+    "house_id": "ib:p907:r16",
+    "pdf_page": 9,
+    "full_nep_title": "Addalam River Irrigation System (ADRIS): Establishment of SMS Telemetered Rainfall/River Gauges and Sensors/Monitoring Equipment/Subscription, Supply and Installation of CCTV, IP Radio/VHF/Steel Gates.",
+    "decision": "join",
+    "note": "The full NEP title and amount agree with the House after restoring the continuation lines."
+  },
+  {
+    "workbook_row": 701,
+    "nep_id": "nep-nia-p09-y255",
+    "house_id": "ib:p908:r3",
+    "pdf_page": 9,
+    "full_nep_title": "Masipi West CIS: Replacement of Trash Rack at Intake Sta. 0+000; Propose Steel Gate at Intake Sta. 04000, and at Inlet of Combined Thresher Crossing and Headgate of Lateral A along Main Canal Sta. 0+436; Construction of Pipeline at Sta. 0+236 - 0+284 along Main Canal; Repair of RC Pipe of Siphon at Sta, 1+360 - 1+440 along Main Canal; Construction of Canal Lining at Sta. 0+474 - 0+633, Sta. 0+658 - 0+845, Sta. 0+858 - 0+996, Sta. 1+300 - 1+360, Sta. 1-+680 -1+800 along Main Canal;",
+    "decision": "join",
+    "note": "Workbook row 701 and matching base titles identify one ₱9M Masipi West line. The original NEP and House descriptions differ in intake station notation. Both complete NIA submissions agree with the Senate revision.",
+    "basis": "unique_workbook_base_title_and_amount",
+    "detail_difference": "nep_house_station"
+  },
+  {
+    "workbook_row": 703,
+    "nep_id": "nep-nia-p09-y337",
+    "house_id": "ib:p908:r4",
+    "pdf_page": 9,
+    "full_nep_title": "Simanu CIS: Propose Steel Gate & Lifting Mechanism at Intake Sta. 0+000 Rehabilitation/Dredging & Clearing of Ogee Dam Construction of Structured Wall Pipe at Sta. 4+360.00 - 4+560.00 along Main Canal; Canal Lining at Sta. 4+580.00 - 4+797.00 and Sta. 4+800.00 - 5+092.50 along Main Canal, Sta. 0+006.20 - 0+568.80 along Lateral A, and Sta. 0+005.00 - 0+690.00 along Lateral B; Canal Structures at various locations (Road Crossing at Sta. 4+797.00 along Main Canal and Drainage Culvert at Sta. 0+054.00 along Lateral A); and Canal Desilting",
+    "decision": "join",
+    "note": "The full NEP title and amount agree with the House after restoring the continuation lines."
+  },
+  {
+    "workbook_row": 743,
+    "nep_id": "nep-nia-p09-y665",
+    "house_id": "ib:p908:r12",
+    "pdf_page": 9,
+    "full_nep_title": "Nakidol Creek-Poblacion CIS: Concreting of the 0.410 KM service road and protection structure from the Poblacion Provincial Road leading to the diversion structure of the Nakidol Creek Poblacion CIS and constrcution of culvert",
+    "decision": "join",
+    "note": "The restored NEP title transposes letters in “construction” of the culvert."
+  },
+  {
+    "workbook_row": 946,
+    "nep_id": "nep-nia-p11-y425",
+    "house_id": "ib:p911:r16",
+    "pdf_page": 11,
+    "full_nep_title": "Dabobo CIS: Repair of Canal Lining along Lateral A at Station 04000 - 0+525.00 ; Repair of Canal Structures along Main Canal at Station 0+000.00 (Intake), along Lateral A at Station 0+160.00 (Thr. Crossing), Station 0+-330.00 (Thr. Crossing).",
+    "decision": "join",
+    "note": "Workbook row 946 and matching base titles identify one ₱3.3M Dabobo line. The original titles differ in the Lateral A start station notation. Both NIA submissions agree with the Senate revision.",
+    "basis": "unique_workbook_base_title_and_amount",
+    "detail_difference": "nep_house_station"
+  },
+  {
+    "workbook_row": 948,
+    "nep_id": "nep-nia-p11-y468",
+    "house_id": "ib:p911:r17",
+    "pdf_page": 11,
+    "full_nep_title": "Villarose CIS: Repair of Canal Lining along Main Canal at Station 0+000.00 - 0+300.00; Construction of Canal Cover at Station 0-+149.00 - 0+175.00, Station 0+235.00, Station 1+400.00 - 1+518.00, Station 1+700.00 - 2+025.00; Repair of Canal Structures at Station 0+030.80 (Spillway), Station 0+175.00 (Overhead Drainage), Station 0+235,00 (Overhead Drainage), Station 0+790.00 (Overhead Drainage); Desilting at Station 1+400.00 - 1+518.00, Station 1+700.00 - 2+200.00",
+    "decision": "join",
+    "note": "The full NEP title and amount agree with the House after restoring the continuation lines."
+  },
+  {
+    "workbook_row": 1038,
+    "nep_id": "nep-nia-p12-y491",
+    "house_id": "ib:p913:r7",
+    "pdf_page": 12,
+    "full_nep_title": "Buhay na Kudos CIS: Repair/Rehabllitation of Diversion Works (Falling Shutter Dam at Sta. 0+000), Slope Protection works at Upstream, Left and Right Side of Dam, and Canalization Works at Lateral A of Right Main Canal (Sta. 0+200 - 0+250)",
+    "decision": "join",
+    "note": "The restored NEP title misspells “rehabilitation”."
+  },
+  {
+    "workbook_row": 1195,
+    "nep_id": "nep-nia-p14-y82",
+    "house_id": "ib:p915:r17",
+    "pdf_page": 14,
+    "full_nep_title": "Lambusong CIS: Lateral A - Gardose area - 1,210 meters (remove and Replace) & continuation of canal lining 400 meters (drainage), Flume - Lateral B - 500 meters (removed and replace), Terruvian dam - 536 meters HDPE",
+    "decision": "join",
+    "note": "The titles differ in the tense of “remove and replace” for the Lateral B flume."
+  },
+  {
+    "workbook_row": 1253,
+    "nep_id": "nep-nia-p14-y503",
+    "house_id": "ib:p916:r15",
+    "pdf_page": 14,
+    "full_nep_title": "Sangbay 1 CIS: Improvement of Canal Lining along MC at Station 0+155.00 - 0+160.00, 0+518.00 - 0+525.00, 2+392.00 - 2+692.00; Improvement of Canal Structurtes along MC at Station 0+118.00 - 0+145.00 (Siphon), 1+762.00 - 1+789.00 (Road Crossing).",
+    "decision": "join",
+    "note": "The restored NEP title misspells “structures”."
+  },
+  {
+    "workbook_row": 1336,
+    "nep_id": "nep-nia-p15-y419",
+    "house_id": "ib:p918:r1",
+    "pdf_page": 15,
+    "full_nep_title": "Gabayan CIS: IMPROVEMENT/INSTALLATION OF PIPELINE Pipeline (Main Pipe from Reservoir #1 to Reservoir #2 @ Sta. 0+000 to Sta. 0+200, Lateral 1 @ Reservoir #1 Sta. 0+000 to Sta. 0+400, Lateral 1 @ Reservoir #2 Sta. 0+000 to Sta. 04300, Lateral 2 @ Reservoir #2 Sta. 0+000 to Sta. 0+300, Lateral 3 @ Reservoir #2 Sta. Sta. 0+000 to 0+400, Sub-lateral 1 @ Reservoir #2 Sta. 0+000 to Sta. 0+400 and Lateral 1 @ Reservoir #3 Sta. Sta. 0+000 to 0+500)",
+    "decision": "join",
+    "note": "NEP and House give different Lateral 1 station notation. The October justification proposes replacing Gabayan CIS with Napo CIS after insufficient water was found at the drilling site. The Senate title names Napo CIS.",
+    "basis": "documented_replacement"
+  },
+  {
+    "workbook_row": 1393,
+    "nep_id": "nep-nia-p16-y153",
+    "house_id": "ib:p918:r13",
+    "pdf_page": 16,
+    "full_nep_title": "Lamkot CIS: Continuation of canal lining of right main canal, 130 meters canal cover of right mina canal, desilting/repair of diversion dam, remove and replace of structure of right main canal and left main canal",
+    "decision": "join",
+    "note": "The restored NEP title transposes letters in “main” in the canal cover description."
+  },
+  {
+    "workbook_row": 1446,
+    "nep_id": "nep-nia-p16-y608",
+    "house_id": "ib:p919:r2",
+    "pdf_page": 16,
+    "decision": "join",
+    "note": "The full House title matches NEP. Both NIA workbooks record ₱400M NEP, ₱200M House, and a ₱400M submission. The Senate restores ₱200M and adopts the November scope.",
+    "basis": "funding_restoration",
+    "full_house_title": "LIBMANAN PUMP IRRIGATION SYSTEM: Repair/Rehabilitation/Replacement of Existing Pump and Motors and Upgrading of Control System with Remote Monitoring System and Electrical System"
+  },
+  {
+    "workbook_row": 1516,
+    "nep_id": "nep-nia-p17-y700",
+    "house_id": "ib:p920:r11",
+    "pdf_page": 17,
+    "decision": "review",
+    "basis": "workbook_pair_senate_attribution_review",
+    "note": "The NIA submission coordinates locate the project in Isabela, Region 2, while the October and November workbooks both book it under Cordillera Administrative Region. Regional reassignment is pending. Both mapped Senate entries repeat these coordinates. Verify the Senate attribution."
+  },
+  {
+    "workbook_row": 1637,
+    "nep_id": "nep-nia-p19-y550",
+    "house_id": "ib:p923:r13",
+    "pdf_page": 19,
+    "decision": "review",
+    "basis": "workbook_pair_senate_attribution_review",
+    "note": "Both NIA workbooks book this separate Isabela site under Region 2. Its coordinates differ from row 1516, but the mapped Senate title repeats the coordinates of row 1516. Verify the Senate attribution."
+  },
+  {
+    "workbook_row": 1767,
+    "nep_id": "nep-nia-p22-y111",
+    "house_id": "ib:p927:r3",
+    "pdf_page": 22,
+    "decision": "join",
+    "note": "The two Bakod Bayan entries have the same title and amount. This NIA submission and its mapped Senate row give 15°28′34.46″N, 121°02′03.18″E, distinct from workbook row 1797.",
+    "basis": "workbook_distinct_coordinates"
+  },
+  {
+    "workbook_row": 1797,
+    "nep_id": "nep-nia-p22-y499",
+    "house_id": "ib:p927:r18",
+    "pdf_page": 22,
+    "decision": "join",
+    "note": "The two Bakod Bayan entries have the same title and amount. This NIA submission and its mapped Senate row give 15°28′24.8″N, 121°02′20.0″E, distinct from workbook row 1767.",
+    "basis": "workbook_distinct_coordinates"
+  },
+  {
+    "workbook_row": 1958,
+    "nep_id": "nep-nia-p24-y81",
+    "house_id": "ib:p931:r15",
+    "pdf_page": 24,
+    "decision": "join",
+    "note": "The original NEP line has no barangay. The House adds San Miguel, and October row 1958 and November row 1965 give the same San Miguel scope and coordinates as Annex A-3.",
+    "basis": "house_location_added"
+  },
+  {
+    "workbook_row": 1960,
+    "nep_id": "nep-nia-p24-y110",
+    "house_id": "ib:p931:r16",
+    "pdf_page": 24,
+    "decision": "join",
+    "note": "The original ₱10M NEP Pila Area line has no barangay. The House adds Pinagbayanan, and October row 1960 and November row 1967 give the same scope and coordinates as Annex A-3.",
+    "basis": "house_location_added"
+  },
+  {
+    "workbook_row": 1962,
+    "nep_id": "nep-nia-p24-y142",
+    "house_id": "ib:p931:r17",
+    "pdf_page": 24,
+    "decision": "join",
+    "note": "The original ₱15M NEP Pila Area line has no barangay. The House adds Bulilan Norte. October row 1962 and November row 1969 identify Bulilan. Annex A-3 retains Bulilan Norte in the project name but names Santa Clara Norte as the barangay at the same coordinates.",
+    "basis": "house_location_added"
+  },
+  {
+    "workbook_row": 2322,
+    "nep_id": "nep-nia-p29-y193",
+    "house_id": "ib:p938:r14",
+    "pdf_page": 29,
+    "decision": "join",
+    "note": "Workbook row 2322 and matching base titles identify one ₱50M Bitoon line. The Senate annex links the original House title and funds the same four-pump project. NIA says Bitoon and Senate says Pagtigni-an. The printed coordinate numbers agree, but the Senate text omits the final hemisphere marker.",
+    "basis": "unique_workbook_base_title_and_amount",
+    "detail_difference": "senate_locality"
+  },
+  {
+    "workbook_row": 2349,
+    "nep_id": "nep-nia-p29-y395",
+    "house_id": "ib:p939:r6",
+    "pdf_page": 29,
+    "full_nep_title": "Mapalyao SIP: Phase 2: Construction of Supplemental Diversion Works, Canalization work (Sta 4+298 - Sta 6+110 MC & Lateral canals), Canal Structures, Cable Pipelines and Proc. & Instal. Of HDPE Pipelines (Sta 4+750 - Sta4+980 MC)",
+    "decision": "join",
+    "note": "The full NEP title and amount agree with the House after restoring the continuation lines."
+  },
+  {
+    "workbook_row": 2403,
+    "nep_id": "nep-nia-p30-y102",
+    "house_id": "ib:p940:r2",
+    "pdf_page": 30,
+    "full_nep_title": "Habangan-Lower Cang-apa SIP: CONSTRUCTION OF DIVERSION WORKS, CANAL STRUCTURES AND CONCRETE CANAL LINING Check Dam - 1 unit & Intake - 2 units Canalization (MC at Sta. 0-000 to Sta. 0+060, MC-1 at Sta. 0+000 to Sta. 0+240, Lateral A at MC-1 Sta. 0+000 to Sta. 0+240, Lateral B at MC-1 Sta. 0+000 to Sta. 0+240, MC-2 Sta. 0+000 to Sta. 0+258, Sta. 0+270 to Sta. 0+500, Sta. 0+512 to Sta. 04523, Sta. 0+534 to Sta. 0+640, Sta. 0+660 to Sta. 0 + 7 0 0 and Lateral A l at MC-2 Sta. 0 - 0 0 0 to Sta. 0 + 1 0 0 ) Canal Structures (Turn-out - 2 units, Stilling Basin - 3 units, Turn-in - 1 unit, Road Crossing - 1 unit, Cut & Cover - 1 unit and Concrete Elevated Flume from Sta. 0+258 to Sta. 04270, Sta. 0+523 to Sta. 04534)",
+    "decision": "join",
+    "note": "NEP and House give different station notation and lateral references. The October justification proposes replacing Habangan–Lower Cang-apa SIP with Songculan–Capalasanan SIP, citing beneficiary priorities. The Senate title names Songculan–Capalasanan SIP.",
+    "basis": "documented_replacement"
+  },
+  {
+    "workbook_row": 2455,
+    "nep_id": "nep-nia-p30-y576",
+    "house_id": "ib:p940:r16",
+    "pdf_page": 30,
+    "full_nep_title": "Cagaycay RIS: Construction of Palale Checkgate (Sta. 0+000.00), Main Canal (Sta. 0+000.00 - 1+000.00), and other appurtenant structures; Supply/Delivery/Installation/Testing/Commissioning of 2-units Solar Powered Pump, Engine, and Accessories and other appurtenant structures",
+    "decision": "join",
+    "note": "The full NEP title and amount agree with the House after restoring the continuation lines."
+  }
+]

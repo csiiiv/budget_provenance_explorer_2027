@@ -1,0 +1,13 @@
+{
+ "method": "submission_title_coords_vs_psqc_polygons_v1",
+ "workbook": "NIA_NEP_2026-11-13.xlsx",
+ "rows_with_coords": 410,
+ "verdicts": {
+  "province_mismatch": 14,
+  "ok": 387,
+  "province_ok_region_mismatch": 9
+ },
+ "note": "Points parsed from FOR SUBMISSION TO SENATE titles; polygons are 2023 PSA/NAMRIA-derived PSGC shapes. Mismatch verdicts are review pointers, not certified errors.",
+ "adjudicated_by": "nia_coord_boundary_dist_nov13.csv (fmr_bad_endpoints_pattern_mapper_v5)",
+ "adjudication_note": "UTM point-in-polygon re-test adjudicated all 432 endpoints (start+end): 406 ok, 14 outside_booked (10 projects, 2.1-20.6 km), 3 near_boundary (2 projects, 0.5-1.2 km), 9 region_mismatch (CAR/Isabela cluster + BARMM bookings). Davao City HUC pair retracted as projection artifact."
+}
