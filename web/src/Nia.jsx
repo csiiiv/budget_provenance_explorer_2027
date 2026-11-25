@@ -5,7 +5,7 @@ import Trail from './AnnexTrail.jsx'
 import { DeltaBar, DetailTable, Downloads, FieldDiff, Flags, ProjectDrawer, Remark } from './Detail.jsx'
 import { fmtBudget, fmtM } from './lib.jsx'
 import { BudgetStageRail } from './StageRail.jsx'
-import NiaCoordinateMap, { formatMapPoint, workbookMapPoints } from './NiaCoordinateMap.jsx'
+import NiaCoordinateMap, { formatMapPoint, workbookMapPoints, submissionMapPoints } from './NiaCoordinateMap.jsx'
 import './styles.css'
 import NiaSectionNav from './NiaSectionNav.jsx'
 
