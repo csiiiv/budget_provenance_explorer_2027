@@ -69,7 +69,7 @@
   .pap-table tbody td::before,.pap-record-scroll tbody td[data-label]::before{content:attr(data-label);display:block;color:var(--dim);font-size:11px;font-weight:600;line-height:1.35;margin-bottom:4px}
   .pap-table tbody td[data-label="Total"]{grid-column:1/-1;border-bottom:1px solid var(--line);padding:8px 2px}
   .pap-table tbody td strong{font-size:19px;line-height:1.25;color:var(--text)}
-  .pap-table tbody td small{font-size:12px;color:var(--text);opacity:.9}
+  .pap-table tbody td small{font-size:15px;font-weight:600;line-height:1.35;color:var(--text);opacity:1;font-variant-numeric:tabular-nums}
   .pap-table tbody td.pap-cell-none::before{color:#f87171}.pap-table tbody td.pap-cell-partial::before{color:#fb923c}.pap-table tbody td.pap-cell-complete::before{color:#facc15}
   .pap-table tbody tr.pap-total{border-color:var(--nep)}
   .pap-explore-cell{display:block;width:100%;min-height:44px;margin:6px 0 0;padding:7px 4px;font-size:12px;background:var(--panel);white-space:normal}
@@ -89,5 +89,5 @@
 }
 @media(max-width:360px){
   .pap-tools{grid-template-columns:minmax(0,1fr)}
-  .pap-table tbody td strong{font-size:17px}.pap-table tbody td small{font-size:11px}
+  .pap-table tbody td strong{font-size:17px}.pap-table tbody td small{font-size:14px}
 }
