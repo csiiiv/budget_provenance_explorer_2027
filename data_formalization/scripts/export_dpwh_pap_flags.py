@@ -45,6 +45,33 @@ def office_group(h):
         kind = "Other implementing office"
     return region, office, kind
 
+def project_record(c):
+    h, s = c.get("house"), c.get("senate")
+    if not h or h.get("allocation_kind") == "control":
+        return None
+    review = c.get("review") or {}
+    n = review.get("key_documents_found")
+    bucket = "none" if n == 0 else "partial" if n in (1, 2, 3, 4) else "complete" if n == 5 else "unchecked"
+    flags = sorted({(f[0], f[1]) for f in c.get("flags", [])})
+    region, office, kind = office_group(h)
+    return {
+        "id": c["id"], "title": h.get("title"),
+        "program": h.get("program") or "Unclassified program",
+        "pap": h.get("pap") or "No separate PAP heading",
+        "region": region, "office": office, "office_type": kind,
+        "house_php": h["amount_php"], "senate_php": (s.get("sv_php") or 0) if s else h["amount_php"],
+        "senate_title": s.get("senate_title") if s else None,
+        "senate_action": (c.get("actions") or {}).get("house_senate") if s else "Carried forward (unlisted)",
+        "house_page": h.get("pdf_page"), "senate_page": s.get("pdf_page") if s else None,
+        "bucket": bucket, "key_documents_found": n,
+        "documents": {k: review.get(k) for k in ("has_pow", "has_bp202", "has_development_council", "has_geotagged_photos", "has_certificate_of_implementability")},
+        "flags": [code for code, _ in flags],
+        "families": sorted({family for _, family in flags}),
+        "flagged": bool(flags or (review.get("red_flags") or 0) > 0),
+        "hgab_id": review.get("hgab_id"),
+        "project_page": review.get("project_page"), "reviewer_page": review.get("reviewer_page"),
+    }
+
 def build(bundle, grouping="pap"):
     groups = {}
     total = group("All regions", "All offices") if grouping == "office" else group("All programs", "All PAPs")
@@ -58,32 +85,27 @@ def build(bundle, grouping="pap"):
                 excluded["senate_unlinked_rows"] += 1
                 excluded["senate_unlinked_php"] += s.get("sv_php") or 0
             continue
-        program = h.get("program") or "Unclassified program"
-        pap = h.get("pap") or "No separate PAP heading"
+        record = project_record(c)
+        program, pap = record["program"], record["pap"]
         if grouping == "office":
-            region, office, kind = office_group(h)
+            region, office, kind = record["region"], record["office"], record["office_type"]
             key = (region, office)
             g = groups.setdefault(key, {**group(*key), "region": region, "office": office, "office_type": kind})
         else:
             key = (program, pap)
             g = groups.setdefault(key, group(*key))
-        house = h["amount_php"]
-        senate = (s.get("sv_php") or 0) if s else house
+        house, senate = record["house_php"], record["senate_php"]
         if s and s.get("gab_php") != house:
             excluded["linked_house_amount_mismatches"] += 1
-        review = c.get("review") or {}
-        n = review.get("key_documents_found")
-        bucket = "none" if n == 0 else "partial" if n in (1, 2, 3, 4) else "complete" if n == 5 else "unchecked"
-        flags = {(f[0], f[1]) for f in c.get("flags", [])}
-        families = {family for _, family in flags}
+        bucket = record["bucket"]
         for row in (g, total):
             add(row["total"], house, senate)
             add(row["documents"][bucket], house, senate)
-            if flags or (review.get("red_flags") or 0) > 0:
+            if record["flagged"]:
                 add(row["flagged"], house, senate)
-            for code, family in flags:
+            for code in set(record["flags"]):
                 add(row["flags"][code], house, senate)
-            for family in families:
+            for family in record["families"]:
                 add(row["families"][family], house, senate)
     return {"grouping": grouping, "groups": sorted(groups.values(), key=lambda r: (r["program"], r["pap"])),
             "total": total, "excluded": excluded, "flag_catalog": bundle["flag_catalog"],
@@ -110,6 +132,9 @@ def main():
     offices = build(bundle, "office")
     write_report(report, "dpwh-pap-flags")
     write_report(offices, "dpwh-deo-flags")
+    records = [r for c in bundle["chains"] if (r := project_record(c)) is not None]
+    (DATA / "dpwh-finding-records.json").write_text(json.dumps({"records": records, "inputs": bundle["inputs"]}, ensure_ascii=False, separators=(",", ":")) + "\n")
+    print("FINDING_RECORDS", len(records))
     print("OFFICE_REPORT", json.dumps({"groups": len(offices["groups"]), "total": offices["total"]["total"], "types": {k: sum(r["office_type"] == k for r in offices["groups"]) for k in sorted({r["office_type"] for r in offices["groups"]})}}, ensure_ascii=False))
     # Compact build log for verifying the report without downloading large files.
     print("PAP_REPORT_START")

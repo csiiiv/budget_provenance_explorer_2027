@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import SiteNav from './SiteNav.jsx'
+import DpwhCellRecords from './DpwhCellRecords.jsx'
 import './styles.css'
 import './dpwhFindings.css'
 
@@ -52,6 +53,7 @@ function CoverageBars({rows,stage,metric,groupLabel}){
 
 function App(){
   const [report,setReport] = useState(null)
+  const [drill,setDrill] = useState(null)
   const [grouping,setGrouping] = useState('pap')
   const [region,setRegion] = useState('')
   const [officeType,setOfficeType] = useState('')
@@ -95,7 +97,7 @@ function App(){
     return delta*(direction==='asc'?1:-1)||nameCompare(a,b)
   })
   const sortHeader = (key,label,className) => <th key={key} scope="col" className={className} aria-sort={sort===key?(direction==='asc'?'ascending':'descending'):'none'}><button type="button" onClick={()=>chooseSort(key)} title={'Sort '+label+(key==='name'?' alphabetically':' by '+(metric==='php'?'allocation':'project count'))} style={{font:'inherit',color:'inherit',background:'transparent',border:0,padding:'4px 0',cursor:'pointer',textAlign:'inherit',whiteSpace:'inherit'}}>{label} <span aria-hidden="true">{sort===key?(direction==='asc'?'↑':'↓'):'↕'}</span></button></th>
-  const cell = m => <><strong>{num.format(count(m))}</strong><small>{money.format(amount(m))}</small></>
+  const cell = (m,r,key,label,all=false) => <><strong>{num.format(count(m))}</strong><small>{money.format(amount(m))}</small><button type="button" className="pap-explore-cell" aria-label={'Explore records: '+(all?(isOffice?'All offices':'All PAPs'):r.pap)+' — '+label} onClick={()=>setDrill({grouping,stage,mode,key,label,all,program:r.program,pap:r.pap,expectedCount:count(m),expectedAmount:amount(m),inputs:report.inputs})}>Explore records</button></>
   const download = () => {
     const header=[...(isOffice?['Region','Implementing office','Office type']:['Program','PAP']),'Category','Project count','Allocation PHP','Stage']
     const csv=[header,...rows.flatMap(r=>[['Total',r.total],...visible.map(([k,label])=>[label,get(r,k)])].map(([label,m])=>[r.program,r.pap,...(isOffice?[r.office_type]:[]),label,count(m),amount(m),stage]))].map(r=>r.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(',')).join('\n')
@@ -113,12 +115,13 @@ function App(){
     {isOffice&&<><label>Region<select value={region} onChange={e=>setRegion(e.target.value)}><option value="">All regions</option>{regions.map(r=><option key={r} value={r}>{r}</option>)}</select></label><label>Office type<select value={officeType} onChange={e=>setOfficeType(e.target.value)}><option value="">All office types</option>{officeTypes.map(t=><option key={t} value={t}>{t}</option>)}</select></label></>}
     <label>Search {groupLabel}<input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder={isOffice?'e.g. Quezon City':'e.g. Multi-Purpose'}/></label>
     <label>Chart metric / column sorting<select value={metric} onChange={e=>setMetric(e.target.value)}><option value="php">Allocation (PHP)</option><option value="count">Project count</option></select></label></div>
-    {mode==='documents'&&<CoverageBars key={grouping} rows={rows} stage={stage} metric={metric} groupLabel={groupLabel}/>}
     <p><button onClick={download}>Export displayed rows (CSV)</button> · <a href={"./data/"+stem+".csv"} download>Full breakdown CSV</a> · <a href={"./data/"+stem+".json"}>JSON</a></p>
     <div className="pap-table" tabIndex={0}><table><thead><tr>{sortHeader('name',isOffice?'Region / Implementing office':'Program / PAP')}{sortHeader('total','Total')}{visible.map(([k,label])=>sortHeader(k,label,'pap-'+k))}</tr></thead><tbody>
-    {!query&&!region&&!officeType&&<tr className="pap-total"><th>{isOffice?"All offices":"All PAPs"}</th><td>{cell(report.total.total)}</td>{visible.map(([k])=><td key={k}>{cell(get(report.total,k))}</td>)}</tr>}
-    {rows.map(r=><tr key={r.program+'|'+r.pap}><th><small>{r.program}{isOffice?' · '+r.office_type:''}</small>{r.pap}</th><td>{cell(r.total)}</td>{visible.map(([k])=><td key={k}>{cell(get(r,k))}</td>)}</tr>)}
-    </tbody></table></div><p>{rows.length} {groupLabel} groups. Each cell shows project count and allocation in pesos. Click a column heading to sort; click again to reverse the order. The total row stays fixed.</p></section>
-    </>}</main></>
+    {!query&&!region&&!officeType&&<tr className="pap-total"><th>{isOffice?"All offices":"All PAPs"}</th><td>{cell(report.total.total,report.total,'total','Total',true)}</td>{visible.map(([k,label])=><td key={k}>{cell(get(report.total,k),report.total,k,label,true)}</td>)}</tr>}
+    {rows.map(r=><tr key={r.program+'|'+r.pap}><th><small>{r.program}{isOffice?' · '+r.office_type:''}</small>{r.pap}</th><td>{cell(r.total,r,'total','Total')}</td>{visible.map(([k,label])=><td key={k}>{cell(get(r,k),r,k,label)}</td>)}</tr>)}
+    </tbody></table></div><p>{rows.length} {groupLabel} groups. Each cell shows project count and allocation in pesos. Click a column heading to sort; click again to reverse the order. The total row stays fixed.</p>
+    {mode==='documents'&&<CoverageBars key={grouping} rows={rows} stage={stage} metric={metric} groupLabel={groupLabel}/>}
+    </section>
+    </>}</main>{drill&&<DpwhCellRecords selection={drill} onClose={()=>setDrill(null)}/>}</>
 }
 createRoot(document.getElementById('app')).render(<App/>)
