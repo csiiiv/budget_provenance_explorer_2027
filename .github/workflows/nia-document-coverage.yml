@@ -1,10 +1,6 @@
 name: NIA document coverage checks
+# Temporarily manual-only while prioritizing usable Pages deployments.
 on:
-  pull_request:
-    paths:
-      - 'web/**'
-      - 'analysis-nia/data/program_of_works/**'
-      - '.github/workflows/nia-document-coverage.yml'
   workflow_dispatch:
 permissions:
   contents: read
