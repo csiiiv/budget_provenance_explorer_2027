@@ -7,6 +7,9 @@ on:
       - 'web/**'
       - 'data_formalization/scripts/**'
       - 'analysis-nia/**'
+      - 'analysis/data/**'
+      - 'Senate_report_data/data/derived/**'
+      - 'dpwh_HGAB_REVIEW_SET/**'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
@@ -32,8 +35,61 @@ jobs:
           node-version: '22'
           cache: npm
           cache-dependency-path: web/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore DPWH source snapshots
+        working-directory: .
+        env:
+          HOUSE_SOURCE_REF: 1207ac2909a5fc880ffa3c54f54235a0e90d49e5
+          REVIEW_BASE: https://budget-assets.bettergov.ph/hgab/2027/documents/downloads
+        run: |
+          set -euo pipefail
+          tree=analysis/data/hb_dpwh_native_ic_projects_3rd_reading.json
+          curl --fail --show-error --silent --location --retry 3 --max-time 180 \
+            "https://raw.githubusercontent.com/csiiiv/DPWH-NEP-HB-2027-ANALYSIS/$HOUSE_SOURCE_REF/$tree" \
+            --output "$tree"
+          echo "4ab63aea525784ce342d4911c7859f77380b8504eb5483d8e65d48be9377078c  $tree" | sha256sum --check
+          curl --fail --show-error --silent --location --retry 3 --max-time 180 \
+            "$REVIEW_BASE/house-bill-2027-dpwh-dataset.zip" --output "$RUNNER_TEMP/hgab-review.zip"
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import os, hashlib
+          target = Path("dpwh_HGAB_REVIEW_SET")
+          wanted = {"house-bill-2027-dpwh-projects.csv", "house-bill-2027-dpwh-red-flags.csv"}
+          with ZipFile(Path(os.environ["RUNNER_TEMP"]) / "hgab-review.zip") as archive:
+              for name in sorted(wanted):
+                  matches = [item for item in archive.namelist() if Path(item).name == name]
+                  if len(matches) != 1:
+                      raise ValueError(f"Expected one {name}, found {len(matches)}")
+                  data = archive.read(matches[0])
+                  (target / name).write_bytes(data)
+                  print(f"{name}: {hashlib.sha256(data).hexdigest()}")
+          PY
+      - name: Generate DPWH browser bundle
+        working-directory: .
+        run: python data_formalization/scripts/export_dpwh_web.py
       - run: npm ci
       - run: npm run build
+      - name: Verify DPWH explorer is included
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from collections import Counter
+          assert Path("dist/dpwh.html").is_file()
+          bundle = json.loads(Path("dist/data/dpwh.json").read_text())
+          chains, totals = bundle["chains"], bundle["totals"]
+          assert chains and len({c["id"] for c in chains}) == len(chains)
+          assert sum(bool(c.get("house")) and c["house"].get("allocation_kind") != "control" for c in chains) == totals["house"]["rows"]
+          assert sum(bool(c.get("nep")) for c in chains) == totals["nep"]["rows"]
+          assert sum(bool(c.get("senate")) for c in chains) == totals["senate"]["rows"]
+          for stage, counts in totals["actions"].items():
+              assert Counter(c["actions"][stage] for c in chains if c["actions"].get(stage)) == counts
+          assert bundle["review_totals"]["bridged"] > 0
+          print(f"Validated {len(chains):,} DPWH chains")
+          PY
       - uses: actions/upload-pages-artifact@v4
         with:
           path: web/dist
