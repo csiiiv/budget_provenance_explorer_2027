@@ -109,7 +109,7 @@ function adapt(row) {
 
 function AgencyAmount({ project }) {
   const review = project.raw.review
-  if (!review) return '—'
+  if (review?.key_documents_found == null) return '—'
   return <span title="Key documents found (of 5)">{review.key_documents_found}/5</span>
 }
 
@@ -119,6 +119,7 @@ function railAction(row, key) {
   if (key === 'review') {
     if (!row.review) return null
     if (row.review.key_documents_found === 5) return 'All key documents'
+    if (row.review.red_flags == null) return 'Not yet checked'
     if (row.review.red_flags === 0) return 'No red flags'
     return `${row.review.red_flags} red flags`
   }
@@ -131,7 +132,7 @@ function Rail({ project, onSelect, selected }) {
     stages={[
       ['NEP', raw.nep ? 'Proposed' : null],
       ['House I-C', actions.nep_house],
-      ['HGAB review', railAction(raw, 'review'), raw.review ? [{ status: raw.review.red_flags ? 'PENDING REVIEW' : 'RESOLVED' }] : null],
+      ['HGAB review', railAction(raw, 'review'), raw.review?.red_flags != null ? [{ status: raw.review.red_flags ? 'PENDING REVIEW' : 'RESOLVED' }] : null],
       ['Senate', senateOutcome(project)],
     ]} onSelect={onSelect} selected={selected} />
 }
@@ -237,11 +238,11 @@ function Evidence({ rec, initialStage, onClose, onJump }) {
     {selected === 'review' && <section className="stage">
       <h4 style={{ color: 'var(--da)' }}>HGAB review set — documents and red flags</h4>
       {row.review ? <>
-        <p><b>{row.review.hgab_id}</b> · {row.review.key_documents_found}/5 key documents · {row.review.red_flags} red flags</p>
+        <p><b>{row.review.hgab_id}</b> · {row.review.key_documents_found == null ? 'Key documents not yet checked' : `${row.review.key_documents_found}/5 key documents`} · {row.review.red_flags == null ? 'Red flags not yet checked' : `${row.review.red_flags} red flags`}</p>
         <div className="flagrow">
           {KEY_DOCS.map(([key, label]) => (
-            <span key={key} className={row.review[key] ? 'review-fixed' : 'review-open'}
-                  title={label}>{row.review[key] ? '✓' : '⚑'} {label.split(' ').slice(-1)[0]}</span>
+            <span key={key} className={row.review[key] == null ? '' : row.review[key] ? 'review-fixed' : 'review-open'}
+                  title={label}>{row.review[key] == null ? '?' : row.review[key] ? '✓' : '⚑'} {label.split(' ').slice(-1)[0]}</span>
           ))}
         </div>
         <Meta pairs={[
