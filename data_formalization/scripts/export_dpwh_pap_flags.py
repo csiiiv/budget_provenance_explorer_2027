@@ -6,6 +6,7 @@ rows and control nodes are excluded and disclosed separately.
 """
 import csv
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -28,9 +29,25 @@ def group(program, pap):
             "flagged": metric(), "flags": defaultdict(metric),
             "families": defaultdict(metric)}
 
-def build(bundle):
+def office_group(h):
+    region = " ".join((h.get("region_key") or h.get("region") or "Unspecified region").split())
+    office = " ".join((h.get("office") or "Unspecified implementing office").split())
+    label = office.casefold()
+    if re.search(r"district (?:engineering )?office|\bdeo\b", label):
+        kind = "District engineering office"
+    elif "regional office" in label:
+        kind = "Regional office"
+    elif "central office" in label or "bureau proper" in label:
+        kind = "Central / bureau office"
+    elif label == "unspecified implementing office":
+        kind = "Unspecified office"
+    else:
+        kind = "Other implementing office"
+    return region, office, kind
+
+def build(bundle, grouping="pap"):
     groups = {}
-    total = group("All programs", "All PAPs")
+    total = group("All regions", "All offices") if grouping == "office" else group("All programs", "All PAPs")
     excluded = {"house_controls": 0, "no_house": 0, "senate_unlinked_rows": 0,
                 "senate_unlinked_php": 0, "linked_house_amount_mismatches": 0}
     for c in bundle["chains"]:
@@ -43,8 +60,13 @@ def build(bundle):
             continue
         program = h.get("program") or "Unclassified program"
         pap = h.get("pap") or "No separate PAP heading"
-        key = (program, pap)
-        g = groups.setdefault(key, group(*key))
+        if grouping == "office":
+            region, office, kind = office_group(h)
+            key = (region, office)
+            g = groups.setdefault(key, {**group(*key), "region": region, "office": office, "office_type": kind})
+        else:
+            key = (program, pap)
+            g = groups.setdefault(key, group(*key))
         house = h["amount_php"]
         senate = (s.get("sv_php") or 0) if s else house
         if s and s.get("gab_php") != house:
@@ -63,22 +85,32 @@ def build(bundle):
                 add(row["flags"][code], house, senate)
             for family in families:
                 add(row["families"][family], house, senate)
-    return {"groups": sorted(groups.values(), key=lambda r: (r["program"], r["pap"])),
+    return {"grouping": grouping, "groups": sorted(groups.values(), key=lambda r: (r["program"], r["pap"])),
             "total": total, "excluded": excluded, "flag_catalog": bundle["flag_catalog"],
             "inputs": bundle["inputs"]}
 
-def main():
-    report = build(json.loads((DATA / "dpwh.json").read_text()))
-    (DATA / "dpwh-pap-flags.json").write_text(json.dumps(report, ensure_ascii=False, separators=(",", ":")) + "\n")
-    fields = ["program", "pap", "dimension", "category", *metric()]
-    with (DATA / "dpwh-pap-flags.csv").open("w", encoding="utf-8-sig", newline="") as f:
+def write_report(report, stem):
+    (DATA / (stem + ".json")).write_text(json.dumps(report, ensure_ascii=False, separators=(",", ":")) + "\n")
+    office_mode = report["grouping"] == "office"
+    labels = ["region", "office", "office_type"] if office_mode else ["program", "pap"]
+    fields = [*labels, "dimension", "category", *metric()]
+    with (DATA / (stem + ".csv")).open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()
         for row in [report["total"], *report["groups"]]:
             categories = [("total", "all", row["total"]), ("flags", "any", row["flagged"])]
             categories += [(dim, k, m) for dim in ("documents", "families", "flags") for k, m in row[dim].items()]
+            identity = {"region": row["program"], "office": row["pap"], "office_type": row.get("office_type", "All offices")} if office_mode else {"program": row["program"], "pap": row["pap"]}
             for dim, k, m in categories:
-                writer.writerow({"program": row["program"], "pap": row["pap"], "dimension": dim, "category": k, **m})
+                writer.writerow({**identity, "dimension": dim, "category": k, **m})
+
+def main():
+    bundle = json.loads((DATA / "dpwh.json").read_text())
+    report = build(bundle)
+    offices = build(bundle, "office")
+    write_report(report, "dpwh-pap-flags")
+    write_report(offices, "dpwh-deo-flags")
+    print("OFFICE_REPORT", json.dumps({"groups": len(offices["groups"]), "total": offices["total"]["total"], "types": {k: sum(r["office_type"] == k for r in offices["groups"]) for k in sorted({r["office_type"] for r in offices["groups"]})}}, ensure_ascii=False))
     # Compact build log for verifying the report without downloading large files.
     print("PAP_REPORT_START")
     print("program|pap|house_count|house_php|senate_count|senate_php|none_n|none_php|partial_n|partial_php|complete_n|complete_php|unchecked_n|unchecked_php|flagged_n|flagged_php (Senate buckets)")
