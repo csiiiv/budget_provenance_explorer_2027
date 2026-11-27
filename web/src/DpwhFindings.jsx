@@ -8,6 +8,48 @@ const buckets = [['none','0 of 5'],['partial','1–4 of 5'],['complete','5 of 5'
 const num = new Intl.NumberFormat('en-PH')
 const money = new Intl.NumberFormat('en-PH', {style:'currency',currency:'PHP',maximumFractionDigits:0})
 const empty = {house_count:0,house_php:0,senate_count:0,senate_php:0}
+
+const coverageLabels = {none:'0 of 5 — No key documents',partial:'1–4 of 5 — Incomplete',complete:'5 of 5 — Complete',unchecked:'Unknown / unchecked'}
+const compactMoney = value => value>=1e9?'₱'+(value/1e9).toFixed(2)+'B':value>=1e6?'₱'+(value/1e6).toFixed(2)+'M':money.format(value)
+function CoverageBars({rows,stage,metric}){
+  const [display,setDisplay] = useState('absolute')
+  const [showAll,setShowAll] = useState(false)
+  const value = m => (m??empty)[stage+'_'+metric]
+  const format = v => metric==='php'?compactMoney(v):num.format(v)
+  const full = v => metric==='php'?money.format(v):num.format(v)+' projects'
+  const plotted = showAll?rows:rows.slice(0,12)
+  const max = Math.max(0,...rows.map(r=>value(r.total)))
+  const percent = (v,total) => total>0?100*v/total:0
+  const ticks = display==='percentage'?[0,25,50,75,100]:[0,.25,.5,.75,1].map(f=>f*max)
+  return <section className="pap-coverage-chart" aria-labelledby="pap-coverage-heading">
+    <div className="pap-chart-heading"><div><h3 id="pap-coverage-heading">Document coverage by PAP</h3><p>{stage==='senate'?'Senate committee · surviving House-linked projects':'House third reading'} · {metric==='php'?'Allocation':'Project count'}</p></div>
+      <div className="pap-chart-switch" role="group" aria-label="Bar scale">
+        <button type="button" aria-pressed={display==='absolute'} onClick={()=>setDisplay('absolute')}>Absolute</button>
+        <button type="button" aria-pressed={display==='percentage'} onClick={()=>setDisplay('percentage')}>Percentage</button>
+      </div>
+    </div>
+    <div className="pap-chart-legend">{buckets.map(([key])=><span key={key}><i className={'coverage-swatch coverage-'+key}/>{coverageLabels[key]}</span>)}</div>
+    {plotted.length===0?<p>No PAPs match the current search.</p>:<>
+      <div className="pap-chart-axis" aria-hidden="true">{ticks.map((tick,i)=><span key={i}>{display==='percentage'?tick+'%':format(Math.round(tick))}</span>)}</div>
+      <div className="pap-chart-rows">{plotted.map(r=>{
+        const total=value(r.total)
+        const description=buckets.map(([k])=>coverageLabels[k]+': '+full(value(r.documents[k]))+' ('+percent(value(r.documents[k]),total).toFixed(1)+'%)').join('; ')
+        return <div className="pap-chart-row" key={r.program+'|'+r.pap}>
+          <div className="pap-chart-label"><span><small>{r.program}</small><strong>{r.pap}</strong></span><strong className="pap-chart-total" title={full(total)}>{format(total)}</strong></div>
+          <div className="pap-chart-track" role="img" aria-label={r.pap+'; total '+full(total)+'; '+description}>
+            {buckets.map(([key])=>{
+              const v=value(r.documents[key]), share=percent(v,total), width=percent(v,display==='percentage'?total:max)
+              return v>0?<div key={key} className={'pap-chart-segment coverage-'+key} style={{width:width+'%'}} title={coverageLabels[key]+' · '+full(v)+' · '+share.toFixed(1)+'% of PAP'}>{width>=12?<span>{display==='percentage'?share.toFixed(1)+'%':format(v)}</span>:null}</div>:null
+            })}
+          </div>
+        </div>
+      })}</div>
+      <p className="pap-chart-note">Showing {plotted.length} of {rows.length} matching PAPs in the table's current sort order. {display==='percentage'?'Shares are relative to each PAP total.':'All bars use the same scale.'} Hover a segment for its exact value and share. Complete documentation is not technical clearance.</p>
+      {rows.length>12&&<button type="button" className="pap-chart-more" aria-expanded={showAll} onClick={()=>setShowAll(v=>!v)}>{showAll?'Show first 12 PAPs':'Show all '+rows.length+' PAPs'}</button>}
+    </>}
+  </section>
+}
+
 function App(){
   const [report,setReport] = useState(null)
   const [error,setError] = useState('')
@@ -55,7 +97,8 @@ function App(){
     <label>Breakdown<select value={mode} onChange={e=>{setMode(e.target.value);resetSort();setSelected('any')}}><option value="documents">Key document coverage</option><option value="families">Automated flag families</option><option value="flags">Individual automated flags</option></select></label>
     {mode==='flags'&&<label>Flag<select value={selected} onChange={e=>{setSelected(e.target.value);resetSort()}}>{cols.map(([k,label])=><option key={k} value={k}>{label}</option>)}</select></label>}
     <label>Search PAP<input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="e.g. Multi-Purpose"/></label>
-    <label>Sort numeric columns by<select value={metric} onChange={e=>setMetric(e.target.value)}><option value="php">Allocation (PHP)</option><option value="count">Project count</option></select></label></div>
+    <label>Chart metric / column sorting<select value={metric} onChange={e=>setMetric(e.target.value)}><option value="php">Allocation (PHP)</option><option value="count">Project count</option></select></label></div>
+    {mode==='documents'&&<CoverageBars rows={rows} stage={stage} metric={metric}/>}
     <p><button onClick={download}>Export displayed rows (CSV)</button> · <a href="./data/dpwh-pap-flags.csv" download>Full breakdown CSV</a> · <a href="./data/dpwh-pap-flags.json">JSON</a></p>
     <div className="pap-table" tabIndex={0}><table><thead><tr>{sortHeader('name','Program / PAP')}{sortHeader('total','Total')}{visible.map(([k,label])=>sortHeader(k,label,'pap-'+k))}</tr></thead><tbody>
     {!query&&<tr className="pap-total"><th>All PAPs</th><td>{cell(report.total.total)}</td>{visible.map(([k])=><td key={k}>{cell(get(report.total,k))}</td>)}</tr>}
