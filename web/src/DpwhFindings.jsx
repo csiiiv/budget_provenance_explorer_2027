@@ -16,6 +16,13 @@ function App(){
   const [query,setQuery] = useState('')
   const [selected,setSelected] = useState('any')
   const [sort,setSort] = useState('total')
+  const [direction,setDirection] = useState('desc')
+  const [metric,setMetric] = useState('php')
+  const chooseSort = key => {
+    if(key===sort) setDirection(d=>d==='asc'?'desc':'asc')
+    else {setSort(key);setDirection(key==='name'?'asc':'desc')}
+  }
+  const resetSort = () => {setSort('total');setDirection('desc')}
   useEffect(()=>{fetch(new URL('data/dpwh-pap-flags.json',location.href)).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(setReport).catch(e=>setError(e.message))},[])
   const cols = useMemo(()=>{
     if(mode==='documents')return buckets
@@ -26,7 +33,13 @@ function App(){
   const count = m => (m??empty)[stage+'_count']
   const get = (r,k) => mode==='flags'&&k==='any'?r.flagged:r[mode][k]??empty
   const visible = mode==='flags'?cols.filter(([k])=>k===selected):cols
-  const rows = (report?.groups??[]).filter(r=>(r.program+' '+r.pap).toLowerCase().includes(query.toLowerCase())).sort((a,b)=>sort==='name'?(a.program+' '+a.pap).localeCompare(b.program+' '+b.pap):amount(sort==='total'?b.total:get(b,sort))-amount(sort==='total'?a.total:get(a,sort)))
+  const nameCompare = (a,b) => (a.program+' '+a.pap).localeCompare(b.program+' '+b.pap)
+  const sortValue = r => (sort==='total'?r.total:get(r,sort))[stage+'_'+metric]
+  const rows = (report?.groups??[]).filter(r=>(r.program+' '+r.pap).toLowerCase().includes(query.toLowerCase())).sort((a,b)=>{
+    const delta = sort==='name'?nameCompare(a,b):sortValue(a)-sortValue(b)
+    return delta*(direction==='asc'?1:-1)||nameCompare(a,b)
+  })
+  const sortHeader = (key,label,className) => <th key={key} scope="col" className={className} aria-sort={sort===key?(direction==='asc'?'ascending':'descending'):'none'}><button type="button" onClick={()=>chooseSort(key)} title={'Sort '+label+(key==='name'?' alphabetically':' by '+(metric==='php'?'allocation':'project count'))} style={{font:'inherit',color:'inherit',background:'transparent',border:0,padding:'4px 0',cursor:'pointer',textAlign:'inherit',whiteSpace:'inherit'}}>{label} <span aria-hidden="true">{sort===key?(direction==='asc'?'↑':'↓'):'↕'}</span></button></th>
   const cell = m => <><strong>{num.format(count(m))}</strong><small>{money.format(amount(m))}</small></>
   const download = () => {
     const header=['Program','PAP','Category','Project count','Allocation PHP','Stage']
@@ -39,15 +52,15 @@ function App(){
     <section className="panel"><h2>Scope and methodology</h2><p>House project leaves grouped by their official program and PAP, preserving uncategorized rows. Senate amounts reflect the linked Annex A-4 amendment; an unlisted House project is carried forward. Senate counts include only projects with a positive surviving allocation. This is a House-anchored estimate, not the entire Senate DPWH budget.</p><p>Document categories are based on the five key documents found in the HGAB review snapshot: zero, one to four, five, or unknown. Zero key documents does not necessarily mean no other documents exist. Five documents does not establish technical clearance. Automated flags and families overlap; each project is counted once per code or family, so their allocations must not be added.</p><p>Excluded: {num.format(report.excluded.house_controls)} House control chains; {num.format(report.excluded.senate_unlinked_rows)} Senate rows outside the House-leaf population ({money.format(report.excluded.senate_unlinked_php)}). Linked House amount mismatches: {num.format(report.excluded.linked_house_amount_mismatches)}. No risk status is inferred for these exclusions.</p></section>
     <section className="panel pap-findings"><h2>Counts and allocations per PAP</h2>
     <div className="pap-tools"><label>Budget stage<select value={stage} onChange={e=>setStage(e.target.value)}><option value="senate">Senate (surviving)</option><option value="house">House</option></select></label>
-    <label>Breakdown<select value={mode} onChange={e=>{setMode(e.target.value);setSort('total');setSelected('any')}}><option value="documents">Key document coverage</option><option value="families">Automated flag families</option><option value="flags">Individual automated flags</option></select></label>
-    {mode==='flags'&&<label>Flag<select value={selected} onChange={e=>{setSelected(e.target.value);setSort('total')}}>{cols.map(([k,label])=><option key={k} value={k}>{label}</option>)}</select></label>}
+    <label>Breakdown<select value={mode} onChange={e=>{setMode(e.target.value);resetSort();setSelected('any')}}><option value="documents">Key document coverage</option><option value="families">Automated flag families</option><option value="flags">Individual automated flags</option></select></label>
+    {mode==='flags'&&<label>Flag<select value={selected} onChange={e=>{setSelected(e.target.value);resetSort()}}>{cols.map(([k,label])=><option key={k} value={k}>{label}</option>)}</select></label>}
     <label>Search PAP<input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="e.g. Multi-Purpose"/></label>
-    <label>Sort<select value={sort} onChange={e=>setSort(e.target.value)}><option value="total">Total allocation</option><option value="name">Program / PAP</option>{visible.map(([k,label])=><option key={k} value={k}>{label} allocation</option>)}</select></label></div>
+    <label>Sort numeric columns by<select value={metric} onChange={e=>setMetric(e.target.value)}><option value="php">Allocation (PHP)</option><option value="count">Project count</option></select></label></div>
     <p><button onClick={download}>Export displayed rows (CSV)</button> · <a href="./data/dpwh-pap-flags.csv" download>Full breakdown CSV</a> · <a href="./data/dpwh-pap-flags.json">JSON</a></p>
-    <div className="pap-table" tabIndex={0}><table><thead><tr><th>Program / PAP</th><th>Total</th>{visible.map(([k,label])=><th key={k} className={'pap-'+k}>{label}</th>)}</tr></thead><tbody>
+    <div className="pap-table" tabIndex={0}><table><thead><tr>{sortHeader('name','Program / PAP')}{sortHeader('total','Total')}{visible.map(([k,label])=>sortHeader(k,label,'pap-'+k))}</tr></thead><tbody>
     {!query&&<tr className="pap-total"><th>All PAPs</th><td>{cell(report.total.total)}</td>{visible.map(([k])=><td key={k}>{cell(get(report.total,k))}</td>)}</tr>}
     {rows.map(r=><tr key={r.program+'|'+r.pap}><th><small>{r.program}</small>{r.pap}</th><td>{cell(r.total)}</td>{visible.map(([k])=><td key={k}>{cell(get(r,k))}</td>)}</tr>)}
-    </tbody></table></div><p>{rows.length} PAP groups. Each cell shows project count and allocation in pesos.</p></section>
+    </tbody></table></div><p>{rows.length} PAP groups. Each cell shows project count and allocation in pesos. Click a column heading to sort; click again to reverse the order. The total row stays fixed.</p></section>
     </>}</main></>
 }
 createRoot(document.getElementById('app')).render(<App/>)
