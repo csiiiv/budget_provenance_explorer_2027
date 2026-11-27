@@ -70,6 +70,9 @@ jobs:
       - name: Generate DPWH browser bundle
         working-directory: .
         run: python data_formalization/scripts/export_dpwh_web.py
+      - name: Generate PAP risk breakdown
+        working-directory: .
+        run: python data_formalization/scripts/export_dpwh_pap_flags.py
       - run: npm ci
       - run: npm run build
       - name: Verify DPWH explorer is included

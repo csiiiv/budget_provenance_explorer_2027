@@ -392,6 +392,7 @@ function App() {
     )} senateScope="Annex A-4 listed rows" data={{ projects, ...geography, manifest: { totals } }} config={config}
     header={<>
       <h1>DPWH Provenance Explorer — FY2027 budget chain</h1>
+      <p><a href="./dpwh-findings.html">PAP-level flag breakdown and allocations →</a></p>
       <span className="sub">NEP Vol 2B · House HB 10858 I-C 3rd reading · HGAB review set · Senate Annex A-4</span>
       <div className="badges">
         <span className="badge">{t.nep.rows.toLocaleString()} NEP · {t.house.rows.toLocaleString()} House · {t.senate.rows.toLocaleString()} A-4 rows</span>

@@ -39,6 +39,7 @@ export default defineConfig({
         'nia-coordinates': fileURLToPath(new URL('./nia-coordinates.html', import.meta.url)),
         'nia-documents': fileURLToPath(new URL('./nia-documents.html', import.meta.url)),
         'nia-titles': fileURLToPath(new URL('./nia-titles.html', import.meta.url)),
+        'dpwh-findings': fileURLToPath(new URL('./dpwh-findings.html', import.meta.url)),
         dpwh: fileURLToPath(new URL('./dpwh.html', import.meta.url)),
       },
     },
