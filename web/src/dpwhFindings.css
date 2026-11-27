@@ -28,3 +28,66 @@
 .pap-record-dialog button{background:var(--panel2);color:var(--text);border:1px solid var(--line);padding:7px 10px;border-radius:6px;cursor:pointer}.pap-record-dialog button:disabled{opacity:.45;cursor:default}
 .pap-record-scroll{overflow:auto;max-height:52vh;border:1px solid var(--line);border-radius:6px}.pap-record-scroll table{border-collapse:collapse;width:100%;font-size:.8rem}.pap-record-scroll th,.pap-record-scroll td{padding:9px;vertical-align:top;text-align:left;border-bottom:1px solid var(--line)}.pap-record-scroll thead th{position:sticky;top:0;background:var(--panel2);z-index:1}.pap-record-scroll tbody th{min-width:230px}.pap-record-scroll td:nth-child(2){min-width:180px}.pap-record-scroll td:nth-child(3),.pap-record-scroll td:nth-child(4){white-space:nowrap}.pap-record-scroll small{display:block;color:var(--dim);margin-top:3px}.pap-record-scroll a{color:var(--nep)}.pap-record-warning{padding:10px;border:1px solid var(--cut);border-radius:6px}.pap-record-pagination{justify-content:space-between}
 @media(max-width:540px){.pap-record-inner{padding:10px}.pap-record-scroll{max-height:46vh}.pap-record-header button{flex:none}}
+
+/* Scoped findings layout: preserve desktop tables; use labeled record cards on phones. */
+.pap-methodology summary{cursor:pointer;color:var(--dim);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:13px}
+.pap-export-tools{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:12px 0}
+.pap-export-tools button,.pap-mobile-sort button{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:8px 12px;cursor:pointer}
+.pap-export-tools a,.dpwh-findings-page header a{color:var(--nep)}
+.pap-mobile-sort{display:none}
+@media(max-width:760px){
+  .dpwh-findings-page #app{width:100%;min-width:0}
+  .dpwh-findings-page .site-bar,.dpwh-findings-page .site-nav{max-width:100%;min-width:0}
+  .dpwh-findings-page .site-nav{display:flex;flex-wrap:wrap;gap:6px 12px;padding:8px 12px;align-items:center}
+  .dpwh-findings-page .site-name{font-size:13px}
+  .dpwh-findings-page .site-links{display:flex;flex-wrap:wrap;gap:8px 14px;padding:0;margin:0;list-style:none}
+  .dpwh-findings-page .site-links a{display:inline-flex;align-items:center;min-height:40px}
+  .dpwh-findings-page header{display:block;padding:12px}
+  .dpwh-findings-page header h1{font-size:18px;line-height:1.35;overflow-wrap:anywhere}
+  .dpwh-findings-page header p{margin:6px 0;font-size:13px}
+  .dpwh-findings-page header a{display:inline-block;padding:8px 0}
+  .dpwh-findings-page main{display:grid;grid-template-columns:minmax(0,1fr);padding:10px 10px 28px;gap:10px}
+  .dpwh-findings-page main>*,.dpwh-findings-page .panel{min-width:0;max-width:100%}
+  .dpwh-findings-page .panel{padding:12px}
+  .pap-methodology summary{min-height:36px;display:list-item;line-height:36px}
+  .pap-tools,.pap-record-tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:8px 0}
+  .pap-tools label,.pap-record-tools label,.pap-mobile-sort label{min-width:0;max-width:100%;display:flex;flex-direction:column;gap:5px;font-size:12px}
+  .pap-tools input,.pap-tools select,.pap-record-tools input,.pap-record-tools select,.pap-mobile-sort select{width:100%;min-width:0;max-width:100%;font-size:16px;min-height:44px;padding:8px;background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:6px}
+  .pap-tools label:has(input[type=search]),.pap-tools label:only-child{grid-column:1/-1}
+  .pap-export-tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 10px}
+  .pap-export-tools button{grid-column:1/-1;min-height:44px;font-size:14px}
+  .pap-export-tools a{display:flex;align-items:center;min-height:40px;overflow-wrap:anywhere;font-size:13px}
+  .pap-mobile-sort{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:8px;margin:12px 0}
+  .pap-mobile-sort button{min-height:44px;font-size:13px}
+  .pap-table,.pap-record-scroll{overflow:visible;max-height:none;border:0;min-width:0;outline-offset:3px}
+  .pap-table table,.pap-table tbody,.pap-record-scroll table,.pap-record-scroll tbody{display:block;width:100%;min-width:0}
+  .pap-table thead,.pap-record-scroll thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  .pap-table thead button{visibility:hidden}
+  .pap-table tbody tr,.pap-record-scroll tbody tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 8px;background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:10px;margin:0 0 10px;min-width:0}
+  .pap-table tbody th:first-child,.pap-record-scroll tbody th{display:block;grid-column:1/-1;position:static;min-width:0;width:auto;background:transparent;color:var(--text);text-align:left;white-space:normal;overflow-wrap:anywhere;padding:0 0 8px;font-size:14px;font-weight:600;border-bottom:1px solid var(--line)}
+  .pap-table tbody td,.pap-record-scroll tbody td{display:block;min-width:0;max-width:100%;padding:10px 2px 5px;text-align:left;white-space:normal;overflow-wrap:anywhere;border:0;font-size:14px}
+  .pap-table tbody td::before,.pap-record-scroll tbody td[data-label]::before{content:attr(data-label);display:block;color:var(--dim);font-size:11px;font-weight:600;line-height:1.35;margin-bottom:4px}
+  .pap-table tbody td[data-label="Total"]{grid-column:1/-1;border-bottom:1px solid var(--line);padding:8px 2px}
+  .pap-table tbody td strong{font-size:19px;line-height:1.25;color:var(--text)}
+  .pap-table tbody td small{font-size:12px;color:var(--text);opacity:.9}
+  .pap-table tbody td.pap-cell-none::before{color:#f87171}.pap-table tbody td.pap-cell-partial::before{color:#fb923c}.pap-table tbody td.pap-cell-complete::before{color:#facc15}
+  .pap-table tbody tr.pap-total{border-color:var(--nep)}
+  .pap-explore-cell{display:block;width:100%;min-height:44px;margin:6px 0 0;padding:7px 4px;font-size:12px;background:var(--panel);white-space:normal}
+  .pap-coverage-chart{padding:10px;margin:14px 0 0}.pap-chart-heading h3{font-size:15px}
+  .pap-chart-switch{width:100%;display:grid;grid-template-columns:1fr 1fr}.pap-chart-switch button,.pap-chart-more{min-height:44px}
+  .pap-chart-label span{min-width:0;overflow-wrap:anywhere}.pap-chart-total{font-size:12px}.pap-chart-legend{gap:8px 12px}.pap-chart-track{height:30px}.pap-chart-axis{font-size:10px}.pap-chart-segment span{font-size:10px}
+  .pap-record-dialog{position:fixed;inset:0;margin:0;width:100%;max-width:100%;height:100vh;height:100dvh;max-height:100vh;max-height:100dvh;border:0;border-radius:0;overflow:auto;overscroll-behavior:contain}
+  .pap-record-inner{padding:0 12px max(12px,env(safe-area-inset-bottom));min-width:0}
+  .pap-record-header{position:sticky;top:0;z-index:3;margin:0 -12px;padding:12px 12px 8px;padding-top:max(12px,env(safe-area-inset-top));background:var(--panel);border-bottom:1px solid var(--line)}
+  .pap-record-header>div{min-width:0}.pap-record-header h2{font-size:16px;overflow-wrap:anywhere}.pap-record-header p{font-size:12px;overflow-wrap:anywhere;margin-bottom:0}
+  .pap-record-dialog button{min-height:44px;font-size:13px}.pap-record-summary{gap:6px 12px;font-size:14px;overflow-wrap:anywhere}
+  .pap-record-tools{grid-template-columns:minmax(0,1fr)}.pap-record-tools button{width:100%}
+  .pap-record-scroll tbody td:nth-child(2),.pap-record-scroll tbody td:nth-child(3),.pap-record-scroll tbody td:nth-child(4){min-width:0;white-space:normal}
+  .pap-record-location,.pap-record-docs,.pap-record-sources,.pap-record-empty{grid-column:1/-1}
+  .pap-record-scroll tbody td{font-size:13px}.pap-record-scroll small{font-size:12px}.pap-record-scroll a{display:inline-flex;align-items:center;min-height:40px}
+  .pap-record-pagination{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px;text-align:center;align-items:center;font-size:12px}
+}
+@media(max-width:360px){
+  .pap-tools{grid-template-columns:minmax(0,1fr)}
+  .pap-table tbody td strong{font-size:17px}.pap-table tbody td small{font-size:11px}
+}
